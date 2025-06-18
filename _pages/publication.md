@@ -6,6 +6,7 @@ author_profile: true
 
 # Journal Papers
 * **Tan Tan***, Grant Mills, Xiaolin Ma, Eleni Papadonikolaki (2024). "Adoption challenges of building information modelling (BIM) and off-site construction (OSC) in healthcare construction: are they fellow sufferers?". <i>Engineering, Construction and Architectural Management</i>.
+* Walzer, A.N*., **Tan, T**., Graser, K. and Hall, D.M., (2025). "Bug or feature? Institutional misalignments between construction technology and venture capital". <i>Construction Management and Economics</i>.([Link](https://www.tandfonline.com/doi/full/10.1080/01446193.2024.2401818))
 * Gordan Kucan, **Tan Tan***, David Grossmann, Konrad Graser, Daniel Hall (2024). "Sustainable Future-Proofing Healthcare Facilities: A Modular and Adaptable Design Approach". <i>Journal of Management in Engineering</i>.
 * **Tan Tan***, Grant Mills, Eleni Papadonikolaki (2024). "Exploring Multi-Dimensional Modularity: Strategies to Reduce Complexity in Design Activities". <i>Journal of Management in Engineering</i>.
 * **Tan Tan**, Lang Zheng, Fan Xue, Zhikang Bao, Zigeng Fang, Xiaohu Liu* (2024). "MIVES Multi-Criteria Framework to Sustainability Index for Design for Manufacture and Assembly". <i>Journal of Civil Engineering and Management</i>.
