@@ -22,7 +22,7 @@ Dr. Tan Tan has presided over and participated in many projects including the Ho
 * **设计工程信息学**（如面向制造与装配设计DfMA、安全设计DfS、计算式设计生成和自动化设计审查等）
 * **设计管理创新**（数字化转型,如生成式人工智能、数字制造、BIM等）
 
-谭坦博士主持香港杰出青年学者计划（ECS），参与合作研究基金、科技创新署基金等多个项目。曾获ESI高被引论文奖、主编精选论文奖、最佳论文奖等多个学术荣誉，以及英国全额博士奖学金、英国重大挑战博士基金、中国国家优秀自费留学生奖学金等科研资助。目前担任《Developments in the Built Environment》执行客座编辑、中国工程院院刊《Frontiers of Engineering Management》特约通讯专家、《工程管理学报》与《Smart Construction》青年编委，并担任CAAD Futures 2025学术委员会联合主席。其课题组成立于2024年，积极支持团队成员获得香港政府奖学金、优异论文奖等荣誉。
+谭坦博士主持香港杰出青年学者计划（ECS），参与合作研究基金（CRF）、科技创新署基金（ITF）等多个项目。曾获ESI高被引论文奖、主编精选论文奖、最佳论文奖等多个学术荣誉，以及英国全额博士奖学金、英国重大挑战博士基金、中国国家优秀自费留学生奖学金等科研资助。目前担任《Developments in the Built Environment》执行客座编辑、中国工程院院刊《Frontiers of Engineering Management》特约通讯专家、《工程管理学报》与《Smart Construction》青年编委，并担任CAAD Futures 2025学术委员会联合主席。其课题组成立于2024年，积极支持团队成员获得香港政府奖学金、优异论文奖等荣誉。
 
 
 
