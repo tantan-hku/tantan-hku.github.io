@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tan Tan - Assistant Professor | Architecture & Technology</title>
+  <meta name="description" content="Dr. Tan Tan, Assistant Professor at University of Hong Kong, specializing in Design Engineering Informatics and Design Management Innovation.">
+  <style>
+    :root{
+      --black:#0b0b0b;
+      --white:#ffffff;
+      --orange:#ff6b35;
+      --yellow:#ffd23f;
+      --gray:#666;
+      --light-gray:#f5f5f5;
+      --maxw:1200px;
+      --s1:8px; --s2:12px; --s3:16px; --s4:24px; --s5:32px; --s6:48px; --s7:64px;
+      --radius:12px;
+      --shadow:0 6px 24px rgba(0,0,0,.08);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Noto Sans","Helvetica Neue",Arial,sans-serif; line-height:1.6; color:var(--black); background:var(--white);}
+    a{color:inherit}
+    /* Announcement (kept slow + email) */
+    .announcement{background:var(--black); color:#fff; padding:10px 0; overflow:hidden;}
+    .announcement-content{display:flex; white-space:nowrap; animation:scroll 60s linear infinite;}
+    .announcement-text{margin-right:60px; font-weight:700; font-size:14px;}
+    @keyframes scroll{from{transform:translateX(100%)} to{transform:translateX(-100%)}}
+    header{position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid var(--light-gray);}
+    nav{max-width:var(--maxw); margin:0 auto; padding:0 var(--s4); height:70px; display:flex; align-items:center; justify-content:space-between;}
+    .logo{font-weight:900; letter-spacing:2px; text-transform:uppercase; text-decoration:none;}
+    .nav-links{display:flex; gap:var(--s5); list-style:none; align-items:center;}
+    .nav-links a{text-decoration:none; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:14px; transition:color .3s;}
+    .nav-links a:hover{color:var(--orange)}
+    .translate-btn{background:var(--orange); color:#fff; border:none; padding:8px 16px; border-radius:4px; font-weight:700; cursor:pointer;}
+    .container{max-width:var(--maxw); margin:0 auto; padding:0 var(--s4);}
+    .section{padding:var(--s7) 0; text-align:center; position:relative;}
+    .section-title{font-size:48px; font-weight:900; text-transform:uppercase; letter-spacing:2px; margin-bottom:var(--s3);}
+    .section-subtitle{font-size:18px; color:var(--gray); max-width:640px; margin:0 auto var(--s6);}
+
+    /* Micro-interactions */
+    .hover-lift{transition:transform .25s ease, box-shadow .25s ease;}
+    .hover-lift:hover{transform:translateY(-4px); box-shadow:var(--shadow);}
+    .reveal{opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s ease;}
+    .reveal.show{opacity:1; transform:none;}
+
+    /* Hero */
+    .hero{padding:var(--s7) 0; text-align:center;}
+    .hero-content{max-width:820px; margin:0 auto;}
+    .hero-eyebrow{font-size:14px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:#7a7a7a;}
+    .hero-title{font-size:clamp(36px,7vw,64px); font-weight:900; text-transform:uppercase; letter-spacing:2px; line-height:1.08; margin:var(--s4) 0 var(--s5);}
+    .hero-title .no-wrap{white-space:nowrap;}
+    .hero-subtitle{font-size:20px; color:#555; margin-bottom:var(--s5);}
+    .highlight{background:var(--yellow); padding:2px 4px; font-weight:800; color:#000 !important;} /* 强制全黑 */
+    .btn{display:inline-block; padding:14px 28px; border:3px solid var(--black); font-weight:700; text-transform:uppercase; letter-spacing:1px; text-decoration:none;}
+    .btn--primary{background:var(--black); color:#fff;}
+    .btn--secondary{background:#fff; color:var(--black);}
+    .btn--primary:hover{background:#fff; color:var(--black);}
+    .btn--secondary:hover{background:var(--black); color:#fff;}
+    .hero-buttons{display:flex; gap:var(--s3); justify-content:center; flex-wrap:wrap;}
+
+    /* About */
+    #about .about-wrap{display:grid; grid-template-columns:1fr 2fr; gap:var(--s7); align-items:flex-start;}
+    #about .about-img{background:var(--light-gray); aspect-ratio:1; border:2px dashed #bbb; color:#777; display:flex; align-items:center; justify-content:center; font-size:14px; margin-top:28px;}
+    #about .about-text{text-align:left;}
+    #about .credentials{font-size:12px; color:#666; letter-spacing:.5px; text-transform:uppercase; margin:6px 0 10px;}
+
+    /* Publications */
+    .publications{background:#333; color:#fff;}
+    .publication-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:var(--s5); margin-top:var(--s5);}
+    .publication-card{background:#fff; color:#000; padding:var(--s5); border:2px solid #fff; text-align:left; position:relative;}
+    .publication-year{position:absolute; top:0; left:0; background:#000; color:#fff; padding:6px 10px; font-size:12px; font-weight:700;}
+    .publication-title{font-weight:700; font-size:16px; line-height:1.35; margin:24px 0 8px;}
+    /* 要求：期刊名与作者名均一行且不省略。用JS自适应缩放 */
+    .publication-journal,
+    .publication-authors{display:block; white-space:nowrap; overflow:visible; font-size:14px;}
+    .publication-journal{color:var(--orange); font-weight:800; letter-spacing:.3px;}
+    .publication-authors{color:#555;}
+
+    .publication-award{display:inline-block; background:var(--yellow); color:#000; padding:3px 8px; font-size:11px; font-weight:700; margin-top:6px; text-transform:uppercase; letter-spacing:1px;}
+
+    /* Grants — compact timeline with motion */
+    .grants{background:#fff; color:#000;}
+    .grant-wrap{max-width:var(--maxw); margin:0 auto;}
+    .grant-list{position:relative; margin-left:22px;}
+    .grant-list::before{content:""; position:absolute; left:0; top:0; bottom:0; width:2px; background:#e6e6e6;}
+    .grant-item{display:grid; grid-template-columns: 160px 1fr; gap:var(--s3); align-items:start; padding:14px 0; position:relative;}
+    .grant-item .dot{position:absolute; left:-8px; top:22px; width:14px; height:14px; border-radius:50%; background:var(--orange); box-shadow:0 0 0 4px rgba(255,107,53,.15); transition:transform .3s, box-shadow .3s;}
+    .grant-item:hover .dot{transform:scale(1.15); box-shadow:0 0 0 6px rgba(255,107,53,.2);}
+    .grant-date{font-weight:700; color:#333; font-size:14px; white-space:nowrap;}
+    .grant-title{font-weight:900; font-size:18px; line-height:1.3; margin-bottom:4px;}
+    .grant-meta{font-size:14px; color:#555;}
+    .grant-role{font-weight:800; color:var(--orange);}
+    .grant-item.hover-lift{border-bottom:1px dashed #eee;}
+
+    /* Special Issue */
+    .special-issue{background:var(--orange); color:#fff;}
+    .special-wrap{display:grid; grid-template-columns:1fr 1fr; gap:var(--s6);}
+    .si-info{background:#fff; color:#000; padding:var(--s6); border:3px solid #fff; text-align:left;}
+    .si-info h3{font-size:28px; font-weight:900; text-transform:uppercase; margin-bottom:var(--s3);}
+    .si-info .journal{color:#666; font-style:italic; margin-bottom:var(--s3);}
+    .badge{display:inline-block; background:var(--yellow); color:#000; padding:6px 12px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:var(--s3);}
+    .badge.call{background:#000; color:#fff;}
+    .si-poster{background:var(--light-gray); aspect-ratio:3/4; display:flex; align-items:center; justify-content:center; color:#666; border:2px dashed #bbb;}
+
+    /* Team */
+    .team-grid{display:grid; grid-template-columns:repeat(4, minmax(220px,1fr)); gap:var(--s3);}
+    .team-member{border:2px solid #000; padding:var(--s4); text-align:center;}
+    .team-photo{width:100px; height:100px; margin:0 auto var(--s2); background:var(--light-gray); border:2px dashed #bbb; display:flex; align-items:center; justify-content:center; color:#777; font-size:10px;}
+    .team-name{font-size:18px; font-weight:800;}
+    .team-role{display:inline-block; margin:6px 0 8px; font-size:12px; font-weight:800; background:#000; color:#fff; padding:2px 10px; border-radius:999px; text-transform:uppercase; letter-spacing:.5px;}
+    .team-period{color:var(--orange); font-weight:700;}
+    .team-education{color:#666; font-size:14px;}
+
+    /* Contact */
+    .contact .section-subtitle{color:#666;}
+    .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:var(--s5); max-width:800px; margin:0 auto;}
+
+    footer{background:#000; color:#fff; text-align:center; padding:var(--s5) 0;}
+
+    @media (max-width:1024px){ .team-grid{grid-template-columns:repeat(2, minmax(220px,1fr));} }
+    @media (max-width:768px){
+      .section-title{font-size:32px;}
+      #about .about-wrap{grid-template-columns:1fr;}
+      .special-wrap{grid-template-columns:1fr;}
+      .contact-grid{grid-template-columns:1fr;}
+      .grant-item{grid-template-columns:120px 1fr;}
+    }
+  
+/* Publications cards: animated accent bar on hover */
+.publication-card::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:2px;
+  background: var(--orange); transform: scaleX(0); transform-origin:left;
+  transition: transform .25s ease;
+}
+.publication-card:hover::after{ transform: scaleX(1); }
+
+
+/* === Big section number + underline (added) === */
+.section-count{
+  position:relative;
+  display:block;
+  width:100%;
+  text-align:center;
+  line-height:1;
+  margin: -4px 0 18px 0;
+}
+.section-count::before{
+  content: attr(data-count);
+  display:block;
+  font-weight:900;
+  letter-spacing:2px;
+  /* responsive size similar to the reference screenshots */
+  font-size: clamp(32px, 7vw, 88px);
+  /* default for light background */
+  color: rgba(0,0,0,.09);
+}
+/* orange underline */
+.section-count::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:2px;
+  width: clamp(28px, 4.5vw, 72px);
+  height:2px;
+  background: var(--orange);
+  border-radius:2px;
+}
+/* on dark sections like Publications */
+.publications .section-count::before{
+  color: rgba(255,255,255,.28);
+}
+
+
+/* Smaller on mobile */
+@media (max-width: 768px){
+  .section-count::before{ font-size: clamp(26px, 10vw, 58px); }
+  .section-count::after{ width: clamp(24px, 8vw, 50px); }
+}
+
+
+#about .about-text p{margin-bottom:12px;}
+
+
+
+
+
+
+/* === Publications cards: refined hover motion (keep orange bar) === */
+.publication-card{
+  overflow:hidden; /* 为描边与轻微动画提供裁切 */
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.publication-card::before{
+  content:"";
+  position:absolute; inset:0;
+  border:2px solid transparent;
+  pointer-events:none;
+  transition: border-color .25s ease;
+}
+.publication-card:hover{
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+.publication-card:hover::before{
+  border-color: var(--orange); /* 橙色细描边淡入 */
+}
+
+</style>
+</head>
+<body>
+  <!-- Announcement with email, slow speed -->
+  <div class="announcement">
+    <div class="announcement-content">
+      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2025/26 — enquiries to tant@hku.hk</span>
+      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2025/26 — enquiries to tant@hku.hk</span>
+      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2025/26 — enquiries to tant@hku.hk</span>
+      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2025/26 — enquiries to tant@hku.hk</span>
+    </div>
+  </div>
+
+  <header>
+    <nav>
+      <a href="#" class="logo">Tan Tan</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#grants">Grants</a></li>
+        <li><a href="#special-issue">Special Issue</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#job">Job Vacancy</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="translate-btn" class="translate-btn">中文</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content reveal">
+        <div class="hero-eyebrow">Architecture • Technology • Management</div>
+        <h1 class="hero-title">
+          BRIDGING DESIGN<br>
+          INNOVATION WITH<br>
+          <span class="no-wrap">DIGITAL CONSTRUCTION</span>
+        </h1>
+        <p class="hero-subtitle">
+          Assistant Professor at the University of Hong Kong, specializing in <span class="highlight">Design Engineering Informatics</span> and <span class="highlight">Design Management Innovation</span>. Transforming the future of modern methods of construction through computations and innovations.
+        </p>
+        <div style="margin:var(--s4) 0;">
+          <a href="https://www.arch.hku.hk/staff/rec/tan-tan/" target="_blank" style="color:var(--orange); text-decoration:none; font-weight:700; margin-right:var(--s4);">HKU Profile</a>
+          <a href="https://www.linkedin.com/in/mrtantan" target="_blank" style="color:var(--orange); text-decoration:none; font-weight:700; margin-right:var(--s4);">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=_VG990cAAAAJ&hl=en" target="_blank" style="color:var(--orange); text-decoration:none; font-weight:700;">Google Scholar</a>
+        </div>
+        <div class="hero-buttons">
+          <a class="btn btn--primary hover-lift" href="#contact">Start Collaboration</a>
+          <a class="btn btn--secondary hover-lift" href="#publications">Explore Research</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About (unchanged layout, left-aligned text kept) -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-wrap">
+          <div class="about-img">Personal Photo<br>Placeholder</div>
+          <div class="about-text reveal">
+            <h2 class="section-title" style="text-align:left;">About Tan Tan</h2>
+            <div class="credentials">PhD · MSc · BArch · MRICS</div>
+            <p>Dr. Tan Tan is an <strong>Assistant Professor</strong> at the Department of Real Estate and Construction, Faculty of Architecture, the University of Hong Kong (HKU), and a Principal Investigator at the National Centre of Technology Innovation for Digital Construction in Hong Kong (NCTI-DC-HK). Previously, he held postdoctoral positions at the Delft University of Technology (TU Delft) in the Netherlands and the National Centre of Competence in Research (NCCR) Digital Fabrication in Switzerland. He received his PhD and MSc from University College London (UCL Bartlett) and his BArch from Huazhong University of Science and Technology (HUST).</p>
+            <p>Dr. Tan has presided over and participated in many projects including the Hong Kong <strong>Early Career Scheme (ECS)</strong>, Collaborative Research Fund (CRF), and Innovation and Technology Fund (ITF). His achievements include receiving the ESI Highly Cited Paper Award, Editor's Choice Paper Award, and Best Paper Awards, alongside various prestigious scholarships such as the UCL PhD Scholarship, UK Grand Challenges Doctoral Grant, and China National Award for Outstanding Self-funded Students Abroad.</p>
+            <p>He currently serves as a <strong>managing guest editor</strong> for Developments in the Built Environment, a Corresponding Expert for the Chinese Academy of Engineering's journal Front. Eng. Manag., and as Co-Chair for CAAD Futures 2025. Since founding his research group in 2024, he has actively supported his team members in securing various academic honors, including Hong Kong government fellowships and merit paper awards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="section publications">
+      <div class="container">
+        <div class="section-count" data-count="36"></div>
+        <h2 class="section-title">Featured Publications</h2>
+        <p class="section-subtitle">Selected publications in peer-reviewed journals</p>
+        <div class="publication-grid">
+          <div class="publication-card hover-lift reveal">
+            <div class="publication-year">2025</div>
+            <h3 class="publication-title">Human-robot interaction design with augmented reality in construction: A systematic review of frameworks, applications, and future directions</h3>
+            <span class="publication-journal fitline">Front. Eng. Manag.</span>
+            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Liu, X., Walzer, A.N., Ng, M.S., Hall, D.M.</span>
+          </div>
+          <div class="publication-card hover-lift reveal">
+            <div class="publication-year">2025</div>
+            <h3 class="publication-title">Exploring the Implementation of Digital Fabrication in Construction: Combining System Approaches and a Revelatory Case Study from Switzerland</h3>
+            <span class="publication-journal fitline">J. Constr. Eng. Manag.</span>
+            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Graser, K., Walzer, A.N., Ng, M.S., Hall, D.M.</span>
+          </div>
+          <div class="publication-card hover-lift reveal">
+            <div class="publication-year">2024</div>
+            <h3 class="publication-title">Exploring Multidimensional Modularity: Strategies to Reduce Complexity in Design Activities</h3>
+            <span class="publication-journal fitline">J. Manag. Eng.</span>
+            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E.</span>
+          </div>
+          <div class="publication-card hover-lift reveal">
+            <div class="publication-year">2023</div>
+            <h3 class="publication-title">Digital-enabled Design for Manufacture and Assembly (DfMA) in Offsite Construction</h3>
+            <span class="publication-journal fitline">Archit. Eng. Des. Manag.</span>
+            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E., Li, B., Huang, J.</span>
+            <span class="publication-award">Most Downloaded Paper Prize</span>
+          </div>
+          <div class="publication-card hover-lift reveal">
+            <div class="publication-year">2022</div>
+            <h3 class="publication-title">Integrated Approaches to Design for Manufacture and Assembly: Huoshenshan Hospital Case Study</h3>
+            <span class="publication-journal fitline">J. Manag. Eng.</span>
+            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Hu, J., Papadonikolaki, E.</span>
+            <span class="publication-award">Editor's Choice Selection</span>
+          </div>
+          <div class="publication-card hover-lift reveal">
+            <div class="publication-year">2021</div>
+            <h3 class="publication-title">Combining Multi-criteria Decision Making (MCDM) Methods with Building Information Modelling (BIM)</h3>
+            <span class="publication-journal fitline">Autom. Constr.</span>
+            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E., Liu, Z.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grants (compact timeline) -->
+    <section id="grants" class="section grants">
+      <div class="container grant-wrap">
+        <div class="section-count" data-count="07"></div>
+        <h2 class="section-title">Selected Funded Projects</h2>
+        <p class="section-subtitle">Selected grants supporting research and teaching</p>
+        <div class="grant-list">
+          <article class="grant-item hover-lift reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="grant-date">Jan 2026 — Dec 2028</div>
+            <div class="grant-content">
+              <div class="grant-title">Large Language Model (LLM)-augmented Automated Safety Checking in Alteration and Addition (A&amp;A) Works</div>
+              <div class="grant-meta"><span class="grant-role">Principal Investigator</span> · Early Career Scheme (RGC) · 611,148 HKD</div>
+            </div>
+          </article>
+          <article class="grant-item hover-lift reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="grant-date">June 2025 — June 2026</div>
+            <div class="grant-content">
+              <div class="grant-title">Evaluating the Impact of Augmented Reality (AR)-based Interaction Designs on Cognitive Load and Learning Satisfaction in Digital Construction Education</div>
+              <div class="grant-meta"><span class="grant-role">Principal Investigator</span> · Teaching Development Grant (URC) · 300,000 HKD</div>
+            </div>
+          </article>
+          <article class="grant-item hover-lift reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <div class="grant-date">Apr 2023 — Mar 2026</div>
+            <div class="grant-content">
+              <div class="grant-title">Generative DfX in High-Rise Modular Building: An Expert Augmented Cascade Graph Learning and Optimisation Approach</div>
+              <div class="grant-meta"><span class="grant-role">Co‑Investigator</span> · Collaborative Research Fund (RGC) · 5,310,000 HKD</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Issue -->
+    <section id="special-issue" class="section special-issue">
+      <div class="container">
+        <h2 class="section-title">Special Issue</h2>
+        <p class="section-subtitle">Editorial work in emerging research areas</p>
+        <div class="special-wrap">
+          <div class="si-info hover-lift reveal">
+            <span class="badge call">Call for Papers</span>
+            <h3>Design for X (DfX) in Digital Construction</h3>
+            <div class="journal">Developments in the Built Environment</div>
+            <span class="badge">Managing Guest Editor</span>
+            <p>This Special Issue invites original contributions that explore the application of DfX concepts within the context of digital construction, including Design for Manufacture and Assembly, Design for Safety, and Design for Sustainability.</p>
+            <p style="margin-top:var(--s3); font-weight:700; color:var(--orange);">Submission Deadline</p>
+            <p style="font-size:24px; font-weight:900;">July 1st, 2026</p>
+            <a class="btn btn--secondary hover-lift" target="_blank" rel="noopener" href="https://www-sciencedirect-com.eproxy.lib.hku.hk/special-issue/323014/design-for-x-dfx-in-digital-construction#:~:text=The%20concept%20of%20Design%20for,perspective%20for%20advancing%20digital%20construction.">Submit</a>
+          </div>
+          <div class="si-poster reveal">Special Issue Poster<br>Placeholder</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section">
+      <div class="container">
+        <div class="section-count" data-count="06"></div>
+        <h2 class="section-title">Our Research Team</h2>
+        <p class="section-subtitle">Interdisciplinary researchers advancing DfX in digital construction</p>
+        <div class="team-grid">
+          <div class="team-member hover-lift reveal">
+            <div class="team-photo">Photo<br>(Zhuoran Zhang)</div>
+            <div class="team-name">Zhuoran Zhang</div>
+            <div class="team-role">PhD Researcher</div>
+            <div class="team-period">2024–now</div>
+            <div class="team-education">M.Arch Tsinghua · M.Arch TU Berlin · B.Arch SEU</div>
+          </div>
+          <div class="team-member hover-lift reveal">
+            <div class="team-photo">Photo<br>(Yalan Mei)</div>
+            <div class="team-name">Yalan Mei</div>
+            <div class="team-role">PhD Researcher</div>
+            <div class="team-period">2025–now</div>
+            <div class="team-education">M.Arch Tsinghua · B.Arch HFUT</div>
+          </div>
+          <div class="team-member hover-lift reveal">
+            <div class="team-photo">Photo<br>(Xin Liu)</div>
+            <div class="team-name">Xin Liu</div>
+            <div class="team-role">Postdoc Researcher</div>
+            <div class="team-period">2025–now</div>
+            <div class="team-education">PhD Civil Eng. SJTU · B.Eng Traffic Eng. CSU</div>
+          </div>
+          <div class="team-member hover-lift reveal">
+            <div class="team-photo">Photo<br>(Mudasir Hussain)</div>
+            <div class="team-name">Mudasir Hussain</div>
+            <div class="team-role">Postdoc Researcher</div>
+            <div class="team-period">2025–now</div>
+            <div class="team-education">PhD Civil Eng. PolyU · MSc Civil Eng. SKKU · BSc Civil Eng. UET Peshawar</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Vacancy (unchanged except anchor id) -->
+    <section id="job" class="section">
+      <div class="container">
+        <div class="section-count" data-count="25/26"></div>
+        <h2 class="section-title">Job Vacancy</h2>
+        <p class="section-subtitle">Join our interdisciplinary research team</p>
+        <div style="border:3px solid #000; padding:var(--s6); text-align:left;">
+          <h3 style="font-size:24px; font-weight:900; color:var(--orange); text-transform:uppercase; margin-bottom:var(--s3);">Open Positions</h3>
+          <p style="margin-bottom:var(--s3);">We are recruiting <strong>RA/MPhil/PhD/PostDoc</strong> based on the Department of Real Estate and Construction and the National Center of Technology Innovation in Digital Construction (Hong Kong Branch).</p>
+          <p style="margin-bottom:var(--s3);">Applicants should hold a Bachelor's or Master's degree in <strong>Civil Engineering, Architecture, Construction Management, Design</strong>, or related fields. Both qualitative and quantitative research interests are welcome.</p>
+          <p>More requirements about academic merit can be found at the <a href="https://www.gradsch.hku.hk/" target="_blank" style="color:var(--orange); font-weight:700;">HKU Graduate School</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Let's Collaborate</h2>
+        <p class="section-subtitle">Open to academic partnerships, industry collaborations, and research opportunities.</p>
+        <div class="contact-grid">
+          <div>
+            <h4 style="text-transform:uppercase; letter-spacing:1px; font-weight:900;">Office</h4>
+            <p>5/F, Knowles Building<br>University of Hong Kong<br>Hong Kong SAR</p>
+          </div>
+          <div>
+            <h4 style="text-transform:uppercase; letter-spacing:1px; font-weight:900;">Email</h4>
+            <p><a href="mailto:tant@hku.hk" style="text-decoration:underline;">tant@hku.hk</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tan Tan. All rights reserved. | Assistant Professor, University of Hong Kong</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href.startsWith('#')){
+          e.preventDefault();
+          const el = document.querySelector(href);
+          el && el.scrollIntoView({behavior:'smooth', block:'start'});
+        }
+      });
+    });
+
+    // Reveal on scroll (gf.org style subtle motion)
+    const io = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); }
+      });
+    }, {threshold: .12});
+    document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+    // Fit text to one line for journals & authors
+    function fitOneLine(el, min=10){
+      el.style.whiteSpace = 'nowrap';
+      let style = getComputedStyle(el);
+      let size = parseFloat(style.fontSize);
+      const max = size;
+      const parentWidth = el.clientWidth || el.parentElement.clientWidth;
+      let attempts = 0;
+      while(el.scrollWidth > el.clientWidth && size > min && attempts < 40){
+        size -= 0.5;
+        el.style.fontSize = size + 'px';
+        attempts++;
+      }
+    }
+    function refitAll(){
+      document.querySelectorAll('.fitline').forEach(el=>{
+        el.style.fontSize = ''; // reset
+        fitOneLine(el);
+      });
+    }
+    window.addEventListener('load', refitAll);
+    window.addEventListener('resize', ()=>{ clearTimeout(window.__fitTimer); window.__fitTimer=setTimeout(refitAll, 120); });
+
+    // Dummy translate (kept as before)
+    const btn = document.getElementById('translate-btn');
+    if(btn){ btn.addEventListener('click', ()=>alert('Translation is disabled in this demo.')); }
+  </script>
+</body>
+</html>
