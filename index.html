@@ -207,6 +207,55 @@
   border-color: var(--orange); /* 橙色细描边淡入 */
 }
 
+/* === Mobile fix pack: paste at the very end === */
+img{max-width:100%; height:auto;}
+
+/* 手机与小平板（≤768px） */
+@media (max-width: 768px){
+
+  /* 导航：允许换行，不要把整排挤出屏幕 */
+  nav{height:auto; padding:8px 16px;}
+  .nav-links{flex-wrap:wrap; gap:12px; justify-content:flex-start;}
+  .nav-links a{font-size:13px; padding:4px 0;}
+
+  /* 版心区间与间距收紧一点 */
+  .section{padding:40px 0;}
+  .section-title{font-size:28px; line-height:1.2;}
+  .section-subtitle{font-size:16px; padding:0 6px; word-break:break-word;}
+
+  /* Hero 标题别太大 */
+  .hero-title{font-size:clamp(26px, 8.5vw, 38px);}
+
+  /* About：两列变一列，头像居中 */
+  #about .about-wrap{grid-template-columns:1fr; gap:24px;}
+  #about .about-img{max-width:340px; margin:12px auto 0;}
+  #about .about-text p{margin-bottom:12px;}
+
+  /* 大数字+下划线：进一步缩小，避免占位过大 */
+  .section-count::before{font-size:clamp(22px, 10.5vw, 48px);}
+  .section-count::after{bottom:0;}
+
+  /* Publications：改为单列，标题/期刊避免溢出 */
+  .publication-grid{grid-template-columns:1fr; gap:20px;}
+  .publication-title{font-size:15px; word-break:break-word;}
+  /* 允许期刊和作者在手机端换行，避免被挤爆 */
+  .fitline{white-space:normal !important;}
+
+  /* Grants：时间轴改为上下两行 */
+  .grant-item{grid-template-columns:1fr; padding:12px 0;}
+  .grant-date{margin-bottom:6px;}
+
+  /* Team：手机小屏两列；更小屏时一列 */
+  .team-grid{grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px;}
+}
+
+/* 超小屏（≤480px）进一步堆叠 */
+@media (max-width: 480px){
+  .team-grid{grid-template-columns:1fr;}
+  .section{padding:32px 0;}
+  .hero-title{font-size:clamp(24px, 9vw, 34px);}
+}
+
 </style>
 </head>
 <body>
