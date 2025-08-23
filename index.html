@@ -161,10 +161,61 @@
     .team-grid{display:grid; grid-template-columns:repeat(4, minmax(220px,1fr)); gap:var(--s3);}
     .team-member{border:2px solid #000; padding:var(--s4); text-align:center;}
     .team-photo{width:100px; height:100px; margin:0 auto var(--s2); background:var(--light-gray); border:2px dashed #bbb; display:flex; align-items:center; justify-content:center; color:#777; font-size:10px;}
+    .team-name-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: var(--s1);
+        margin-bottom: 6px;
+    }
     .team-name{font-size:18px; font-weight:800;}
     .team-role{display:inline-block; margin:6px 0 8px; font-size:12px; font-weight:800; background:#000; color:#fff; padding:2px 10px; border-radius:999px; text-transform:uppercase; letter-spacing:.5px;}
-    .team-period{color:var(--orange); font-weight:700;}
+    .team-period{color:var(--orange); font-weight:700; margin-bottom: 8px;}
     .team-education{color:#666; font-size:14px;}
+    .team-contact {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .team-contact a {
+        color: var(--gray);
+        transition: color 0.3s ease, transform 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+    }
+    .team-contact a:hover {
+        color: var(--orange);
+        transform: scale(1.15);
+    }
+
+    /* Partners Section */
+    .partner-category-title {
+        font-size: 22px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin: var(--s6) 0 var(--s4) 0;
+        text-align: center;
+        color: var(--black);
+    }
+    .partner-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: var(--s5);
+    }
+    .partner-logo {
+        max-height: 50px;
+        max-width: 150px;
+        filter: grayscale(100%);
+        opacity: 0.7;
+        transition: filter 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+    }
+    .partner-logo:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+    }
 
     /* Contact */
     .contact .section-subtitle{color:#666;}
@@ -327,6 +378,7 @@
         <li><a href="#grants">Grants</a></li>
         <li><a href="#special-issue">Special Issue</a></li>
         <li><a href="#team">Team</a></li>
+        <li><a href="#partners">Partners</a></li>
         <li><a href="#job">Job Vacancy</a></li>
         <li><a href="#contact" class="contact-btn-special">Contact</a></li>
       </ul>
@@ -486,32 +538,107 @@
         <div class="team-grid">
           <div class="team-member hover-lift reveal">
             <div class="team-photo">Photo</div>
-            <div class="team-name">Zhuoran Zhang</div>
+            <div class="team-name-container">
+                <div class="team-name">Zhuoran Zhang</div>
+                <div class="team-contact">
+                    <a href="mailto:zhuoran_zhang@connect.hku.hk" title="Email Zhuoran Zhang">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.502 5l9.498 7.124L21.498 5H2.502ZM1.5 18.5l7.5-5.625V18.5h-7.5Zm13.5 0v-5.625L22.5 18.5h-7.5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zhuoran-zhang-arch/" target="_blank" rel="noopener noreferrer" title="Zhuoran Zhang's LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+                    </a>
+                </div>
+            </div>
             <div class="team-role">PhD Researcher</div>
             <div class="team-period">2024–now</div>
             <div class="team-education">M.Arch Tsinghua · M.Arch TU Berlin · B.Arch SEU</div>
           </div>
           <div class="team-member hover-lift reveal">
             <div class="team-photo">Photo</div>
-            <div class="team-name">Yalan Mei</div>
+             <div class="team-name-container">
+                <div class="team-name">Yalan Mei</div>
+                <div class="team-contact">
+                    <a href="mailto:yalan_mei@connect.hku.hk" title="Email Yalan Mei">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.502 5l9.498 7.124L21.498 5H2.502ZM1.5 18.5l7.5-5.625V18.5h-7.5Zm13.5 0v-5.625L22.5 18.5h-7.5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zhuoran-zhang-arch/" target="_blank" rel="noopener noreferrer" title="Yalan Mei's LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+                    </a>
+                </div>
+            </div>
             <div class="team-role">PhD Researcher</div>
             <div class="team-period">2025–now</div>
             <div class="team-education">M.Arch Tsinghua · B.Arch HFUT</div>
           </div>
           <div class="team-member hover-lift reveal">
             <div class="team-photo">Photo</div>
-            <div class="team-name">Xin Liu</div>
+            <div class="team-name-container">
+                <div class="team-name">Xin Liu</div>
+                 <div class="team-contact">
+                    <a href="mailto:xinliuhk@hku.hk" title="Email Xin Liu">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.502 5l9.498 7.124L21.498 5H2.502ZM1.5 18.5l7.5-5.625V18.5h-7.5Zm13.5 0v-5.625L22.5 18.5h-7.5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/xin-liu-957687338/" target="_blank" rel="noopener noreferrer" title="Xin Liu's LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+                    </a>
+                </div>
+            </div>
             <div class="team-role">Postdoc Researcher</div>
             <div class="team-period">2025–now</div>
             <div class="team-education">PhD Civil Eng. SJTU · B.Eng Traffic Eng. CSU</div>
           </div>
           <div class="team-member hover-lift reveal">
             <div class="team-photo">Photo</div>
-            <div class="team-name">Mudasir Hussain</div>
+            <div class="team-name-container">
+                <div class="team-name">Mudasir Hussain</div>
+                <div class="team-contact">
+                    <a href="mailto:mudasirh@hku.hk" title="Email Mudasir Hussain">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.502 5l9.498 7.124L21.498 5H2.502ZM1.5 18.5l7.5-5.625V18.5h-7.5Zm13.5 0v-5.625L22.5 18.5h-7.5Z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mudasir-hussain-95b423108/" target="_blank" rel="noopener noreferrer" title="Mudasir Hussain's LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+                    </a>
+                </div>
+            </div>
             <div class="team-role">Postdoc Researcher</div>
             <div class="team-period">2025–now</div>
             <div class="team-education">PhD Civil Eng. PolyU · MSc Civil Eng. SKKU · BSc Civil Eng. UET Peshawar</div>
           </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="partners" class="section">
+      <div class="container">
+        <h2 class="section-title">External Partners</h2>
+        <p class="section-subtitle">Collaborating with leading industry and academic institutions worldwide.</p>
+        
+        <h3 class="partner-category-title">Enterprises</h3>
+        <div class="partner-grid">
+          <img src="images/logos/Arup.jpg" alt="Arup Logo" class="partner-logo">
+          <img src="images/logos/AIS.jpg" alt="AIS Logo" class="partner-logo">
+          <img src="images/logos/CIMC.jpg" alt="CIMC Logo" class="partner-logo">
+          <img src="images/logos/China Overseas.jpg" alt="China Overseas Logo" class="partner-logo">
+          <img src="images/logos/SOCAM.jpg" alt="SOCAM Logo" class="partner-logo">
+        </div>
+
+        <h3 class="partner-category-title">National Centers</h3>
+        <div class="partner-grid">
+          <img src="images/logos/NCCR.jpg" alt="NCCR Logo" class="partner-logo">
+          <img src="images/logos/NCTIDC.jpg" alt="NCTIDC Logo" class="partner-logo">
+        </div>
+
+        <h3 class="partner-category-title">Academic Partners</h3>
+        <div class="partner-grid">
+          <img src="images/logos/UCL.jpg" alt="UCL Logo" class="partner-logo">
+          <img src="images/logos/Delft.jpg" alt="TU Delft Logo" class="partner-logo">
+          <img src="images/logos/ETH.jpg" alt="ETH Zurich Logo" class="partner-logo">
+          <img src="images/logos/Berlin.jpg" alt="TU Berlin Logo" class="partner-logo">
+          <img src="images/logos/Cambridge.jpg" alt="University of Cambridge Logo" class="partner-logo">
+          <img src="images/logos/NUS.jpg" alt="NUS Logo" class="partner-logo">
+          <img src="images/logos/Kyoto.jpg" alt="Kyoto University Logo" class="partner-logo">
+          <img src="images/logos/Austin.jpg" alt="UT Austin Logo" class="partner-logo">
+          <img src="images/logos/ZHAW.jpg" alt="ZHAW Logo" class="partner-logo">
         </div>
       </div>
     </section>
