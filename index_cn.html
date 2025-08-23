@@ -88,25 +88,46 @@
         filter: brightness(1.05);
     }
     
+   /* ===== 新的語言切換按鈕樣式 ===== */
     .language-switch {
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        font-size: 14px;
-        transition: color .3s;
-        margin-left: auto;
+        /* -- 按鈕基本樣式 -- */
+        background: var(--orange); /* 按鈕背景顏色 (橘色) */
+        color: var(--white);       /* 文字顏色 (白色) */
+        padding: 8px 16px;         /* 按鈕的內邊距 (上下8px, 左右16px) */
+        border-radius: 6px;        /* 圓角效果 */
+        font-weight: 700;          /* 字體粗細 */
+        text-transform: uppercase; /* 文字大寫 */
+        letter-spacing: 1px;       /* 字元間距 */
+        font-size: 14px;           /* 字體大小 */
+        white-space: nowrap;
+        margin-left: auto;         /* 在電腦版將按鈕推到右側 */
         margin-right: 20px;
+        
+        /* -- 動效的準備 -- */
+        transition: all 0.25s ease-out; /* 讓所有變化在0.25秒內平滑過渡 */
     }
+
+    /* -- 滑鼠懸停時的動效 -- */
     .language-switch:hover {
-        color: var(--orange);
+        transform: translateY(-2px); /* 按鈕向上移動 2px */
+        box-shadow: 0 6px 15px rgba(255, 107, 53, 0.4); /* 添加橘色光暈陰影 */
+        filter: brightness(1.05); /* 讓按鈕稍微變亮 */
+        color: var(--white); /* 確保滑鼠懸停時文字仍為白色 */
     }
+
+    /* -- 手機版的樣式調整 -- */
     @media (max-width: 768px) {
         .language-switch {
             position: absolute;
             right: 60px;
             top: 50%;
             transform: translateY(-50%);
+            /* 手機版動效微調，如果需要的話 */
         }
+        .language-switch:hover {
+            transform: translateY(-50%) scale(1.05); /* 手機上可以改為稍微放大 */
+        }
+    }
     }
 
     /* General Sections */
