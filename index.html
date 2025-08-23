@@ -370,6 +370,30 @@
       .section{padding:32px 0;}
       .hero-title{font-size:clamp(24px, 9vw, 34px);}
     }
+    /* --- 語言切換按鈕的樣式 --- */
+.language-switch {
+    /* 橘黃色底框 */
+    background-color: var(--orange);
+    padding: 8px 16px;
+    border-radius: 6px;
+
+    /* 確保文字是白色，!important 用於防止被其他樣式覆蓋 */
+    color: var(--white) !important;
+
+    /* 動效準備 */
+    transition: all 0.25s ease-out;
+}
+
+/* --- 滑鼠懸停時的動效 --- */
+.language-switch:hover {
+    /* 強制文字在懸停時保持白色 */
+    color: var(--white) !important;
+
+    /* 向上浮動和光暈效果 */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 107, 53, 0.4);
+    filter: brightness(1.05);
+}
   </style>
 </head>
 <body>
