@@ -450,7 +450,7 @@
           <div class="about-text reveal">
             <h2 class="section-title" style="text-align:left;">團隊主持人簡介</h2>
             <div class="credentials">博士 · 理學碩士 · 建築學學士 · 英國皇家特許測量師學會會員</div>
-            <p><strong>譚坦</strong>博士，現任香港大學建築學院房地產及建設系助理教授，同時擔任國家數字建造技術創新中心香港分中心（NCTI-DC-HK）的獨立研究員（PI）。此前，他曾於荷蘭代爾夫特理工大學（TU Delft）及瑞士國家數字製造能力研究中心（NCCR）數碼建造從事博士後研究。他於英国倫敦大學學院（UCL）取得博士及理學碩士學位，並於華中科技大學（HUST）獲得建築學學士學位。</p>
+            <p><strong>譚坦</strong>博士，現任香港大學建築學院房地產及建設系助理教授，同時擔任國家數字建造技術創新中心香港分中心（NCTI-DC-HK）的首席研究員（Principal Investigator）。此前，他曾於荷蘭代爾夫特理工大學（TU Delft）及瑞士國家數字製造能力研究中心（NCCR）從事博士後研究。他於英国倫敦大學學院（UCL）取得博士及理學碩士學位，並於華中科技大學（HUST）獲得建築學學士學位。</p>
             <p>譚博士曾主持及參與多項研究計劃，包括香港研究資助局的「傑出青年學者計劃」（ECS）、「協作研究金」（CRF）以及創新科技署的「創新及科技基金」（ITF）。他曾榮獲 ESI 高被引論文獎、美国土木工程师协会主編精選論文獎、会议最佳論文獎，並獲得多項著名獎學金，如倫敦大學學院博士獎學金、英國 Grand Challenges 博士研究資助，以及中国國家優秀自費留學生獎學金。</p>
             <p>他目前擔任《Developments in the Built Environment》期刊的执行客座編輯、中國工程院院刊《Frontiers of Engineering Management》的特约通訊專家，並共同擔任 CAAD Futures 2025 的學術委員會聯席主席。自2024年創立其研究團隊以來，他積極支持團隊成員爭取多項學術榮譽，包括香港政府獎學金和優秀論文獎。</p>
           </div>
@@ -648,6 +648,76 @@
       </div>
     </section>
     
+<style>
+  /* 修正後的學術顧問置中樣式 */
+  .team-grid.advisory-board-grid {
+    /* 1. 設定網格佈局為兩欄，並限制最大寬度 */
+    grid-template-columns: repeat(2, minmax(220px, 300px));
+    
+    /* 2. 讓網格內的項目（卡片）水平置中 */
+    justify-content: center; 
+    
+    /* 3. 讓網格容器本身在頁面置中 */
+    max-width: 700px; 
+    margin: 0 auto;
+  }
+
+  /* 在平板等較小螢幕上，改為單欄顯示以維持美觀 */
+  @media (max-width: 768px) {
+    .team-grid.advisory-board-grid {
+        grid-template-columns: minmax(220px, 300px);
+    }
+  }
+</style>
+
+<section id="advisory-board" class="section">
+  <div class="container">
+    <h2 class="section-title">學術顧問</h2>
+    <p class="section-subtitle">由國際知名學者組成，提供策略指導與學術建議。</p>
+    <div class="team-grid advisory-board-grid">
+      
+      <div class="team-member hover-lift reveal">
+        <div class="team-photo">
+          <img src="images/Vedran.jpg" alt="Vedran Zerjav 的照片">
+        </div>
+        <div class="team-name-container">
+          <div class="team-name">Vedran Zerjav</div>
+          <div class="team-contact">
+            <a href="https://www.ntnu.edu/employees/vedran.zerjav" target="_blank" rel="noopener noreferrer" title="官方網站">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/vzerjav/" target="_blank" rel="noopener noreferrer" title="Vedran Zerjav 的 LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="team-role">顧問學者</div>
+        <div class="team-education"><strong>項目管理學教授</strong><br>挪威科技大學</div>
+      </div>
+
+      <div class="team-member hover-lift reveal">
+        <div class="team-photo">
+          <img src="images/Ng.jpg" alt="吳明珊教授的照片">
+        </div>
+        <div class="team-name-container">
+          <div class="team-name">吳明珊</div>
+          <div class="team-contact">
+            <a href="https://www.design-architecture.kit.ac.jp/ja/faculty/p.php?c=3&id=71" target="_blank" rel="noopener noreferrer" title="官方網站">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/charmings/" target="_blank" rel="noopener noreferrer" title="吳明珊教授的 LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="team-role">顧問學者</div>
+        <div class="team-education"><strong>建築學教授</strong><br>京都工藝纖維大學</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     <section id="partners" class="section">
       <div class="container">
         <h2 class="section-title">外部合作夥伴</h2>
