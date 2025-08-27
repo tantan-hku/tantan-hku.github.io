@@ -300,6 +300,14 @@
         .section-title{font-size:32px;}
         .section-subtitle{font-size:16px; padding:0 6px; word-break:break-word;}
 
+/* 調整手機版語言切換按鈕樣式 */
+li a.language-switch {
+  display: inline-block; /* 讓按鈕寬度由內容和內邊距決定 */
+  width: auto;          /* 覆蓋繼承的 width: 100% */
+  margin-top: var(--s2);  /* 與上方選項保持間距 (12px) */
+  padding: 10px 24px;   /* 增加左右內邊距，讓按鈕更寬 */
+}
+      
         /* Hamburger Menu Styles */
         .menu-toggle {
             display: block;
