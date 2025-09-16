@@ -657,23 +657,27 @@
     </section>
     
 <style>
-  /* 修正後的學術顧問置中樣式 */
+  /* 修正後的學術顧問置中樣式（三欄版本） */
   .team-grid.advisory-board-grid {
-    /* 1. 設定網格佈局為兩欄，並限制最大寬度 */
-    grid-template-columns: repeat(2, minmax(220px, 300px));
-    
-    /* 2. 讓網格內的項目（卡片）水平置中 */
-    justify-content: center; 
-    
-    /* 3. 讓網格容器本身在頁面置中 */
-    max-width: 700px; 
+    display: grid;
+    grid-template-columns: repeat(3, minmax(220px, 1fr)); /* 桌機三欄 */
+    gap: var(--s3);
+    justify-content: center;
+    max-width: none;  /* 取消 700px 限制 */
     margin: 0 auto;
   }
 
-  /* 在平板等較小螢幕上，改為單欄顯示以維持美觀 */
+  /* 平板：二欄 */
+  @media (max-width: 1024px) {
+    .team-grid.advisory-board-grid {
+      grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+  }
+
+  /* 手機：單欄 */
   @media (max-width: 768px) {
     .team-grid.advisory-board-grid {
-        grid-template-columns: minmax(220px, 300px);
+      grid-template-columns: 1fr;
     }
   }
 </style>
