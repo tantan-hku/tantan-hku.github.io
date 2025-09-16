@@ -676,27 +676,39 @@ li a.language-switch {
     </section>
     
 <style>
-  /* Advisory Board：與上面 Team 區塊保持一致邊距 */
+/* Advisory Board：卡片寬度與上面 Team 區塊相同 */
 .advisory-board-grid{
   display: grid;
-  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr);   /* 三列布局 */
   gap: var(--s3);
-  justify-content: stretch;  /* 讓欄位自動撐滿，不再強制居中 */
+  justify-items: center;                   /* 卡片在格子中置中 */
   width: 100%;
-  margin: 0;                 /* 用外層 .container 控制邊距 */
+  margin: 0;
 }
 
-/* 平板：2 列 */
+/* 卡片寬度鎖定成與四列一致 */
+.advisory-board-grid .team-member{
+  width: 100%;
+  max-width: calc((var(--maxw) - 3*var(--s3)) / 4); /* 與上面4欄卡片等寬 */
+}
+
+/* 平板：2 列，取消鎖定寬度 */
 @media (max-width:1024px){
   .advisory-board-grid{
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .advisory-board-grid .team-member{
+    max-width: none;
   }
 }
 
-/* 手机：1 列 */
+/* 手機：1 列，取消鎖定寬度 */
 @media (max-width:768px){
   .advisory-board-grid{
     grid-template-columns: 1fr;
+  }
+  .advisory-board-grid .team-member{
+    max-width: none;
   }
 }
 </style>
