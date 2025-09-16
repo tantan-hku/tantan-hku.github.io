@@ -657,39 +657,31 @@
     </section>
     
 <style>
-/* Advisory Board：卡片寬度與上面 Team 區塊相同 */
+/* Advisory Board：四欄布局，與上面 Research Team 對齊 */
 .advisory-board-grid{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* 三列布局 */
+  grid-template-columns: repeat(4, minmax(220px, 1fr));  /* 關鍵：4 欄 */
   gap: var(--s3);
-  justify-items: center;                   /* 卡片在格子中置中 */
   width: 100%;
   margin: 0;
 }
 
-/* 卡片寬度鎖定成與四列一致 */
+/* 讓卡片填滿各自網格（不設 max-width） */
 .advisory-board-grid .team-member{
   width: 100%;
-  max-width: calc((var(--maxw) - 3*var(--s3)) / 4); /* 與上面4欄卡片等寬 */
 }
 
-/* 平板：2 列，取消鎖定寬度 */
+/* 平板：2 欄 */
 @media (max-width:1024px){
   .advisory-board-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .advisory-board-grid .team-member{
-    max-width: none;
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
 }
 
-/* 手機：1 列，取消鎖定寬度 */
+/* 手機：1 欄 */
 @media (max-width:768px){
   .advisory-board-grid{
     grid-template-columns: 1fr;
-  }
-  .advisory-board-grid .team-member{
-    max-width: none;
   }
 }
 </style>
@@ -756,7 +748,8 @@
         <div class="team-role">顧問學者</div>
         <div class="team-education"><strong>建築學教授</strong><br>京都工藝纖維大學</div>
       </div>
-
+    <!-- 占位：佔住第 4 欄，使網格完整對齊 -->
+    <div class="team-member" aria-hidden="true" style="border:none; background:none; box-shadow:none;"></div>
     </div>
   </div>
 </section>
