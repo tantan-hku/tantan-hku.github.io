@@ -677,17 +677,26 @@ li a.language-switch {
     
 <style>
   /* Styles for centering the Advisory Board */
-  .advisory-board-grid {
-    grid-template-columns: repeat(2, minmax(220px, 300px)); /* Defines 2 columns with a max width */
-    justify-content: center; /* Centers the grid items horizontally */
-    max-width: 700px; /* Optional: Constrains the max width for better centering on large screens */
-    margin: 0 auto; /* Ensures the grid container itself is centered */
-  }
+.advisory-board-grid{
+  display: grid;                          /* 确保是网格容器 */
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: var(--s3);
+  justify-content: center;
+  max-width: none;                         /* 取消 700px 限制 */
+  margin: 0 auto;
+}
 
-  /* On smaller screens (tablets), switch to a single column */
-  @media (max-width: 768px) {
-    .advisory-board-grid {
-        grid-template-columns: minmax(220px, 300px);
+/* 平板：2 列 */
+@media (max-width:1024px){
+  .advisory-board-grid{
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+/* 手机：1 列 */
+@media (max-width:768px){
+  .advisory-board-grid{
+    grid-template-columns: 1fr;
     }
   }
 </style>
