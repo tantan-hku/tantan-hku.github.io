@@ -657,29 +657,30 @@
     </section>
     
 <style>
-  /* 修正後的學術顧問置中樣式（三欄版本） */
-  .team-grid.advisory-board-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(220px, 1fr)); /* 桌機三欄 */
-    gap: var(--s3);
-    justify-content: center;
-    max-width: none;  /* 取消 700px 限制 */
-    margin: 0 auto;
-  }
+/* Advisory Board：與上面 Team 區同樣的邊距行為 */
+.team-grid.advisory-board-grid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: var(--s3);
+  /* 關鍵：不要居中整個網格，不要限制 max-width */
+  justify-content: stretch;   /* 或者直接刪除此行 */
+  width: 100%;
+  margin: 0;                  /* 由外層 .container 控制邊距 */
+}
 
-  /* 平板：二欄 */
-  @media (max-width: 1024px) {
-    .team-grid.advisory-board-grid {
-      grid-template-columns: repeat(2, minmax(220px, 1fr));
-    }
+/* 平板：2 欄 */
+@media (max-width:1024px){
+  .team-grid.advisory-board-grid{
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
+}
 
-  /* 手機：單欄 */
-  @media (max-width: 768px) {
-    .team-grid.advisory-board-grid {
-      grid-template-columns: 1fr;
-    }
+/* 手機：1 欄 */
+@media (max-width:768px){
+  .team-grid.advisory-board-grid{
+    grid-template-columns: 1fr;
   }
+}
 </style>
 
 <section id="advisory-board" class="section">
