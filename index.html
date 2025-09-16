@@ -676,14 +676,14 @@ li a.language-switch {
     </section>
     
 <style>
-  /* Styles for centering the Advisory Board */
+  /* Advisory Board：與上面 Team 區塊保持一致邊距 */
 .advisory-board-grid{
-  display: grid;                          /* 确保是网格容器 */
+  display: grid;
   grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: var(--s3);
-  justify-content: center;
-  max-width: none;                         /* 取消 700px 限制 */
-  margin: 0 auto;
+  justify-content: stretch;  /* 讓欄位自動撐滿，不再強制居中 */
+  width: 100%;
+  margin: 0;                 /* 用外層 .container 控制邊距 */
 }
 
 /* 平板：2 列 */
@@ -697,8 +697,8 @@ li a.language-switch {
 @media (max-width:768px){
   .advisory-board-grid{
     grid-template-columns: 1fr;
-    }
   }
+}
 </style>
 
 <section id="advisory-board" class="section">
