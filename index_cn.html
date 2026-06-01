@@ -12,6 +12,7 @@
   <meta property="og:title" content="譚坦 - 助理教授 | 卓越設計與數字建造">
   <meta property="og:description" content="通過計算與創新，塑造現代建造方法的未來。">
   <meta property="og:image" content="https://tantan-hku.github.io/images/Tan.jpg"> <meta property="og:url" content="https://tantan-hku.github.io/"> <meta property="og:type" content="website">
+  <meta name="googlebot" content="noimageindex">
   <meta name="google-site-verification" content="ioEo1MSJWHxrqk5xHnvyepEGAWgJwVbFu0eRYOwNkK4" />
   <style>
     :root{
@@ -134,10 +135,9 @@
     .publication-card{background:#fff; color:#000; padding:var(--s5); border:2px solid #fff; text-align:left; position:relative;}
     .publication-year{position:absolute; top:0; left:0; background:#000; color:#fff; padding:6px 10px; font-size:12px; font-weight:700;}
     .publication-title{font-weight:700; font-size:16px; line-height:1.35; margin:24px 0 8px;}
-    .publication-journal,
-    .publication-authors{display:block; white-space:nowrap; overflow:visible; font-size:14px;}
-    .publication-journal{color:var(--orange); font-weight:800; letter-spacing:.3px;}
-    .publication-authors{color:#555;}
+    .publication-meta{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;}
+    .publication-journal{display:inline-flex; white-space:nowrap; overflow:visible; font-size:14px; color:var(--orange); font-weight:800; letter-spacing:.3px; align-items:center;}
+    .publication-authors{display:block; white-space:nowrap; overflow:visible; font-size:14px; color:#555;}
     .publication-award{display:inline-block; background:var(--yellow); color:#000; padding:3px 8px; font-size:11px; font-weight:700; margin-top:6px; text-transform:uppercase; letter-spacing:1px;}
 
   /* Grants */
@@ -287,6 +287,8 @@
     .publication-card::before{content:""; position:absolute; inset:0; border:2px solid transparent; pointer-events:none; transition:border-color .25s ease;}
     .publication-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
     .publication-card:hover::before{border-color:var(--orange);}
+    .publication-link{display:inline-flex; align-items:center; gap:6px; margin-top:0; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--orange); border:1px solid rgba(255,107,53,.25); padding:6px 10px; border-radius:999px; white-space:nowrap; transition:background .2s ease, transform .2s ease;}
+    .publication-link:hover{background:rgba(255,107,53,.1); transform:translateY(-1px);}
 
     /* Image Styles */
     img{max-width:100%; height:auto;}
@@ -467,39 +469,57 @@
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2025</div>
             <h3 class="publication-title">推進模組化設計生成：模組化工作流程與計算設計方法之綜述</h3>
-            <span class="publication-journal fitline">J. Build. Eng.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Build. Eng.</span>
+              <a class="publication-link" href="https://www.sciencedirect.com/science/article/abs/pii/S2352710225028839" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline">Zhang, Z., <strong>Tan, T.*</strong></span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2025</div>
             <h3 class="publication-title">探索數字建造的實施：結合系統方法與瑞士的啟示性案例研究</h3>
-            <span class="publication-journal fitline">J. Constr. Eng. Manag.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Constr. Eng. Manag.</span>
+              <a class="publication-link" href="https://ascelibrary.org/doi/10.1061/JCEMD4.COENG-16680" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Graser, K., Walzer, A.N., Ng, M.S., Hall, D.M.</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2024</div>
             <h3 class="publication-title">探索多維度模組化：降低設計活動複雜度的策略</h3>
-            <span class="publication-journal fitline">J. Manag. Eng.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Manag. Eng.</span>
+              <a class="publication-link" href="https://ascelibrary.org/doi/10.1061/JMENEA.MEENG-5596" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E.</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2023</div>
             <h3 class="publication-title">非現場建造中由數碼技術驅動的面向製造與裝配的設計</h3>
-            <span class="publication-journal fitline">Archit. Eng. Des. Manag.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">Archit. Eng. Des. Manag.</span>
+              <a class="publication-link" href="https://www.tandfonline.com/doi/full/10.1080/17452007.2022.2104208" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E., Li, B., Huang, J.</span>
             <span class="publication-award">最高下載量論文獎</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2022</div>
             <h3 class="publication-title">面向製造與裝配的設計的綜合方法：火神山醫院案例研究</h3>
-            <span class="publication-journal fitline">J. Manag. Eng.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Manag. Eng.</span>
+              <a class="publication-link" href="https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29ME.1943-5479.0000972" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Hu, J., Papadonikolaki, E.</span>
             <span class="publication-award">主編精選</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2021</div>
             <h3 class="publication-title">結合多準則決策分析方法與建築信息模擬</h3>
-            <span class="publication-journal fitline">Autom. Constr.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">Autom. Constr.</span>
+              <a class="publication-link" href="https://www.sciencedirect.com/science/article/abs/pii/S0926580520310311" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E., Liu, Z.</span>
           </div>
         </div>
@@ -510,7 +530,7 @@
   <div class="container grant-wrap">
     <div class="section-count" data-count="07"></div>
     <h2 class="section-title">部分獲資助項目</h2>
-    <p class="section-subtitle">DxDC 研究團隊成立首年，已從香港研資局（RGC）、國家自然科學基金（NSFC）和港大研究委員會（URC）獲得超過250萬港元的研究經費，涵蓋 ECS、NSFC、TDG、VPS 及 HKPF 等項目。</p>
+    <p class="section-subtitle">截至2025年，DxDC 研究團隊已從香港研資局（RGC）、國家自然科學基金（NSFC）和港大研究委員會（URC）獲得超過120萬港元的研究經費，涵蓋 ECS、NSFC、TDG等項目。</p>
     <div class="grant-list">
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>
@@ -572,7 +592,7 @@
 
     <section id="team" class="section">
       <div class="container">
-        <div class="section-count" data-count="06"></div>
+        <div class="section-count" data-count="07"></div>
         <h2 class="section-title">我們的研究團隊</h2>
         <p class="section-subtitle">我們的團隊由來自全球 QS 排名前50大學的研究人員組成。核心團隊包括四名博士級研究員，並由碩士生研究助理提供支援。</p>
         <div class="team-grid">
@@ -675,100 +695,29 @@
   <div class="team-period">2026–至今</div>
   <div class="team-education">恩克魯瑪科技大學 工程管理碩士 · 恩克魯瑪科技大學 測量學學士</div>
   </div>
+          <div class="team-member hover-lift reveal">
+  <div class="team-photo">
+      <img src="images/ZiangLi.jpg" alt="李子昂相片">
+  </div>
+  <div class="team-name-container">
+      <div class="team-name">李子昂</div>
+      <div class="team-contact">
+          <a href="mailto:ziangli@hku.hk" title="電郵聯絡 李子昂">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.502 5l9.498 7.124L21.498 5H2.502ZM1.5 18.5l7.5-5.625V18.5h-7.5Zm13.5 0v-5.625L22.5 18.5h-7.5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ziang-li-4441b6237/" target="_blank" rel="noopener noreferrer" title="李子昂 的領英專頁">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+          </a>
+      </div>
+  </div>
+  <div class="team-role">研究助理</div>
+  <div class="team-period">2026–至今</div>
+  <div class="team-education">倫敦大學學院 項目與企業管理碩士 · 西安建築科技大學 工程管理學士</div>
+  </div>
 </div>
-        </div>
       </div>
     </section>
     
-<style>
-/* Advisory Board：四欄布局，與上面 Research Team 對齊 */
-.advisory-board-grid{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(220px, 1fr));  /* 關鍵：4 欄 */
-  gap: var(--s3);
-  width: 100%;
-  margin: 0;
-}
-
-/* 讓卡片填滿各自網格（不設 max-width） */
-.advisory-board-grid .team-member{
-  width: 100%;
-}
-
-/* 平板：2 欄 */
-@media (max-width:1024px){
-  .advisory-board-grid{
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-  }
-}
-
-/* 手機：1 欄 */
-@media (max-width:768px){
-  .advisory-board-grid{
-    grid-template-columns: 1fr;
-  }
-}
-</style>
-
-<section id="advisory-board" class="section">
-  <div class="container">
-    <h2 class="section-title">學術顧問</h2>
-    <p class="section-subtitle">由國際知名學者組成，提供策略指導與學術建議。</p>
-    <div class="team-grid advisory-board-grid">
-
-      <div class="team-member hover-lift reveal">
-        <div class="team-photo">
-          <img src="images/Liz.jpg" alt="Liz Varga 的照片">
-        </div>
-        <div class="team-name-container">
-          <div class="team-name">Liz Varga</div>
-          <div class="team-contact">
-            <a href="https://www.linkedin.com/in/vargaliz/" target="_blank" rel="noopener noreferrer" title="Liz Varga 的 LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="team-role">訪問教授</div>
-        <div class="team-education"><strong>複雜系統講席教授</strong><br>倫敦大學學院</div>
-      </div>
-      
-      <div class="team-member hover-lift reveal">
-        <div class="team-photo">
-          <img src="images/Vedran.jpg" alt="Vedran Zerjav 的照片">
-        </div>
-        <div class="team-name-container">
-          <div class="team-name">Vedran Zerjav</div>
-          <div class="team-contact">
-            <a href="https://www.linkedin.com/in/vzerjav/" target="_blank" rel="noopener noreferrer" title="Vedran Zerjav 的 LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="team-role">顧問學者</div>
-        <div class="team-education"><strong>項目管理學教授</strong><br>挪威科技大學</div>
-      </div>
-
-      <div class="team-member hover-lift reveal">
-        <div class="team-photo">
-          <img src="images/Ng.jpg" alt="吳明珊教授的照片">
-        </div>
-        <div class="team-name-container">
-          <div class="team-name">吳明珊</div>
-          <div class="team-contact">
-            <a href="https://www.linkedin.com/in/charmings/" target="_blank" rel="noopener noreferrer" title="吳明珊教授的 LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="team-role">顧問學者</div>
-        <div class="team-education"><strong>建築學教授</strong><br>京都工藝纖維大學</div>
-      </div>
-    <!-- 占位：佔住第 4 欄，使網格完整對齊 -->
-    <div class="team-member" aria-hidden="true" style="border:none; background:none; box-shadow:none;"></div>
-    </div>
-  </div>
-</section>
-
     <section id="partners" class="section">
       <div class="container">
         <h2 class="section-title">外部合作夥伴</h2>
@@ -839,7 +788,7 @@
      </li>
      <li>
       <strong>方向二：大語言模型驅動的設計審查</strong>  
-      研發以大語言模型為核心的智能助手，提升工程審查與合規效率。目標是建立能理解複雜工程規範及多模態設計信息（如BIM、圖紙）的智能设计審查系統。本方向由香港研究資助局傑出青年學者計劃《Large Language Model (LLM)-augmented Automated safety checking in Alteration and Addition (A&A) Works》支持。
+      研發以大語言模型為核心的智能助手，提升工程審查與合規效率。目標是建立能理解複雜工程規範及多模態設計信息（如BIM、圖紙）的智能设计審查系統。本方向由香港研究資助局傑出青年學者計劃《Large Language Model (LLM)-augmented Automated safety checking in Alteration and Addition (A&amp;A) Works》支持。
      </li>
      <li>
       <strong>方向三：模組化建築的生成式設計</strong>  
@@ -849,7 +798,7 @@
    </div>
 
    <p style="margin-bottom:var(--s3);">
-    申請人須持有<strong>土木工程、建築學、管理學、心理學、設計學</strong>或相關領域的一級榮譽學士或碩士學位。我們歡迎對卓越设计（DfX）和數字建造方向有興趣的申請人，無論是質性或量化研究。有意者請將以下資料發送至 tant@hku.hk：1) 個人履歷 (CV)；2) 學業成績單 (學士及碩士)；3) 托福(TOEFL)/雅思(IELTS)/GRE成績。入圍申請人將獲邀參加面試。
+    申請人須持有<strong>土木工程、建築學、管理學、設計學</strong>或相關領域的一級榮譽學士或碩士學位。我們歡迎對卓越设计（DfX）和數字建造方向有興趣的申請人，無論是質性或量化研究。有意者請將以下資料發送至 tant@hku.hk：1) 個人履歷 (CV)；2) 學業成績單 (學士及碩士)；3) 托福(TOEFL)/雅思(IELTS)/GRE成績。入圍申請人將獲邀參加面試。
    </p>
    <p>
     更多關於學術成績的要求，可在<a href="https://gradsch.hku.hk/" target="_blank" style="color:var(--orange); font-weight:700;">香港大學研究生院</a>網站查閱。

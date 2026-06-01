@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tan Tan, HKU - Assistant Professor | Digital Construction & DfX</title>
+  <title>Tan Tan, HKU - Assistant Professor | Digital Construction &amp; DfX</title>
   <meta name="description" content="Dr. Tan Tan, Assistant Professor at the University of Hong Kong (HKU), specializing in Design Engineering Informatics, Design for Excellence (DfX), and Design Management Innovation in Digital Construction.">
   <meta name="author" content="Tan Tan">
   <meta name="keywords" content="Tan Tan, HKU, Assistant Professor, Digital Construction, DfX, Design for Excellence, Construction Management, Design Engineering, Built Environment">
@@ -12,6 +12,7 @@
   <meta property="og:title" content="Tan Tan - Assistant Professor | DfX in Digital Construction">
   <meta property="og:description" content="Transforming the future of modern methods of construction through computations and innovations.">
   <meta property="og:image" content="https://tantan-hku.github.io/images/Tan.jpg"> <meta property="og:url" content="https://tantan-hku.github.io/"> <meta property="og:type" content="website">
+  <meta name="googlebot" content="noimageindex">
   <meta name="google-site-verification" content="ioEo1MSJWHxrqk5xHnvyepEGAWgJwVbFu0eRYOwNkK4" />
   <style>
     :root{
@@ -127,10 +128,9 @@
     .publication-card{background:#fff; color:#000; padding:var(--s5); border:2px solid #fff; text-align:left; position:relative;}
     .publication-year{position:absolute; top:0; left:0; background:#000; color:#fff; padding:6px 10px; font-size:12px; font-weight:700;}
     .publication-title{font-weight:700; font-size:16px; line-height:1.35; margin:24px 0 8px;}
-    .publication-journal,
-    .publication-authors{display:block; white-space:nowrap; overflow:visible; font-size:14px;}
-    .publication-journal{color:var(--orange); font-weight:800; letter-spacing:.3px;}
-    .publication-authors{color:#555;}
+    .publication-meta{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;}
+    .publication-journal{display:inline-flex; white-space:nowrap; overflow:visible; font-size:14px; color:var(--orange); font-weight:800; letter-spacing:.3px; align-items:center;}
+    .publication-authors{display:block; white-space:nowrap; overflow:visible; font-size:14px; color:#555;}
     .publication-award{display:inline-block; background:var(--yellow); color:#000; padding:3px 8px; font-size:11px; font-weight:700; margin-top:6px; text-transform:uppercase; letter-spacing:1px;}
 
   /* Grants */
@@ -277,6 +277,8 @@
     /* Publication Card Hover Effects */
     .publication-card::after{content:""; position:absolute; left:0; right:0; bottom:0; height:2px; background:var(--orange); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;}
     .publication-card:hover::after{transform:scaleX(1);}
+    .publication-link{display:inline-flex; align-items:center; gap:6px; margin-top:0; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--orange); border:1px solid rgba(255,107,53,.25); padding:6px 10px; border-radius:999px; white-space:nowrap; transition:background .2s ease, transform .2s ease;}
+    .publication-link:hover{background:rgba(255,107,53,.1); transform:translateY(-1px);}
     .publication-card{overflow:hidden; transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;}
     .publication-card::before{content:""; position:absolute; inset:0; border:2px solid transparent; pointer-events:none; transition:border-color .25s ease;}
     .publication-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
@@ -486,39 +488,57 @@ li a.language-switch {
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2025</div>
             <h3 class="publication-title">Advancing modular design generation: A review of modularization workflows and computational design approaches</h3>
-            <span class="publication-journal fitline">J. Build. Eng.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Build. Eng.</span>
+              <a class="publication-link" href="https://www.sciencedirect.com/science/article/abs/pii/S2352710225028839" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline">Zhang, Z., <strong>Tan, T.*</strong></span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2025</div>
             <h3 class="publication-title">Exploring the Implementation of Digital Fabrication in Construction: Combining System Approaches and a Revelatory Case Study from Switzerland</h3>
-            <span class="publication-journal fitline">J. Constr. Eng. Manag.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Constr. Eng. Manag.</span>
+              <a class="publication-link" href="https://ascelibrary.org/doi/10.1061/JCEMD4.COENG-16680" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Graser, K., Walzer, A.N., Ng, M.S., Hall, D.M.</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2024</div>
             <h3 class="publication-title">Exploring Multidimensional Modularity: Strategies to Reduce Complexity in Design Activities</h3>
-            <span class="publication-journal fitline">J. Manag. Eng.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Manag. Eng.</span>
+              <a class="publication-link" href="https://ascelibrary.org/doi/10.1061/JMENEA.MEENG-5596" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E.</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2023</div>
             <h3 class="publication-title">Digital-enabled Design for Manufacture and Assembly (DfMA) in Offsite Construction</h3>
-            <span class="publication-journal fitline">Archit. Eng. Des. Manag.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">Archit. Eng. Des. Manag.</span>
+              <a class="publication-link" href="https://www.tandfonline.com/doi/full/10.1080/17452007.2022.2104208" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E., Li, B., Huang, J.</span>
             <span class="publication-award">Most Downloaded Paper Prize</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2022</div>
             <h3 class="publication-title">Integrated Approaches to Design for Manufacture and Assembly: Huoshenshan Hospital Case Study</h3>
-            <span class="publication-journal fitline">J. Manag. Eng.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">J. Manag. Eng.</span>
+              <a class="publication-link" href="https://ascelibrary.org/doi/abs/10.1061/%28ASCE%29ME.1943-5479.0000972" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Hu, J., Papadonikolaki, E.</span>
             <span class="publication-award">Editor's Choice Selection</span>
           </div>
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2021</div>
             <h3 class="publication-title">Combining Multi-criteria Decision Making (MCDM) Methods with Building Information Modelling (BIM)</h3>
-            <span class="publication-journal fitline">Autom. Constr.</span>
+            <div class="publication-meta">
+              <span class="publication-journal fitline">Autom. Constr.</span>
+              <a class="publication-link" href="https://www.sciencedirect.com/science/article/pii/S0926580520310311" target="_blank" rel="noopener noreferrer">LINK →</a>
+            </div>
             <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Mills, G., Papadonikolaki, E., Liu, Z.</span>
           </div>
         </div>
@@ -529,7 +549,7 @@ li a.language-switch {
   <div class="container grant-wrap">
     <div class="section-count" data-count="07"></div>
     <h2 class="section-title">Selected Funded Projects</h2>
-    <p class="section-subtitle">In its inaugural year, the DxDC research group has secured over HK$2.5 million in funding from the RGC, NSFC and URC, including ECS, YSF(C), TDG, VPS, HKPF.</p>
+    <p class="section-subtitle">In 2025, the DxDC research group has secured over HK$1.2 million in funding from the RGC, NSFC and URC, including ECS, YSF(C), TDG.</p>
     <div class="grant-list">
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>
@@ -591,7 +611,7 @@ li a.language-switch {
 
     <section id="team" class="section">
       <div class="container">
-        <div class="section-count" data-count="06"></div>
+        <div class="section-count" data-count="07"></div>
         <h2 class="section-title">Our Research Team</h2>
         <p class="section-subtitle">Our team is composed of researchers from leading universities worldwide. The core team includes four doctoral-level researchers, supported by master's student research assistants.</p>
         <div class="team-grid">
@@ -694,102 +714,29 @@ li a.language-switch {
   <div class="team-period">2026–now</div>
   <div class="team-education">MSc Construction Management. KNUST · BSc Surveying. KNUST</div>
   </div>
+          <div class="team-member hover-lift reveal">
+  <div class="team-photo">
+      <img src="images/ZiangLi.jpg" alt="Photo of Ziang Li">
+  </div>
+  <div class="team-name-container">
+      <div class="team-name">Ziang Li</div>
+      <div class="team-contact">
+          <a href="mailto:ziangli@hku.hk" title="Email Ziang Li">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.502 5l9.498 7.124L21.498 5H2.502ZM1.5 18.5l7.5-5.625V18.5h-7.5Zm13.5 0v-5.625L22.5 18.5h-7.5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ziang-li-4441b6237/" target="_blank" rel="noopener noreferrer" title="Ziang Li's LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+          </a>
+      </div>
+  </div>
+  <div class="team-role">Research Assistant</div>
+  <div class="team-period">2026–now</div>
+  <div class="team-education">MSc PEM. UCL · BEng Engineering Management. XAUAT</div>
+  </div>
 </div>
-        </div>
       </div>
     </section>
     
-<style>
-/* Advisory Board：四欄布局，與上面 Research Team 對齊 */
-.advisory-board-grid{
-  display: grid;
-  grid-template-columns: repeat(4, minmax(220px, 1fr));  /* 關鍵：4 欄 */
-  gap: var(--s3);
-  width: 100%;
-  margin: 0;
-}
-
-/* 讓卡片填滿各自網格（不設 max-width） */
-.advisory-board-grid .team-member{
-  width: 100%;
-}
-
-/* 平板：2 欄 */
-@media (max-width:1024px){
-  .advisory-board-grid{
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-  }
-}
-
-/* 手機：1 欄 */
-@media (max-width:768px){
-  .advisory-board-grid{
-    grid-template-columns: 1fr;
-  }
-}
-</style>
-
-<section id="advisory-board" class="section">
-  <div class="container">
-    <h2 class="section-title">Advisory Board</h2>
-    <p class="section-subtitle">Scholars from overseas universities provide strategic guidance and networking opportunities for the development of DxDC and its research students.</p>
-    <div class="team-grid advisory-board-grid">
-
-      <div class="team-member hover-lift reveal">
-        <div class="team-photo">
-          <img src="images/Liz.jpg" alt="Photo of Liz Varga">
-        </div>
-        <div class="team-name-container">
-          <div class="team-name">Liz Varga</div>
-          <div class="team-contact">
-            <a href="https://www.linkedin.com/in/vargaliz/" target="_blank" rel="noopener noreferrer" title="Liz Varga's LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="team-role">Visiting Professor</div>
-        <div class="team-education"><strong>Professor in Complex Systems</strong><br>University College London</div>
-      </div>
-      
-      <div class="team-member hover-lift reveal">
-        <div class="team-photo">
-          <img src="images/Vedran.jpg" alt="Photo of Vedran Zerjav">
-        </div>
-        <div class="team-name-container">
-          <div class="team-name">Vedran Zerjav</div>
-          <div class="team-contact">
-            <a href="https://www.linkedin.com/in/vzerjav/" target="_blank" rel="noopener noreferrer" title="Vedran Zerjav's LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="team-role">Advisory Fellow</div>
-        <div class="team-education"><strong>Professor in Project Management</strong><br>Norwegian University of Science and Technology</div>
-      </div>
-
-      <div class="team-member hover-lift reveal">
-        <div class="team-photo">
-          <img src="images/Ng.jpg" alt="Photo of Ming Shan Ng">
-        </div>
-        <div class="team-name-container">
-          <div class="team-name">Charmaine M.S. Ng</div>
-          <div class="team-contact">
-            <a href="https://www.linkedin.com/in/charmings/" target="_blank" rel="noopener noreferrer" title="Ming Shan Ng's LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
-            </a>
-          </div>
-        </div>
-        <div class="team-role">Advisory Fellow</div>
-        <div class="team-education"><strong>Professor in Architecture</strong><br>Kyoto Institute of Technology</div>
-      </div>
-      
- <!-- 占位：佔住第 4 欄，使網格完整對齊 -->
-    <div class="team-member" aria-hidden="true" style="border:none; background:none; box-shadow:none;"></div>
-      
-    </div>
-  </div>
-</section>
-
     <section id="partners" class="section">
       <div class="container">
         <h2 class="section-title">External Partners</h2>
@@ -838,14 +785,14 @@ li a.language-switch {
       </p>
       
       <div style="margin-bottom:var(--s3);">
-        <p style="font-weight:700; color:var(--orange);">Funding & Scholarships for PhD Applicants:</p>
+        <p style="font-weight:700; color:var(--orange);">Funding &amp; Scholarships for PhD Applicants:</p>
         <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
           <li>
             <strong>Fellowship Package (Hong Kong PhD Fellowship Scheme + HKU President's Scholarship):</strong> For the most competitive applicants. This premier package includes a high monthly stipend, full tuition waiver, cash awards, and travel allowance. The total award over 4 years is valued at approximately <strong>HK$1.7 million</strong>.
             <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/hong_kong_phd_fellowship_scheme" target="_blank" style="color:var(--orange); font-weight:700;">[Details]</a>
           </li>
           <li>
-            <strong>Standard Package (Postgraduate Scholarship):</strong> Provided to all admitted full-time MPhil & PhD students. The total stipend over 4 years is approximately <strong>HK$904,000</strong>.
+            <strong>Standard Package (Postgraduate Scholarship):</strong> Provided to all admitted full-time MPhil &amp; PhD students. The total stipend over 4 years is approximately <strong>HK$904,000</strong>.
             <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/postgraduate_scholarships" target="_blank" style="color:var(--orange); font-weight:700;">[Details]</a>
           </li>
         </ul>
@@ -870,7 +817,7 @@ li a.language-switch {
       </div>
 
       <p style="margin-bottom:var(--s3);">
-        Applicants should hold a Bachelor's or Master's degree with first-class honors in <strong>Civil Engineering, Architecture, Management, Psychology, Design</strong>, or related fields. Both qualitative and quantitative research interests related to Design for Excellence in Digital Construction (DxDC) are welcome. Interested candidates can send the following materials to <a href="mailto:tant@hku.hk" style="color:var(--orange); font-weight:700;">tant@hku.hk</a>: 1) CV; 2) Academic transcripts (Bachelor’s and Master’s); 3) TOEFL / IELTS / GRE scores. Shortlisted applicants will be invited for interviews.
+        Applicants should hold a Bachelor's or Master's degree with first-class honors in <strong>Civil Engineering, Architecture, Management, Design</strong>, or related fields. Both qualitative and quantitative research interests related to Design for Excellence in Digital Construction (DxDC) are welcome. Interested candidates can send the following materials to <a href="mailto:tant@hku.hk" style="color:var(--orange); font-weight:700;">tant@hku.hk</a>: 1) CV; 2) Academic transcripts (Bachelor’s and Master’s); 3) TOEFL / IELTS / GRE scores. Shortlisted applicants will be invited for interviews.
       </p>
       <p>
         More requirements about academic merit can be found at the <a href="https://gradsch.hku.hk/" target="_blank" style="color:var(--orange); font-weight:700;">HKU Graduate School</a>.
