@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>安全設計 | DxDC</title>
+  <style>
+    :root{--orange:#e8752b;--ink:#000;--muted:#555;--line:#000;--s1:8px;--s2:16px;--s3:24px;--s4:32px;--s5:48px;--s6:72px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,"Microsoft JhengHei","PingFang TC",sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    header{position:sticky;top:0;background:#fff;border-bottom:3px solid var(--line);z-index:10}
+    nav{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
+    .logo{font-size:24px;font-weight:900;text-transform:uppercase}
+    .nav-links{display:flex;gap:22px;align-items:center;list-style:none;font-size:13px;font-weight:800;text-transform:uppercase}
+    .nav-links a:hover{color:var(--orange)}
+    .language-switch{border:2px solid var(--line);padding:6px 10px}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px}
+    .hero{border-bottom:3px solid var(--line)}
+    .hero-inner{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:var(--s5);align-items:end;min-height:68vh;padding:var(--s6) 24px var(--s5)}
+    .kicker{color:var(--orange);font-size:14px;font-weight:900;text-transform:uppercase;margin-bottom:var(--s2)}
+    h1{font-size:58px;line-height:1.02;text-transform:uppercase;letter-spacing:0;margin-bottom:var(--s3)}
+    .lead{font-size:22px;max-width:760px;color:#222;font-weight:700}
+    .hero-panel,.card{border:3px solid var(--line);padding:var(--s3);background:#fff}
+    .panel-number{font-size:56px;font-weight:900;color:var(--orange);line-height:1}
+    .panel-text{font-size:18px;font-weight:800;margin-top:var(--s2)}
+    .section{padding:var(--s6) 0;border-bottom:3px solid var(--line)}
+    .section-grid{display:grid;grid-template-columns:300px minmax(0,1fr);gap:var(--s5)}
+    .section-label{font-size:13px;font-weight:900;color:var(--orange);text-transform:uppercase}
+    h2{font-size:38px;line-height:1.12;text-transform:uppercase;margin-bottom:var(--s3)}
+    p{font-size:18px;margin-bottom:var(--s2);color:#222}
+    .evidence-grid,.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3)}
+    .card-grid{grid-template-columns:repeat(3,1fr)}
+    .figure-placeholder{min-height:340px;border:3px solid var(--line);background:repeating-linear-gradient(135deg,#fff 0,#fff 18px,#f0f0f0 18px,#f0f0f0 36px);display:flex;align-items:end;padding:var(--s3)}
+    .figure-caption{display:inline-block;background:#000;color:#fff;font-size:22px;font-weight:900;padding:8px 10px;line-height:1.2}
+    .card h3{font-size:22px;line-height:1.2;margin-bottom:var(--s2)}
+    .card p{font-size:16px;color:var(--muted);margin:0}
+    .cta{display:flex;gap:var(--s2);flex-wrap:wrap;margin-top:var(--s3)}
+    .btn{display:inline-flex;align-items:center;min-height:48px;border:3px solid var(--line);padding:10px 16px;font-size:14px;font-weight:900;text-transform:uppercase}
+    .btn-primary{background:var(--orange);color:#fff}
+    footer{padding:var(--s4) 24px;text-align:center;font-size:14px;color:var(--muted)}
+    @media(max-width:860px){.nav-links{gap:12px;font-size:12px;flex-wrap:wrap;justify-content:flex-end}.hero-inner,.section-grid,.evidence-grid,.card-grid{grid-template-columns:1fr}.hero-inner{min-height:auto;padding-top:var(--s5)}h1{font-size:42px}.lead{font-size:19px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index_cn.html">DxDC</a>
+      <ul class="nav-links">
+        <li><a href="index_cn.html#about">簡介</a></li>
+        <li><a href="index_cn.html#publications">論文</a></li>
+        <li><a href="index_cn.html#grants">項目</a></li>
+        <li><a href="dfs_cn.html">DfS</a></li>
+        <li><a href="dfma_cn.html">DfMA</a></li>
+        <li><a href="index_cn.html#team">團隊</a></li>
+        <li><a href="index_cn.html#contact">聯絡</a></li>
+        <li><a class="language-switch" href="dfs.html">English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="kicker">研究方向 01 · DfS</div>
+          <h1>安全設計</h1>
+          <p class="lead">在風險抵達工地之前，先從設計源頭將其化解。</p>
+          <p>建築安全常被視為施工現場管理問題，但許多危害其實在圖紙、施工順序、界面協調和施工方法被確定時已經形成。我們的 DfS 研究關注如何利用數字設計智能，讓更安全的工作方式成為默認選項。</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="dfma_cn.html">製造與裝配設計</a>
+            <a class="btn" href="index_cn.html#contact">聯絡我們</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="panel-number">DfS</div>
+          <div class="panel-text">在採購與現場施工之前，從危害識別走向更安全的設計替代方案。</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="section-label">背景問題</div>
+        <div>
+          <h2>安全應從上游開始</h2>
+          <p>高處墜落、觸電、夾捲、物體打擊和過度用力等事故仍然是建造業中的核心安全風險。法規和現場程序非常重要，但它們往往出現在關鍵設計與施工策劃決策之後。</p>
+          <p>安全設計將安全重新定位為設計責任：提前識別可預見危害、比較更安全的方案，並將施工知識嵌入塑造建築生產方式的決策過程。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-label">視覺材料</div>
+        <h2>從事故模式走向設計智能</h2>
+        <div class="evidence-grid">
+          <figure class="figure-placeholder"><figcaption class="figure-caption">圖片：DfS 事故類型圖</figcaption></figure>
+          <figure class="figure-placeholder"><figcaption class="figure-caption">圖片：國際死亡率比較圖</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="section-label">研究故事</div>
+        <div>
+          <h2>把隱性安全知識轉化為可計算的設計指引</h2>
+          <p>我們連接設計資訊、施工方法、危害知識和專家經驗，探索 BIM、知識圖譜、大語言模型及人智協作如何幫助設計師、工程師和承建商更早識別風險。</p>
+          <div class="card-grid">
+            <article class="card"><h3>危害感知設計審查</h3><p>識別與高風險施工活動相關的設計條件和工作順序。</p></article>
+            <article class="card"><h3>更安全的替代方案</h3><p>從安全、可建造性、成本、碳排和工期等角度比較方案。</p></article>
+            <article class="card"><h3>人智協作決策支持</h3><p>以可追溯推理增強專家判斷，而不是替代專業責任。</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 DxDC Research Group · The University of Hong Kong</footer>
+</body>
+</html>
