@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>製造與裝配設計 | DxDC</title>
+  <style>
+    :root{--orange:#e8752b;--ink:#000;--muted:#555;--line:#000;--s1:8px;--s2:16px;--s3:24px;--s4:32px;--s5:48px;--s6:72px}
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,"Microsoft JhengHei","PingFang TC",sans-serif;color:var(--ink);background:#fff;line-height:1.65}
+    a{color:inherit;text-decoration:none}
+    header{position:sticky;top:0;background:#fff;border-bottom:3px solid var(--line);z-index:10}
+    nav{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
+    .logo{font-size:24px;font-weight:900;text-transform:uppercase}
+    .nav-links{display:flex;gap:22px;align-items:center;list-style:none;font-size:13px;font-weight:800;text-transform:uppercase}
+    .nav-links a:hover{color:var(--orange)}
+    .language-switch{border:2px solid var(--line);padding:6px 10px}
+    .container{max-width:1180px;margin:0 auto;padding:0 24px}
+    .hero{border-bottom:3px solid var(--line)}
+    .hero-inner{display:grid;grid-template-columns:minmax(0,1fr) 420px;gap:var(--s5);align-items:end;min-height:68vh;padding:var(--s6) 24px var(--s5)}
+    .kicker{color:var(--orange);font-size:14px;font-weight:900;text-transform:uppercase;margin-bottom:var(--s2)}
+    h1{font-size:52px;line-height:1.08;text-transform:uppercase;letter-spacing:0;margin-bottom:var(--s3)}
+    .lead{font-size:22px;max-width:780px;color:#222;font-weight:700}
+    .hero-panel,.card{border:3px solid var(--line);padding:var(--s3);background:#fff}
+    .panel-number{font-size:56px;font-weight:900;color:var(--orange);line-height:1}
+    .panel-text{font-size:18px;font-weight:800;margin-top:var(--s2)}
+    .section{padding:var(--s6) 0;border-bottom:3px solid var(--line)}
+    .section-grid{display:grid;grid-template-columns:300px minmax(0,1fr);gap:var(--s5)}
+    .section-label{font-size:13px;font-weight:900;color:var(--orange);text-transform:uppercase}
+    h2{font-size:38px;line-height:1.12;text-transform:uppercase;margin-bottom:var(--s3)}
+    p{font-size:18px;margin-bottom:var(--s2);color:#222}
+    .evidence-grid,.card-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:var(--s3)}
+    .card-grid{grid-template-columns:repeat(3,1fr)}
+    .figure-placeholder{min-height:340px;border:3px solid var(--line);background:repeating-linear-gradient(135deg,#fff 0,#fff 18px,#f0f0f0 18px,#f0f0f0 36px);display:flex;align-items:end;padding:var(--s3)}
+    .figure-caption{display:inline-block;background:#000;color:#fff;font-size:22px;font-weight:900;padding:8px 10px;line-height:1.2}
+    .card h3{font-size:22px;line-height:1.2;margin-bottom:var(--s2)}
+    .card p{font-size:16px;color:var(--muted);margin:0}
+    .cta{display:flex;gap:var(--s2);flex-wrap:wrap;margin-top:var(--s3)}
+    .btn{display:inline-flex;align-items:center;min-height:48px;border:3px solid var(--line);padding:10px 16px;font-size:14px;font-weight:900;text-transform:uppercase}
+    .btn-primary{background:var(--orange);color:#fff}
+    footer{padding:var(--s4) 24px;text-align:center;font-size:14px;color:var(--muted)}
+    @media(max-width:860px){.nav-links{gap:12px;font-size:12px;flex-wrap:wrap;justify-content:flex-end}.hero-inner,.section-grid,.evidence-grid,.card-grid{grid-template-columns:1fr}.hero-inner{min-height:auto;padding-top:var(--s5)}h1{font-size:38px}.lead{font-size:19px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="logo" href="index_cn.html">DxDC</a>
+      <ul class="nav-links">
+        <li><a href="index_cn.html#about">簡介</a></li>
+        <li><a href="index_cn.html#publications">論文</a></li>
+        <li><a href="index_cn.html#grants">項目</a></li>
+        <li><a href="dfs_cn.html">DfS</a></li>
+        <li><a href="dfma_cn.html">DfMA</a></li>
+        <li><a href="index_cn.html#team">團隊</a></li>
+        <li><a href="index_cn.html#contact">聯絡</a></li>
+        <li><a class="language-switch" href="dfma.html">English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <div class="kicker">研究方向 02 · DfMA</div>
+          <h1>製造與裝配設計</h1>
+          <p class="lead">讓建造從碎片化現場作業走向產品化、可製造、可裝配的建築系統。</p>
+          <p>DfMA 將建築視為由生產、物流、公差、施工順序和全生命週期價值共同塑造的裝配體系。它關注如何透過設計，使建造更可預測、更安全、更低浪費，並更容易規模化。</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="dfs_cn.html">安全設計</a>
+            <a class="btn" href="index_cn.html#contact">聯絡我們</a>
+          </div>
+        </div>
+        <aside class="hero-panel">
+          <div class="panel-number">DfMA</div>
+          <div class="panel-text">從一次性現場作業，走向面向製造的設計決策、裝配邏輯與數字化生產流程。</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="section-label">背景問題</div>
+        <div>
+          <h2>建造需要生產邏輯</h2>
+          <p>傳統建造高度依賴分散的現場作業，並伴隨勞動條件波動、返工、浪費和後期協調壓力。這些問題不只是現場問題，往往也源於設計尚未充分面向製造、運輸和裝配。</p>
+          <p>製造與裝配設計將建造思維前移，把建築意圖與模塊、界面、供應鏈、工廠能力、吊裝、施工順序、碳排、成本和可改造性聯繫起來。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-label">視覺材料</div>
+        <h2>從現場手工勞動到裝配式交付</h2>
+        <div class="evidence-grid">
+          <figure class="figure-placeholder"><figcaption class="figure-caption">圖片：高勞動強度的現場施工</figcaption></figure>
+          <figure class="figure-placeholder"><figcaption class="figure-caption">圖片：工廠製造與裝配系統</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="section-label">研究故事</div>
+        <div>
+          <h2>生成可建造方案，而不只是生成幾何形式</h2>
+          <p>我們探索如何結合計算設計、圖學習、優化、專家知識和人智協作，幫助團隊在早期設計階段生成並評估可製造、可運輸、可裝配的建築方案。</p>
+          <div class="card-grid">
+            <article class="card"><h3>模塊化設計智能</h3><p>將建築表達為構件、界面、約束和生產決策的組合。</p></article>
+            <article class="card"><h3>多目標優化</h3><p>平衡建築、結構、成本、碳排、安全、物流和裝配順序。</p></article>
+            <article class="card"><h3>專家增強 AI</h3><p>把算法搜索與設計、工廠和現場團隊的專業知識結合起來。</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 DxDC Research Group · The University of Hong Kong</footer>
+</body>
+</html>
