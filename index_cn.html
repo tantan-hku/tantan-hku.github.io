@@ -37,12 +37,6 @@
     }
     a{color:inherit; text-decoration: none;}
 
-    /* Announcement */
-    .announcement{background:var(--black); color:#fff; padding:10px 0; overflow:hidden;}
-    .announcement-content{display:flex; white-space:nowrap; animation:scroll 60s linear infinite;}
-    .announcement-text{margin-right:60px; font-weight:700; font-size:14px;}
-    @keyframes scroll{from{transform:translateX(100%)} to{transform:translateX(-100%)}}
-    
     /* Header & Navigation */
     header{position:sticky; top:0; z-index:1000; background:#fff; border-bottom:1px solid var(--light-gray);}
     nav{max-width:var(--maxw); margin:0 auto; padding:0 var(--s4); height:70px; display:flex; align-items:center; justify-content:space-between; position:relative;}
@@ -154,16 +148,6 @@
     .grant-role{font-weight:800; color:var(--orange);}
     .grant-item.hover-lift{border-bottom:1px dashed #eee;}
 
-    /* Special Issue */
-    .special-issue{background:var(--orange); color:#fff;}
-    .special-wrap{display:grid; grid-template-columns:1fr 1fr; gap:var(--s6);}
-    .si-info{background:#fff; color:#000; padding:var(--s6); border:3px solid #fff; text-align:left;}
-    .si-info h3{font-size:28px; font-weight:900; text-transform:uppercase; margin-bottom:var(--s3);}
-    .si-info .journal{color:#666; font-style:italic; margin-bottom:var(--s3);}
-    .badge{display:inline-block; background:var(--yellow); color:#000; padding:6px 12px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:var(--s3);}
-    .badge.call{background:#000; color:#fff;}
-    .si-poster{}
-
     /* Team */
     .team-grid{display:grid; grid-template-columns:repeat(4, minmax(220px,1fr)); gap:var(--s3);}
     .team-member{border:2px solid #000; padding:var(--s4); text-align:center;}
@@ -238,6 +222,12 @@
         filter: grayscale(0%);
         opacity: 1;
     }
+
+    /* Team Section */
+    #team{background:var(--orange); color:#fff;}
+    #team .section-title{color:#fff;}
+    #team .section-subtitle{color:rgba(255,255,255,.85);}
+    #team .team-member{border-color:#fff; background:#fff; color:#000;}
 
     /* Contact */
     .contact .section-subtitle{color:#666;}
@@ -389,15 +379,6 @@
 </head>
 <body>
   
-  <div class="announcement">
-    <div class="announcement-content">
-      <span class="announcement-text">🎓 2026/27年度 研究助理/哲學碩士/博士/博士後 現正招生 — 查詢請電郵至 tant@hku.hk</span>
-      <span class="announcement-text">🎓 2026/27年度 研究助理/哲學碩士/博士/博士後 現正招生 — 查詢請電郵至 tant@hku.hk</span>
-      <span class="announcement-text">🎓 2026/27年度 研究助理/哲學碩士/博士/博士後 現正招生 — 查詢請電郵至 tant@hku.hk</span>
-      <span class="announcement-text">🎓 2026/27年度 研究助理/哲學碩士/博士/博士後 現正招生 — 查詢請電郵至 tant@hku.hk</span>
-    </div>
-  </div>
-
   <header>
     <nav>
       <a href="#" class="logo">DxDC</a>
@@ -406,9 +387,7 @@
         <li><a href="#about">關於我們</a></li>
         <li><a href="#publications">學術出版</a></li>
         <li><a href="#grants">科研基金</a></li>
-        <li><a href="#special-issue">期刊特稿</a></li>
-        <li><a href="#team">研究團隊</a></li>
-        <li><a href="#partners">合作夥伴</a></li>
+        <li><a href="#team">团騊</a></li>
         <li><a href="#job">職位空缺</a></li>
         <li><a href="#contact">聯絡我們</a></li>
         <li><a href="index.html" class="language-switch">English</a></li>
@@ -454,7 +433,7 @@
             <div class="credentials">博士 · 理學碩士 · 建築學學士 · 英國皇家特許測量師 · 英國特許建造師</div>
             <p><strong>譚坦</strong>博士，現任香港大學建築學院房地產及建設系助理教授，建設資產數字管理碩士（MSc DMBA）項目主任，同時擔任國家數字建造技術創新中心香港分中心（NCTI-DC-HK）的首席研究員（Principal Investigator）。此前，他曾於荷蘭代爾夫特理工大學（TU Delft）及瑞士國家數字製造能力研究中心（NCCR Dfab）從事博士後研究。他於英国倫敦大學學院（UCL）取得博士及理學碩士學位，並於華中科技大學（HUST）獲得建築學學士學位。</p>
             <p>譚博士主持多項研究計劃，包括香港研究資助局的「傑出青年學者計劃」（ECS）、國家自然科學基金委「青年科學基金項目（C類）」，參與「協作研究金」（CRF）以及創新科技署的「創新及科技基金」（ITF）。他曾榮獲 ESI 高被引論文獎、美国土木工程师协会主編精選論文獎、会议最佳論文獎，並獲得多項著名獎學金，如倫敦大學學院博士獎學金、英國 Grand Challenges 博士研究資助，以及中国國家優秀自費留學生獎學金。</p>
-            <p>他目前擔任《Developments in the Built Environment》执行客座編輯、中國工程院院刊《Frontiers of Engineering Management》特约通訊專家，並共同擔任 CAAD Futures 2025 學術委員會聯席主席。自2024年創立其研究團隊以來，他積極支持團隊成員爭取多項學術榮譽，包括香港政府獎學金和優秀論文獎。</p>
+            <p>他目前擔任國際建築與建設研究創新理事會建築設計與管理工作組（CIB W096）共同協調員、《Developments in the Built Environment》执行客座編輯、中國工程院院刊《Frontiers of Engineering Management》特约通訊專家，並共同擔任 CAAD Futures 2025 學術委員會聯席主席。自2024年創立其研究團隊以來，他積極支持團隊成員爭取多項學術榮譽，包括香港政府獎學金和優秀論文獎。</p>
           </div>
         </div>
       </div>
@@ -464,7 +443,7 @@
       <div class="container">
         <div class="section-count" data-count="36"></div>
         <h2 class="section-title">部分學術出版</h2>
-        <p class="section-subtitle">已於期刊、會議及書籍中發表36篇論文，其著作曾獲「主編精選論文」、「最佳論文獎」、「優秀論文獎」、「最高閲讀量論文獎」及「ESI高被引論文」。</p>
+        <p class="section-subtitle">我們通過發表定位在設計工程與管理領域</p>
         <div class="publication-grid">
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2025</div>
@@ -530,7 +509,7 @@
   <div class="container grant-wrap">
     <div class="section-count" data-count="07"></div>
     <h2 class="section-title">部分獲資助項目</h2>
-    <p class="section-subtitle">截至2025年，DxDC 研究團隊已從香港研資局（RGC）、國家自然科學基金（NSFC）和港大研究委員會（URC）獲得超過120萬港元的研究經費，涵蓋 ECS、NSFC、TDG等項目。</p>
+    <p class="section-subtitle">截至2025年，研究團隊已從香港研資局（RGC）、國家自然科學基金（NSFC）和港大研究委員會（URC）獲得超過120萬港元的研究經費，涵蓋 ECS、NSFC、TDG等項目。</p>
     <div class="grant-list">
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>
@@ -568,33 +547,10 @@
   </div>
 </section>
 
-    <section id="special-issue" class="section special-issue">
-      <div class="container">
-        <h2 class="section-title">期刊特稿</h2>
-        <p class="section-subtitle">以課題組名稱承辦特刊，即卓越設計與數字建造「DxDX」，旨在擴大該研究領域的影響力。</p>
-        <div class="special-wrap">
-          <div class="si-info hover-lift reveal">
-            <span class="badge call">論文徵集</span>
-            <h3>數字建造中的卓越設計 (DfX)</h3>
-            <div class="journal">Developments in the Built Environment</div>
-            <span class="badge">影響因子: 8.2</span>
-            <p>本特稿誠邀原創研究投稿，探討卓越設計概念在數字建造背景下的應用，包括面向製造與裝配的設計、建築安全設計及可持續設計。</p>
-            <p style="margin-top:var(--s3); font-weight:700; color:var(--orange);">投稿截止日期</p>
-            <p style="font-size:24px; font-weight:900;">2026年7月1日</p>
-            <a class="btn btn--secondary hover-lift" target="_blank" rel="noopener" href="https://www.sciencedirect.com/journal/developments-in-the-built-environment/about/call-for-papers">立即投稿</a>
-          </div>
-          <div class="si-poster reveal">
-            <img src="images/Special Issue.jpg" alt="「數字建造中的卓越設計」期刊特稿海報" class="si-poster-img">
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="team" class="section">
       <div class="container">
-        <div class="section-count" data-count="07"></div>
-        <h2 class="section-title">我們的研究團隊</h2>
-        <p class="section-subtitle">我們的團隊由來自全球 QS 排名前50大學的研究人員組成。核心團隊包括四名博士級研究員，並由碩士生研究助理提供支援。</p>
+        <h2 class="section-title">研究團隊</h2>
+        <p class="section-subtitle">核心團隊包括四名博士級研究員，並由碩士生研究助理提供支援。</p>
         <div class="team-grid">
           <div class="team-member hover-lift reveal">
            <div class="team-photo">
@@ -717,42 +673,6 @@
 </div>
       </div>
     </section>
-    
-    <section id="partners" class="section">
-      <div class="container">
-        <h2 class="section-title">外部合作夥伴</h2>
-        <p class="section-subtitle">與全球頂尖的本地業界及學術機構緊密合作。</p>
-        
-        <h3 class="partner-category-title">企業夥伴</h3>
-        <div class="partner-grid">
-          <img src="images/Arup.jpg" alt="Arup Logo" class="partner-logo">
-          <img src="images/AIS.jpg" alt="AIS Logo" class="partner-logo">
-          <img src="images/CIMC.jpg" alt="CIMC Logo" class="partner-logo">
-          <img src="images/China Overseas.jpg" alt="China Overseas Logo" class="partner-logo">
-          <img src="images/SOCAM.jpg" alt="SOCAM Logo" class="partner-logo">
-        </div>
-
-        <h3 class="partner-category-title">國家級中心</h3>
-        <div class="partner-grid">
-          <img src="images/NCCR.jpg" alt="NCCR Logo" class="partner-logo">
-          <img src="images/NCTIDC.jpg" alt="NCTIDC Logo" class="partner-logo">
-        </div>
-
-        <h3 class="partner-category-title">國際學術夥伴</h3>
-        <div class="partner-grid">
-          <img src="images/UCL.jpg" alt="UCL Logo" class="partner-logo">
-          <img src="images/Delft.jpg" alt="TU Delft Logo" class="partner-logo">
-          <img src="images/ETH.jpg" alt="ETH Zurich Logo" class="partner-logo">
-          <img src="images/Berlin.jpg" alt="TU Berlin Logo" class="partner-logo">
-          <img src="images/Cambridge.jpg" alt="University of Cambridge Logo" class="partner-logo">
-          <img src="images/NUS.jpg" alt="NUS Logo" class="partner-logo">
-          <img src="images/Kyoto.jpg" alt="Kyoto University Logo" class="partner-logo">
-          <img src="images/Austin.jpg" alt="UT Austin Logo" class="partner-logo">
-          <img src="images/ZHAW.jpg" alt="ZHAW Logo" class="partner-logo">
-          <img src="images/Sydney.jpg" alt="Sydney Logo" class="partner-logo">
-        </div>
-      </div>
-    </section>
 
 <section id="job" class="section">
  <div class="container">
@@ -762,43 +682,33 @@
   <div style="border:3px solid #000; padding:var(--s6); text-align:left;">
    <h3 style="font-size:24px; font-weight:900; color:var(--orange); text-transform:uppercase; margin-bottom:var(--s3);">招聘職位</h3>
    <p style="margin-bottom:var(--s3);">
-    我們現於<strong>香港大學房地產及建設系</strong>及<strong>國家數字建造技術創新中心（香港分中心）</strong>招聘<strong>研究助理、研究型碩士、博士及博士後研究員</strong>。
+    我們現招聘<strong>研究助理、博士及博士後研究員</strong>。
    </p>
    
    <div style="margin-bottom:var(--s3);">
     <p style="font-weight:700; color:var(--orange);">博士申請人資助及獎學金：</p>
     <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
      <li>
-      <strong>香港博士研究生獎學金計劃 (HKPFS) 及 香港大學校長博士學者獎 (HKU-PS)：</strong>為最卓越的博士申請人而設，屬港大最高榮譽。計劃涵蓋高額月度津貼、全額學費豁免、現金獎及會議差旅津貼。四年總價值約為<strong>170萬港元</strong>。
+      <strong>香港博士研究生獎學金計劃 (HKPFS) 及 香港大學校長博士學者獎 (HKU-PS)：</strong>170萬港元。
       <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/hong_kong_phd_fellowship_scheme" target="_blank" style="color:var(--orange); font-weight:700;">[詳情]</a>
      </li>
      <li>
-      <strong>研究生獎學金 (PGS)：</strong>提供給所有獲錄取之全日制哲學碩士 (MPhil) 及哲學博士 (PhD) 研究生。四年津貼總額約為<strong>90.4萬港元</strong>。
+      <strong>研究生獎學金 (PGS)：</strong>90.4萬港元。
       <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/postgraduate_scholarships" target="_blank" style="color:var(--orange); font-weight:700;">[詳情]</a>
      </li>
     </ul>
    </div>
 
    <div style="margin-bottom:var(--s3);">
-    <p style="font-weight:700; color:var(--orange);">研究方向：</p>
+    <p style="font-weight:700; color:var(--orange);">研究領域：</p>
     <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
-     <li>
-      <strong>方向一：生成式AI下的人智協同</strong>  
-      從認知科學與行為科學視角，研究設計師與AI互動中的創造力機制與決策模式；同時從管理與商業視角，探討生成式人工智能如何重塑設計行業的價值鏈與角色定位。本方向獲國家自然科學基金青年項目《基於生成式AI的工程設計知識共創機理與人智協作模式研究》支持。
-     </li>
-     <li>
-      <strong>方向二：大語言模型驅動的設計審查</strong>  
-      研發以大語言模型為核心的智能助手，提升工程審查與合規效率。目標是建立能理解複雜工程規範及多模態設計信息（如BIM、圖紙）的智能设计審查系統。本方向由香港研究資助局傑出青年學者計劃《Large Language Model (LLM)-augmented Automated safety checking in Alteration and Addition (A&amp;A) Works》支持。
-     </li>
-     <li>
-      <strong>方向三：模組化建築的生成式設計</strong>  
-      結合演算法設計與模組化建築全生命週期需求，開發能同時考慮製造、運輸、吊裝、成本及美學等多重約束的創新設計系統，推動模組化建築邁向智能化與個性化。本方向由香港大學種子基金、教學發展基金及訪問學者計劃支持。
-     </li>
+     <li><strong>領域一：製造與組裝設計</strong></li>
+     <li><strong>領域二：安全設計</strong></li>
     </ul>
    </div>
 
    <p style="margin-bottom:var(--s3);">
-    申請人須持有<strong>土木工程、建築學、管理學、設計學</strong>或相關領域的一級榮譽學士或碩士學位。我們歡迎對卓越设计（DfX）和數字建造方向有興趣的申請人，無論是質性或量化研究。有意者請將以下資料發送至 tant@hku.hk：1) 個人履歷 (CV)；2) 學業成績單 (學士及碩士)；3) 托福(TOEFL)/雅思(IELTS)/GRE成績。入圍申請人將獲邀參加面試。
+    我們歡迎在這兩個領域內探索新的研究方向和創新方法論。有意者歡迎聯絡 <a href="mailto:tant@hku.hk" style="color:var(--orange); font-weight:700;">tant@hku.hk</a>。
    </p>
    <p>
     更多關於學術成績的要求，可在<a href="https://gradsch.hku.hk/" target="_blank" style="color:var(--orange); font-weight:700;">香港大學研究生院</a>網站查閱。

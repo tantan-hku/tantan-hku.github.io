@@ -37,12 +37,6 @@
     }
     a{color:inherit; text-decoration: none;}
 
-    /* Announcement */
-    .announcement{background:var(--black); color:#fff; padding:10px 0; overflow:hidden;}
-    .announcement-content{display:flex; white-space:nowrap; animation:scroll 60s linear infinite;}
-    .announcement-text{margin-right:60px; font-weight:700; font-size:14px;}
-    @keyframes scroll{from{transform:translateX(100%)} to{transform:translateX(-100%)}}
-    
     /* Header & Navigation */
     header{position:sticky; top:0; z-index:1000; background:#fff; border-bottom:1px solid var(--light-gray);}
     nav{max-width:var(--maxw); margin:0 auto; padding:0 var(--s4); height:70px; display:flex; align-items:center; justify-content:space-between; position:relative;}
@@ -147,16 +141,6 @@
     .grant-role{font-weight:800; color:var(--orange);}
     .grant-item.hover-lift{border-bottom:1px dashed #eee;}
 
-    /* Special Issue */
-    .special-issue{background:var(--orange); color:#fff;}
-    .special-wrap{display:grid; grid-template-columns:1fr 1fr; gap:var(--s6);}
-    .si-info{background:#fff; color:#000; padding:var(--s6); border:3px solid #fff; text-align:left;}
-    .si-info h3{font-size:28px; font-weight:900; text-transform:uppercase; margin-bottom:var(--s3);}
-    .si-info .journal{color:#666; font-style:italic; margin-bottom:var(--s3);}
-    .badge{display:inline-block; background:var(--yellow); color:#000; padding:6px 12px; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:var(--s3);}
-    .badge.call{background:#000; color:#fff;}
-    .si-poster{}
-
     /* Team */
     .team-grid{display:grid; grid-template-columns:repeat(4, minmax(220px,1fr)); gap:var(--s3);}
     .team-member{border:2px solid #000; padding:var(--s4); text-align:center;}
@@ -231,6 +215,12 @@
         filter: grayscale(0%);
         opacity: 1;
     }
+
+    /* Team Section */
+    #team{background:var(--orange); color:#fff;}
+    #team .section-title{color:#fff;}
+    #team .section-subtitle{color:rgba(255,255,255,.85);}
+    #team .team-member{border-color:#fff; background:#fff; color:#000;}
 
     /* Contact */
     .contact .section-subtitle{color:#666;}
@@ -408,15 +398,6 @@ li a.language-switch {
 </head>
 <body>
   
-  <div class="announcement">
-    <div class="announcement-content">
-      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2026/27 — enquiries to tant@hku.hk</span>
-      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2026/27 — enquiries to tant@hku.hk</span>
-      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2026/27 — enquiries to tant@hku.hk</span>
-      <span class="announcement-text">🎓 RA/MPhil/PhD/Postdoc opportunities for 2026/27 — enquiries to tant@hku.hk</span>
-    </div>
-  </div>
-
 <header>
     <nav>
       <a href="#" class="logo">DxDC</a>
@@ -425,9 +406,7 @@ li a.language-switch {
         <li><a href="#about">About</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#grants">Grants</a></li>
-        <li><a href="#special-issue">Special Issue</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#partners">Partners</a></li>
         <li><a href="#job">Job Vacancy</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="index_cn.html" class="language-switch">繁体</a></li>
@@ -473,7 +452,7 @@ li a.language-switch {
             <div class="credentials">PhD · MSc · BArch · MRICS · MCIOB</div>
             <p>Dr. <strong>Tan Tan</strong>  is an Assistant Professor at the Department of Real Estate and Construction, Faculty of Architecture, the University of Hong Kong (HKU), the Program Director of MSc Digital Management of Built Assets (DMBA), and a Principal Investigator at the National Centre of Technology Innovation for Digital Construction in Hong Kong (NCTI-DC-HK). Previously, he held postdoctoral positions at the Delft University of Technology (TU Delft) in the Netherlands and the National Centre of Competence in Research (NCCR) Digital Fabrication in Switzerland. He received his PhD and MSc from University College London (UCL Bartlett) and his BArch from Huazhong University of Science and Technology (HUST).</p>
             <p>Dr. Tan has led research projects, including the Hong Kong Early Career Scheme (ECS) and the National Natural Science Foundation of China (NSFC) Young Scientists Fund, and participated in the Collaborative Research Fund (CRF) and the Innovation and Technology Fund (ITF). His achievements include receiving the ESI Highly Cited Paper Award, Editor's Choice Paper Award, and Best Paper Awards, alongside various prestigious scholarships such as the UCL PhD Scholarship, UK Grand Challenges Doctoral Grant, and China National Award for Outstanding Self-funded Students Abroad.</p>
-            <p>He currently serves as a managing guest editor for Developments in the Built Environment, a Corresponding Expert for the Chinese Academy of Engineering's journal Frontiers of Engineering Management, and as Co-Chair for CAAD Futures 2025. Since founding his research group in 2024, he has actively supported his team members in securing various academic honors, including Hong Kong government fellowships and merit paper awards.</p>
+            <p>He currently serves as a co-coordinator for CIB W096 Architectural Design and Management, a managing guest editor for Developments in the Built Environment, a Corresponding Expert for the Chinese Academy of Engineering's journal Frontiers of Engineering Management, and as Co-Chair for CAAD Futures 2025. Since founding his research group in 2024, he has actively supported his team members in securing various academic honors, including Hong Kong government fellowships and merit paper awards.</p>
           </div>
         </div>
       </div>
@@ -483,7 +462,7 @@ li a.language-switch {
       <div class="container">
         <div class="section-count" data-count="36"></div>
         <h2 class="section-title">SELECTED Publications</h2>
-        <p class="section-subtitle">Published 36 papers in journals, conferences, and books, with works receiving the Editor's Choice Selection, Best Paper Award, Merit Paper Award, Most Downloaded Paper Prize, and ESI Highly Cited Paper.</p>
+        <p class="section-subtitle">We are developing our research identity in the field ofdesign engineering and management.</p>
         <div class="publication-grid">
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2025</div>
@@ -587,33 +566,10 @@ li a.language-switch {
   </div>
 </section>
 
-    <section id="special-issue" class="section special-issue">
-      <div class="container">
-        <h2 class="section-title">Special Issue</h2>
-        <p class="section-subtitle"> We are guest-editing a special issue, 'Design for X in Digital Construction', which aims to broaden the field's influence and establish our research group's identity.</p>
-        <div class="special-wrap">
-          <div class="si-info hover-lift reveal">
-            <span class="badge call">Call for Papers</span>
-            <h3>Design for X (DfX) in Digital Construction</h3>
-            <div class="journal">Developments in the Built Environment</div>
-            <span class="badge">Impact Factor: 8.2</span>
-            <p>This Special Issue invites original contributions that explore the application of DfX concepts within the context of digital construction, including Design for Manufacture and Assembly, Design for Safety, and Design for Sustainability.</p>
-            <p style="margin-top:var(--s3); font-weight:700; color:var(--orange);">Submission Deadline</p>
-            <p style="font-size:24px; font-weight:900;">July 1st, 2026</p>
-            <a class="btn btn--secondary hover-lift" target="_blank" rel="noopener" href="https://www.sciencedirect.com/journal/developments-in-the-built-environment/about/call-for-papers">Submit</a>
-          </div>
-          <div class="si-poster reveal">
-            <img src="images/Special Issue.jpg" alt="Poster for the Special Issue on Design for X in Digital Construction" class="si-poster-img">
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section id="team" class="section">
       <div class="container">
-        <div class="section-count" data-count="07"></div>
         <h2 class="section-title">Our Research Team</h2>
-        <p class="section-subtitle">Our team is composed of researchers from leading universities worldwide. The core team includes four doctoral-level researchers, supported by master's student research assistants.</p>
+        <p class="section-subtitle"> The core team includes four doctoral-level researchers, supported by master's student research assistants.</p>
         <div class="team-grid">
           <div class="team-member hover-lift reveal">
            <div class="team-photo">
@@ -736,42 +692,6 @@ li a.language-switch {
 </div>
       </div>
     </section>
-    
-    <section id="partners" class="section">
-      <div class="container">
-        <h2 class="section-title">External Partners</h2>
-        <p class="section-subtitle">Collaborating with leading local industry and academic institutions worldwide.</p>
-        
-        <h3 class="partner-category-title">Enterprises</h3>
-        <div class="partner-grid">
-          <img src="images/Arup.jpg" alt="Arup Logo" class="partner-logo">
-          <img src="images/AIS.jpg" alt="AIS Logo" class="partner-logo">
-          <img src="images/CIMC.jpg" alt="CIMC Logo" class="partner-logo">
-          <img src="images/China Overseas.jpg" alt="China Overseas Logo" class="partner-logo">
-          <img src="images/SOCAM.jpg" alt="SOCAM Logo" class="partner-logo">
-        </div>
-
-        <h3 class="partner-category-title">National Centers</h3>
-        <div class="partner-grid">
-          <img src="images/NCCR.jpg" alt="NCCR Logo" class="partner-logo">
-          <img src="images/NCTIDC.jpg" alt="NCTIDC Logo" class="partner-logo">
-        </div>
-
-        <h3 class="partner-category-title">International Academic Partners</h3>
-        <div class="partner-grid">
-          <img src="images/UCL.jpg" alt="UCL Logo" class="partner-logo">
-          <img src="images/Delft.jpg" alt="TU Delft Logo" class="partner-logo">
-          <img src="images/ETH.jpg" alt="ETH Zurich Logo" class="partner-logo">
-          <img src="images/Berlin.jpg" alt="TU Berlin Logo" class="partner-logo">
-          <img src="images/Cambridge.jpg" alt="University of Cambridge Logo" class="partner-logo">
-          <img src="images/NUS.jpg" alt="NUS Logo" class="partner-logo">
-          <img src="images/Kyoto.jpg" alt="Kyoto University Logo" class="partner-logo">
-          <img src="images/Austin.jpg" alt="UT Austin Logo" class="partner-logo">
-          <img src="images/ZHAW.jpg" alt="ZHAW Logo" class="partner-logo">
-          <img src="images/Sydney.jpg" alt="Sydney Logo" class="partner-logo">
-        </div>
-      </div>
-    </section>
 
 <section id="job" class="section">
   <div class="container">
@@ -781,43 +701,33 @@ li a.language-switch {
     <div style="border:3px solid #000; padding:var(--s6); text-align:left;">
       <h3 style="font-size:24px; font-weight:900; color:var(--orange); text-transform:uppercase; margin-bottom:var(--s3);">Open Positions</h3>
       <p style="margin-bottom:var(--s3);">
-        We are recruiting <strong>RA/MPhil/PhD/PostDoc</strong> based on the HKU Department of Real Estate and Construction and the National Center of Technology Innovation in Digital Construction (Hong Kong Branch).
+        We are recruiting <strong>RA / PhD / PostDoc</strong>.
       </p>
       
       <div style="margin-bottom:var(--s3);">
         <p style="font-weight:700; color:var(--orange);">Funding &amp; Scholarships for PhD Applicants:</p>
         <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
           <li>
-            <strong>Fellowship Package (Hong Kong PhD Fellowship Scheme + HKU President's Scholarship):</strong> For the most competitive applicants. This premier package includes a high monthly stipend, full tuition waiver, cash awards, and travel allowance. The total award over 4 years is valued at approximately <strong>HK$1.7 million</strong>.
+            <strong>Fellowship Package (Hong Kong PhD Fellowship Scheme + HKU President's Scholarship):</strong> HK$1.7 million.
             <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/hong_kong_phd_fellowship_scheme" target="_blank" style="color:var(--orange); font-weight:700;">[Details]</a>
           </li>
           <li>
-            <strong>Standard Package (Postgraduate Scholarship):</strong> Provided to all admitted full-time MPhil &amp; PhD students. The total stipend over 4 years is approximately <strong>HK$904,000</strong>.
+            <strong>Standard Package (Postgraduate Scholarship):</strong> HK$904,000.
             <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/postgraduate_scholarships" target="_blank" style="color:var(--orange); font-weight:700;">[Details]</a>
           </li>
         </ul>
       </div>
 
       <div style="margin-bottom:var(--s3);">
-        <p style="font-weight:700; color:var(--orange);">Research Directions:</p>
+        <p style="font-weight:700; color:var(--orange);">Research Domains:</p>
         <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
-          <li>
-            <strong>Direction 1: Human-AI Collaboration in Generative AI</strong><br>
-            Explore creativity and decision-making mechanisms in designer-AI interactions from cognitive and behavioral science perspectives, and investigate how AIGC reshapes the value chain and professional roles of the design industry from management and business perspectives. Supported by the NSFC Young Scientists Scheme.
-          </li>
-          <li>
-            <strong>Direction 2: LLM-assisted Design Checking</strong><br>
-            Develop intelligent assistants powered by large language models to enhance engineering review and compliance efficiency. The aim is to build systems capable of interpreting complex building codes and multi-modal design data (e.g., BIM, drawings). Supported by the RGC Early Career Scheme.
-          </li>
-          <li>
-            <strong>Direction 3: Generative Design for Modular Construction</strong><br>
-            Integrate algorithmic design with lifecycle demands of modular construction to generate innovative solutions under constraints such as manufacturing, transportation, lifting, cost, and aesthetics. Supported by HKU Seed Fund, Teaching Development Fund, and Visiting Professors Scheme.
-          </li>
+          <li><strong>Domain 1: Design for Manufacture and Assembly</strong></li>
+          <li><strong>Domain 2: Design for Safety</strong></li>
         </ul>
       </div>
 
       <p style="margin-bottom:var(--s3);">
-        Applicants should hold a Bachelor's or Master's degree with first-class honors in <strong>Civil Engineering, Architecture, Management, Design</strong>, or related fields. Both qualitative and quantitative research interests related to Design for Excellence in Digital Construction (DxDC) are welcome. Interested candidates can send the following materials to <a href="mailto:tant@hku.hk" style="color:var(--orange); font-weight:700;">tant@hku.hk</a>: 1) CV; 2) Academic transcripts (Bachelor’s and Master’s); 3) TOEFL / IELTS / GRE scores. Shortlisted applicants will be invited for interviews.
+        We are open to exploring new research directions and innovative methodologies within these two domains. Interested candidates can contact <a href="mailto:tant@hku.hk" style="color:var(--orange); font-weight:700;">tant@hku.hk</a>.
       </p>
       <p>
         More requirements about academic merit can be found at the <a href="https://gradsch.hku.hk/" target="_blank" style="color:var(--orange); font-weight:700;">HKU Graduate School</a>.
