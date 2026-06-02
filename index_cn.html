@@ -275,6 +275,11 @@
     .publication-card:hover::before{border-color:var(--orange);}
     .publication-link{display:inline-flex; align-items:center; gap:6px; margin-top:0; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--orange); border:1px solid rgba(255,107,53,.25); padding:6px 10px; border-radius:999px; white-space:nowrap; transition:background .2s ease, transform .2s ease;}
     .publication-link:hover{background:rgba(255,107,53,.1); transform:translateY(-1px);}
+    .scholar-card .publication-year{background:#333;}
+    .scholar-card .publication-title{font-size:17px; margin:22px 0 8px;}
+    .scholar-card .scholar-brief{font-size:14px; color:#555; line-height:1.45; margin-bottom:12px;}
+    .scholar-card .scholar-link{font-size:13px; font-weight:700; color:#111; text-decoration:underline; text-underline-offset:3px;}
+    .scholar-card .scholar-link:hover{opacity:.7;}
 
     /* Image Styles */
     img{max-width:100%; height:auto;}
@@ -426,7 +431,7 @@
           <div class="about-text reveal">
             <h2 class="section-title" style="text-align:left;">團隊主持人簡介</h2>
             <div class="credentials">博士 · 理學碩士 · 建築學學士 · 英國皇家特許測量師 · 英國特許建造師</div>
-            <p><strong>譚坦</strong>博士，現任香港大學建築學院房地產及建設系助理教授，建設資產數字管理碩士（MSc DMBA）項目主任，同時擔任國家數字建造技術創新中心香港分中心（NCTI-DC-HK）的項目負責人（Principal Investigator）。此前，他曾於荷蘭代爾夫特理工大學（TU Delft）及瑞士國家數字製造能力研究中心（NCCR Dfab）從事博士後研究。他於英国倫敦大學學院（UCL）取得博士及理學碩士學位，並於華中科技大學（HUST）獲得建築學學士學位。</p>
+            <p><strong>譚坦</strong>博士，現任香港大學建築學院房地產及建設系助理教授，建設資產數字管理碩士（MSc DMBA）項目主管。此前，他曾於荷蘭代爾夫特理工大學（TU Delft）及瑞士國家數字製造能力研究中心（NCCR Dfab）從事博士後研究。他於英国倫敦大學學院（UCL）取得博士及理學碩士學位，並於華中科技大學（HUST）獲得建築學學士學位。</p>
             <p>譚博士主持多項研究計劃，包括香港研究資助局的「傑出青年學者計劃」（ECS）、國家自然科學基金委「青年科學基金項目（C類）」，參與「協作研究金」（CRF）以及創新科技署的「創新及科技基金」（ITF）。他曾榮獲 ESI 高被引論文獎、美国土木工程师协会主編精選論文獎、会议最佳論文獎，並獲得多項著名獎學金，如倫敦大學學院博士獎學金、英國 Grand Challenges 博士研究資助，以及中国國家優秀自費留學生獎學金。</p>
             <p>他目前擔任國際建築與建設研究創新理事會建築設計與管理工作組（CIB W096）共同協調員、《Developments in the Built Environment》执行客座編輯、中國工程院院刊《Frontiers of Engineering Management》特约通訊專家，並共同擔任 CAAD Futures 2025 學術委員會聯席主席。自2024年創立其研究團隊以來，他積極支持團隊成員爭取多項學術榮譽，包括香港政府獎學金和優秀論文獎。</p>
           </div>
@@ -435,8 +440,8 @@
     </section>
 <section id="team" class="section">
       <div class="container">
+        <div class="section-count" data-count="08"></div>
         <h2 class="section-title">研究團隊</h2>
-        <p class="section-subtitle">核心團隊包括四名博士級研究員，並由碩士生研究助理提供支援。</p>
         <div class="team-grid">
           <div class="team-member hover-lift reveal">
            <div class="team-photo">
@@ -598,7 +603,7 @@
     </section>
 <section id="grants" class="section grants">
   <div class="container grant-wrap">
-    <div class="section-count" data-count="07"></div>
+    <div class="section-count" data-count="03"></div>
     <h2 class="section-title">部分獲資助項目</h2>
     <p class="section-subtitle">截至2025年，研究團隊已從香港研資局（RGC）、國家自然科學基金（NSFC）和港大研究委員會（URC）獲得超過120萬港元的研究經費，涵蓋 ECS、NSFC、TDG等項目。</p>
     <div class="grant-list">
@@ -631,9 +636,9 @@
 </section>
 <section id="publications" class="section publications">
       <div class="container">
-        <div class="section-count" data-count="36"></div>
+        <div class="section-count" data-count="42"></div>
         <h2 class="section-title">部分學術出版</h2>
-        <p class="section-subtitle">我們通過發表定位在設計工程與管理領域</p>
+        <p class="section-subtitle">我們的發表方向專注於設計工程管理領域</p>
         <div class="publication-grid">
           <div class="publication-card hover-lift reveal">
             <div class="publication-year">2026</div>
@@ -680,15 +685,11 @@
             </div>
             <span class="publication-authors fitline">Kucan, G., <strong>Tan, T*.</strong>, Grossmann, D., Graser, K., Hall, D.M.</span>
           </div>
-          <div class="publication-card hover-lift reveal">
-            <div class="publication-year">學術</div>
-            <h3 class="publication-title">在 Google Scholar 查看完整學術出版與引用記錄</h3>
-            <div class="publication-meta">
-              <span class="publication-journal fitline">Google Scholar</span>
-              <a class="publication-link" href="https://scholar.google.com/citations?user=_VG990cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">PROFILE &rarr;</a>
-            </div>
-            <span class="publication-authors fitline">完整論文列表、引用記錄與最新研究成果。</span>
-            <span class="publication-award">完整檔案</span>
+          <div class="publication-card scholar-card hover-lift reveal">
+            <div class="publication-year">更多</div>
+            <h3 class="publication-title">Google Scholar</h3>
+            <p class="scholar-brief">更多論文</p>
+            <a class="scholar-link" href="https://scholar.google.com/citations?user=_VG990cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">前往 &rarr;</a>
           </div>
         </div>
       </div>
@@ -696,7 +697,7 @@
     <section id="contact" class="section contact">
       <div class="container">
         <h2 class="section-title">聯絡我們</h2>
-        <p class="section-subtitle">歡迎學術合作、業界合作、新的研究機會，以及有意加入團隊的同學與研究人員。</p>
+        <p class="section-subtitle">歡迎學術和業界合作，以及有意加入團隊的同學與研究人員。</p>
         
         <div style="border:3px solid #000; padding:var(--s5); text-align:left; max-width:800px; margin:0 auto var(--s6);">
           <h3 style="font-size:24px; font-weight:900; color:var(--orange); text-transform:uppercase; margin-bottom:var(--s3);">加入團隊</h3>
@@ -711,8 +712,8 @@
           <div style="margin-bottom:var(--s3);">
             <p style="font-weight:700; color:var(--orange);">研究領域：</p>
             <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
-              <li><strong>領域一：製造與裝配設計</strong></li>
-              <li><strong>領域二：安全設計</strong></li>
+              <li><strong>領域一：面向製造與裝配設計</strong></li>
+              <li><strong>領域二：建築安全設計</strong></li>
             </ul>
           </div>
           <p style="margin-bottom:var(--s3);">我們歡迎在這兩個領域內探索新的研究方向和創新方法論。</p>

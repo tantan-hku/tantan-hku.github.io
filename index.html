@@ -269,6 +269,11 @@
     .publication-card::before{content:""; position:absolute; inset:0; border:2px solid transparent; pointer-events:none; transition:border-color .25s ease;}
     .publication-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
     .publication-card:hover::before{border-color:var(--orange);}
+    .scholar-card .publication-year{background:#333;}
+    .scholar-card .publication-title{font-size:17px; margin:22px 0 8px;}
+    .scholar-card .scholar-brief{font-size:14px; color:#555; line-height:1.45; margin-bottom:12px;}
+    .scholar-card .scholar-link{font-size:13px; font-weight:700; color:#111; text-decoration:underline; text-underline-offset:3px;}
+    .scholar-card .scholar-link:hover{opacity:.7;}
 
     /* Image Styles */
     img{max-width:100%; height:auto;}
@@ -454,6 +459,7 @@ li a.language-switch {
     </section>
 <section id="team" class="section">
       <div class="container">
+        <div class="section-count" data-count="08"></div>
         <h2 class="section-title">Our Research Team</h2>
         <p class="section-subtitle"> The core team includes four doctoral-level researchers, supported by master's student research assistants.</p>
         <div class="team-grid">
@@ -617,7 +623,7 @@ li a.language-switch {
     </section>
 <section id="grants" class="section grants">
   <div class="container grant-wrap">
-    <div class="section-count" data-count="07"></div>
+    <div class="section-count" data-count="03"></div>
     <h2 class="section-title">Selected Funded Projects</h2>
     <p class="section-subtitle">In 2025, the DxDC research group has secured over HK$1.2 million in funding from the RGC, NSFC and URC, including ECS, YSF(C), TDG.</p>
     <div class="grant-list">
@@ -650,7 +656,7 @@ li a.language-switch {
 </section>
 <section id="publications" class="section publications">
       <div class="container">
-        <div class="section-count" data-count="36"></div>
+        <div class="section-count" data-count="42"></div>
         <h2 class="section-title">SELECTED Publications</h2>
         <p class="section-subtitle">We are developing our research identity in the field of design engineering and management.</p>
         <div class="publication-grid">
@@ -699,15 +705,11 @@ li a.language-switch {
             </div>
             <span class="publication-authors fitline">Kucan, G., <strong>Tan, T*.</strong>, Grossmann, D., Graser, K., Hall, D.M.</span>
           </div>
-          <div class="publication-card hover-lift reveal">
-            <div class="publication-year">PROFILE</div>
-            <h3 class="publication-title">Explore the full publication record on Google Scholar</h3>
-            <div class="publication-meta">
-              <span class="publication-journal fitline">Google Scholar</span>
-              <a class="publication-link" href="https://scholar.google.com/citations?user=_VG990cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">PROFILE &rarr;</a>
-            </div>
-            <span class="publication-authors fitline">Full bibliography, citation record, and latest research outputs.</span>
-            <span class="publication-award">Full Profile</span>
+          <div class="publication-card scholar-card hover-lift reveal">
+            <div class="publication-year">MORE</div>
+            <h3 class="publication-title">Google Scholar</h3>
+            <p class="scholar-brief">More papers</p>
+            <a class="scholar-link" href="https://scholar.google.com/citations?user=_VG990cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Visit &rarr;</a>
           </div>
         </div>
       </div>
