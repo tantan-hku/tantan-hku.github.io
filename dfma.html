@@ -32,6 +32,11 @@
     .evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
     .figure-placeholder{min-height:340px;border:3px solid var(--line);background:repeating-linear-gradient(135deg,#fff 0,#fff 18px,#f0f0f0 18px,#f0f0f0 36px);display:flex;align-items:end;padding:var(--s3)}
     .figure-caption{display:inline-block;background:#000;color:#fff;font-size:22px;font-weight:900;padding:8px 10px;line-height:1.15}
+    .figure-source{font-size:13px;color:var(--muted);font-weight:700;margin-top:10px}
+    .case-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3);margin-top:var(--s3)}
+    .case-note{border:3px solid var(--line);padding:var(--s3);background:#fff}
+    .case-note h3{font-size:26px;line-height:1.15;margin-bottom:var(--s2);color:var(--orange)}
+    .case-note p{font-size:17px;margin:0;color:#333}
     .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
     .card{border:3px solid var(--line);padding:var(--s3);background:#fff}
     .card h3{font-size:22px;line-height:1.15;margin-bottom:var(--s2)}
@@ -41,7 +46,7 @@
     .btn-primary{background:var(--orange);color:#fff}
     .btn:hover{transform:translateY(-2px)}
     footer{padding:var(--s4) 24px;text-align:center;font-size:14px;color:var(--muted)}
-    @media(max-width:860px){.nav-links{gap:12px;font-size:12px;flex-wrap:wrap;justify-content:flex-end}.hero-inner,.section-grid{grid-template-columns:1fr}.hero-inner{min-height:auto;padding-top:var(--s5)}h1{font-size:40px}.lead{font-size:19px}.evidence-grid,.card-grid{grid-template-columns:1fr}}
+    @media(max-width:860px){.nav-links{gap:12px;font-size:12px;flex-wrap:wrap;justify-content:flex-end}.hero-inner,.section-grid{grid-template-columns:1fr}.hero-inner{min-height:auto;padding-top:var(--s5)}h1{font-size:40px}.lead{font-size:19px}.evidence-grid,.case-grid,.card-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -110,6 +115,41 @@
     <section class="section">
       <div class="container section-grid">
         <div class="section-label">Research Story</div>
+        <div>
+          <h2>Hong Kong Hospitals as a DfMA Testbed</h2>
+          <p>Hong Kong's hospital estate makes the DfMA challenge concrete. In 2016, the government launched the first 10-year Hospital Development Plan, allocating HK$200 billion for 16 projects to provide more than 5,000 additional beds and 90 operating theatres. In 2021, the Chief Executive invited the Hospital Authority to prepare the second 10-year Hospital Development Plan, covering 18 hospital projects and one community health centre project. With an estimated budget of HK$270 billion, it aims to provide over 9,000 additional beds.</p>
+          <p>At the same time, hospital demand is becoming more complex. By 2050, people aged 65 and above will account for 40.6% of Hong Kong's population, yet there will be only 4.3 hospital beds per 1,000 people, compared with 12.6 in Japan. Elderly patients often have longer hospital stays, require more intensive MEP systems, and depend on specialised wards such as ICUs and geriatric units. This creates greater demands on space, energy, and service reliability.</p>
+          <div class="case-grid">
+            <div>
+              <figure class="figure-placeholder">
+                <figcaption class="figure-caption">Chart: hospital MiC adoption gap</figcaption>
+              </figure>
+              <div class="figure-source">Source: Pan and Hon, 2020.</div>
+            </div>
+            <div>
+              <figure class="figure-placeholder">
+                <figcaption class="figure-caption">Chart: ageing population vs. hospital capacity</figcaption>
+              </figure>
+              <div class="figure-source">Source: Woo, 2023; Department of Health, 2023; OECD, 2023.</div>
+            </div>
+          </div>
+          <div class="case-grid">
+            <article class="case-note">
+              <h3>The Gap</h3>
+              <p>Hospital MiC adoption is still far below the level needed for a large, repeatable hospital development pipeline. DfMA research can help translate modular ambition into design rules, procurement logic, and evidence-based adoption pathways.</p>
+            </article>
+            <article class="case-note">
+              <h3>The Opportunity</h3>
+              <p>Hospitals need speed, quality, infection-control reliability, adaptable layouts, and dense MEP coordination. These are exactly the conditions where manufacturable design, standardised interfaces, and assembly planning can matter most.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-grid">
+        <div class="section-label">Research Agenda</div>
         <div>
           <h2>Generating Buildable Options, Not Just Beautiful Geometry</h2>
           <p>Our research explores how computational design, graph learning, optimisation, expert knowledge, and human-AI collaboration can help teams generate and evaluate manufacturable building options at early design stages.</p>
