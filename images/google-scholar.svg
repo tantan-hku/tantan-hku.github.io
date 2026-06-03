@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" role="img" aria-label="Google Scholar">
+  <rect x="2" y="2" width="20" height="20" rx="4.5" fill="currentColor"/>
+  <defs>
+    <mask id="gs-mark" maskUnits="userSpaceOnUse" x="2" y="2" width="20" height="20">
+      <image href="google-scholar-g-mask.png" x="2" y="2" width="20" height="20" preserveAspectRatio="xMidYMid meet"/>
+    </mask>
+  </defs>
+  <rect x="2" y="2" width="20" height="20" fill="#fff" mask="url(#gs-mark)"/>
+</svg>
