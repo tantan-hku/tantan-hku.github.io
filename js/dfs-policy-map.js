@@ -1,5 +1,10 @@
 (function () {
-  const MAP_LOCALE = document.documentElement.lang === 'zh-HK' ? 'zh' : 'en';
+  const MAP_LOCALE = (() => {
+    const lang = document.documentElement.lang;
+    if (lang === 'zh-CN') return 'zh-sc';
+    if (lang === 'zh-HK') return 'zh';
+    return 'en';
+  })();
   const LAND_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/land-110m.json';
 
   const POLICIES = {
@@ -34,13 +39,35 @@
       { id: 'sg', name: '新加坡', type: 'mandated', lon: 103.8, lat: 1.3, policy: '建築安全設計法規（2015 年 7 月頒布，2016 年 8 月實施）' },
       { id: 'au', name: '澳洲', type: 'mandated', lon: 133, lat: -25, policy: '2012 年起《工作健康與安全（WHS）法》' },
       { id: 'nz', name: '紐西蘭', type: 'mandated', lon: 174, lat: -41, policy: '2015 年《工作健康與安全法》' }
+    ],
+    'zh-sc': [
+
+      { id: 'us', name: '美国', type: 'guidance', lon: -98, lat: 40, policy: '设计与再设计过程中职业危害与风险处理指引' },
+      { id: 'ie', name: '爱尔兰', type: 'mandated', lon: -7.5, lat: 53.5, policy: '2013 年《营造业安全、健康与福利法规》（2013 年 8 月实施）' },
+      { id: 'es', name: '西班牙', type: 'mandated', lon: -3.5, lat: 40, policy: '皇家法令 1627/1997' },
+      { id: 'uk', name: '英国', type: 'mandated', lon: -1.5, lat: 54, policy: '2015 年《建造设计与管理（CDM）法规》' },
+      { id: 'se', name: '瑞典', type: 'mandated', lon: 16, lat: 63, policy: '建筑与土木工程工作（AFS 1999:3）' },
+      { id: 'dk', name: '丹麦', type: 'mandated', lon: 10, lat: 56, policy: '行政命令第 117 号' },
+      { id: 'fi', name: '芬兰', type: 'mandated', lon: 26, lat: 64, policy: '建造工作安全（205/2009）' },
+      { id: 'za', name: '南非', type: 'mandated', lon: 25, lat: -29, policy: '《职业安全与健康法》第 10 条（85/93）' },
+      { id: 'kr', name: '南韩', type: 'mandated', lon: 127.5, lat: 36, policy: '2016 年《建造技术促进法施行令》' },
+      { id: 'hk', name: '香港', type: 'guidance', lon: 114.2, lat: 22.3, policy: '《建筑安全设计指引与实例》（2013）；2017 年安全规划与设计图解指南' },
+      { id: 'my', name: '马来西亚', type: 'guidance', lon: 101.7, lat: 4.2, policy: '2017 年建造业职安健管理指引' },
+      { id: 'sg', name: '新加坡', type: 'mandated', lon: 103.8, lat: 1.3, policy: '建筑安全设计法规（2015 年 7 月颁布，2016 年 8 月实施）' },
+      { id: 'au', name: '澳洲', type: 'mandated', lon: 133, lat: -25, policy: '2012 年起《工作健康与安全（WHS）法》' },
+      { id: 'nz', name: '纽西兰', type: 'mandated', lon: 174, lat: -41, policy: '2015 年《工作健康与安全法》' }
     ]
   };
 
   const COPY = {
     en: { loadError: 'Map data could not be loaded. Please refresh the page.' },
-    zh: { loadError: '地圖資料載入失敗，請重新整理頁面。' }
+    zh: { loadError: '地圖資料載入失敗，請重新整理頁面。' },
+    'zh-sc': { loadError: '地图资料载入失败，请重新整理页面。' }
   };
+
+  function isChineseLocale(locale) {
+    return locale === 'zh' || locale === 'zh-sc';
+  }
 
   function initPolicyMap(root) {
     if (!root || typeof d3 === 'undefined' || typeof topojson === 'undefined') return;
@@ -70,7 +97,7 @@
       const item = policies.find((p) => p.id === id);
       if (item) {
         detail.dataset.type = item.type;
-        detailTitle.textContent = item.name + (locale === 'zh' ? '：' : ': ');
+        detailTitle.textContent = item.name + (isChineseLocale(locale) ? '：' : ': ');
         detailText.textContent = item.policy;
       } else {
         detail.removeAttribute('data-type');
@@ -96,7 +123,7 @@
           .attr('class', 'policy-map-svg')
           .attr('viewBox', `0 0 ${width} ${height}`)
           .attr('role', 'img')
-          .attr('aria-label', locale === 'zh' ? '全球安全設計政策地圖' : 'World map of Design for Safety policies');
+          .attr('aria-label', isChineseLocale(locale) ? (locale === 'zh-sc' ? '全球安全设计政策地图' : '全球安全設計政策地圖') : 'World map of Design for Safety policies');
 
         const projection = d3.geoNaturalEarth1().fitExtent(
           [[24, 18], [width - 24, height - 18]],

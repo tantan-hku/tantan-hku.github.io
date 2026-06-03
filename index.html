@@ -44,6 +44,17 @@
     .nav-links{display:flex; gap:var(--s5); list-style:none; align-items:center;}
     .nav-links a{font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:14px; transition:color .3s;}
     .nav-links a:not(.contact-btn-special):hover{color:var(--orange)}
+    .language-switch{
+        margin-left:var(--s2);
+        padding-left:var(--s4);
+        border-left:1px solid #d8d8d8;
+        color:#777 !important;
+        font-size:13px;
+        letter-spacing:.5px;
+        transition:color .2s ease;
+    }
+    .language-switch:hover{color:var(--orange) !important;}
+    .language-switch--alt{margin-left:0;padding-left:var(--s2);border-left:none;}
     .menu-toggle { display: none; }
     
     /* Menu Overlay */
@@ -103,40 +114,37 @@
     .hero-title .no-wrap{white-space:nowrap;}
     .hero-subtitle{font-size:20px; color:#555; margin-bottom:var(--s5);}
     .highlight{background:var(--yellow); padding:2px 4px; font-weight:800; color:#000 !important;}
+    .lead-em{font-weight:800; color:var(--black); border-bottom:2px solid rgba(255,107,53,.35); padding-bottom:1px;}
     .btn{display:inline-block; padding:14px 28px; border:3px solid var(--black); font-weight:700; text-transform:uppercase; letter-spacing:1px;}
     .btn--primary{background:var(--black); color:#fff;}
     .btn--secondary{background:#fff; color:var(--black);}
     .btn--primary:hover{background:#fff; color:var(--black);}
     .btn--secondary:hover{background:var(--black); color:#fff;}
+    .hero-research-hint{font-size:14px;color:#666;margin:0 auto var(--s3);max-width:520px;line-height:1.55}
     .hero-buttons{display:flex; gap:var(--s3); justify-content:center; flex-wrap:wrap;}
     .hero-buttons .btn{width:140px;text-align:center}
 
     /* About */
-    #about .about-wrap{display:grid; grid-template-columns:1fr 2fr; gap:var(--s7); align-items:flex-start;}
-    #about .about-img{}
+    #about .about-wrap{display:grid; grid-template-columns:minmax(200px,220px) 1fr; gap:var(--s6); align-items:start;}
+    .about-lead{padding:0; text-align:center;}
+    .about-lead__photo{width:168px; height:168px; margin:0 auto var(--s3); border-radius:50%; overflow:hidden; border:1px solid rgba(0,0,0,.12); background:var(--light-gray);}
+    .about-lead__photo img{width:100%; height:100%; object-fit:cover; display:block; transition:transform .35s ease;}
+    .about-lead:hover .about-lead__photo img{transform:scale(1.04);}
+    .about-lead .team-name-container{margin-bottom:8px;}
+    .about-lead .team-name{font-size:22px; font-weight:900; letter-spacing:.5px;}
+    .about-lead__role{display:inline-block; font-size:11px; font-weight:800; text-transform:uppercase; letter-spacing:.6px; color:#fff; background:var(--black); padding:3px 12px; border-radius:999px; margin:0;}
     #about .about-text{text-align:left;}
     #about .credentials{font-size:12px; color:#666; letter-spacing:.5px; text-transform:uppercase; margin:6px 0 10px;}
-
-    /* Publications */
-    .publications{background:#333; color:#fff;}
-    .publication-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(340px,1fr)); gap:var(--s5); margin-top:var(--s5);}
-    .publication-card{background:#fff; color:#000; padding:var(--s5); border:2px solid #fff; text-align:left; position:relative;}
-    .publication-year{position:absolute; top:0; left:0; background:#000; color:#fff; padding:6px 10px; font-size:12px; font-weight:700;}
-    .publication-title{font-weight:700; font-size:16px; line-height:1.35; margin:24px 0 8px;}
-    .publication-meta{display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;}
-    .publication-journal{display:inline-flex; white-space:nowrap; overflow:visible; font-size:14px; color:var(--orange); font-weight:800; letter-spacing:.3px; align-items:center;}
-    .publication-authors{display:block; white-space:nowrap; overflow:visible; font-size:14px; color:#555;}
-    .publication-award{display:inline-block; background:var(--yellow); color:#000; padding:3px 8px; font-size:11px; font-weight:700; margin-top:6px; text-transform:uppercase; letter-spacing:1px;}
 
   /* Grants */
     .grants{background:#fff; color:#000;}
     .grant-wrap{max-width:var(--maxw); margin:0 auto;}
-    .grant-list{position:relative; margin-left:22px;}
-    .grant-list::before{content:""; position:absolute; left:0; top:0; bottom:0; width:2px; background:#e6e6e6;}
-    .grant-item{display:grid; grid-template-columns: 160px 1fr; gap:var(--s3); align-items:start; padding:14px 0; position:relative;}
-    .grant-item .dot{position:absolute; left:-8px; top:22px; width:14px; height:14px; border-radius:50%; background:var(--orange); box-shadow:0 0 0 4px rgba(255,107,53,.15); transition:transform .3s, box-shadow .3s;}
-    .grant-item:hover .dot{transform:scale(1.15); box-shadow:0 0 0 6px rgba(255,107,53,.2);}
-    .grant-date{font-weight:700; color:#333; font-size:14px; white-space:nowrap;}
+    .grant-list{position:relative; --grant-axis:14px; --grant-gutter:36px; padding-left:var(--grant-gutter);}
+    .grant-list::before{content:""; position:absolute; left:var(--grant-axis); top:0; bottom:0; width:2px; background:#e6e6e6; transform:translateX(-50%);}
+    .grant-item{display:grid; grid-template-columns:172px 1fr; gap:var(--s4); align-items:start; padding:14px 0; position:relative;}
+    .grant-item .dot{position:absolute; left:calc(var(--grant-axis) - var(--grant-gutter)); top:1.35rem; width:14px; height:14px; border-radius:50%; background:var(--orange); box-shadow:0 0 0 4px rgba(255,107,53,.15); transform:translateX(-50%); transition:transform .3s, box-shadow .3s;}
+    .grant-item:hover .dot{transform:translateX(-50%) scale(1.15); box-shadow:0 0 0 6px rgba(255,107,53,.2);}
+    .grant-date{font-weight:700; color:#333; font-size:14px; line-height:1.4; white-space:nowrap; font-variant-numeric:tabular-nums;}
     .grant-title{font-weight:900; font-size:18px; line-height:1.3; margin-bottom:4px;}
     .grant-meta{font-size:14px; color:#555;}
     .grant-role{font-weight:800; color:var(--orange);}
@@ -222,6 +230,10 @@
     /* Contact */
     .contact .section-subtitle{color:#666;}
     .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:var(--s5); max-width:800px; margin:0 auto;}
+    .contact-links{list-style:none; padding:0; margin:0;}
+    .contact-links li + li{margin-top:10px;}
+    .contact-links a{text-decoration:underline; text-underline-offset:3px; transition:color .2s ease;}
+    .contact-links a:hover{color:var(--orange);}
 
     footer{background:#000; color:#fff; text-align:center; padding:var(--s5) 0;}
 
@@ -259,28 +271,11 @@
     .section-count{position:relative; display:block; width:100%; text-align:center; line-height:1; margin:-4px 0 18px 0;}
     .section-count::before{content:attr(data-count); display:block; font-weight:900; letter-spacing:2px; font-size:clamp(32px, 7vw, 88px); color:rgba(0,0,0,.09);}
     .section-count::after{content:""; position:absolute; left:50%; transform:translateX(-50%); bottom:2px; width:clamp(28px, 4.5vw, 72px); height:2px; background:var(--orange); border-radius:2px;}
-    .publications .section-count::before{color:rgba(255,255,255,.28);}
-
-    /* Publication Card Hover Effects */
-    .publication-card::after{content:""; position:absolute; left:0; right:0; bottom:0; height:2px; background:var(--orange); transform:scaleX(0); transform-origin:left; transition:transform .25s ease;}
-    .publication-card:hover::after{transform:scaleX(1);}
-    .publication-link{display:inline-flex; align-items:center; gap:6px; margin-top:0; font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--orange); border:1px solid rgba(255,107,53,.25); padding:6px 10px; border-radius:999px; white-space:nowrap; transition:background .2s ease, transform .2s ease;}
-    .publication-link:hover{background:rgba(255,107,53,.1); transform:translateY(-1px);}
-    .publication-card{overflow:hidden; transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;}
-    .publication-card::before{content:""; position:absolute; inset:0; border:2px solid transparent; pointer-events:none; transition:border-color .25s ease;}
-    .publication-card:hover{transform:translateY(-6px); box-shadow:var(--shadow);}
-    .publication-card:hover::before{border-color:var(--orange);}
-    .scholar-card .publication-year{background:#333;}
-    .scholar-card .publication-title{font-size:17px; margin:22px 0 8px;}
-    .scholar-card .scholar-brief{font-size:14px; color:#555; line-height:1.45; margin-bottom:12px;}
-    .scholar-card .scholar-link{font-size:13px; font-weight:700; color:#111; text-decoration:underline; text-underline-offset:3px;}
-    .scholar-card .scholar-link:hover{opacity:.7;}
-
     /* Image Styles */
     img{max-width:100%; height:auto;}
     .si-poster-img {width:100%; max-width:500px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.15); transition:transform 0.3s ease, box-shadow 0.3s ease;}
     .si-poster-img:hover {transform:scale(1.03); box-shadow:0 8px 20px rgba(0,0,0,0.25);}
-    .si-poster, .about-img {border:none !important; background:none !important; box-shadow:none !important;}
+    .si-poster {border:none !important; background:none !important; box-shadow:none !important;}
     #about .about-text p{margin-bottom:12px;}
 
     /* === RESPONSIVE & MOBILE STYLES === */
@@ -294,14 +289,8 @@
         .section-title{font-size:32px;}
         .section-subtitle{font-size:16px; padding:0 6px; word-break:break-word;}
 
-/* 調整手機版語言切換按鈕樣式 */
-li a.language-switch {
-  display: inline-block; /* 讓按鈕寬度由內容和內邊距決定 */
-  width: auto;          /* 覆蓋繼承的 width: 100% */
-  margin-top: var(--s2);  /* 與上方選項保持間距 (12px) */
-  padding: 10px 24px;   /* 增加左右內邊距，讓按鈕更寬 */
-}
-      
+        li a.language-switch{border-left:none;margin-left:0;padding-left:0;}
+
         /* Hamburger Menu Styles */
         .menu-toggle {
             display: block;
@@ -351,18 +340,17 @@ li a.language-switch {
         }
         /* End Hamburger Menu */
 
-        #about .about-wrap{grid-template-columns:1fr;}
+        #about .about-wrap{grid-template-columns:1fr; justify-items:center;}
         .special-wrap{grid-template-columns:1fr;}
         .contact-grid{grid-template-columns:1fr;}
+        .grant-list{--grant-gutter:28px; --grant-axis:12px;}
         .grant-item{grid-template-columns:1fr;}
-        .grant-date{margin-bottom:6px;}
+        .grant-date{margin-bottom:6px; white-space:normal;}
         .hero-title{font-size:clamp(26px, 8.5vw, 38px);}
-        #about .about-img{max-width:340px; margin:12px auto 0;}
+        .about-lead{width:100%; max-width:280px; margin:0 auto var(--s5);}
+        .about-lead__photo{width:148px; height:148px;}
         .section-count::before{ font-size: clamp(26px, 10vw, 58px); }
         .section-count::after{ width: clamp(24px, 8vw, 50px); }
-        .publication-grid{grid-template-columns:1fr; gap:20px;}
-        .publication-title{font-size:15px; word-break:break-word;}
-        .fitline{white-space:normal !important;}
         .team-grid{grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px;}
     }
 
@@ -372,30 +360,6 @@ li a.language-switch {
       .section{padding:32px 0;}
       .hero-title{font-size:clamp(24px, 9vw, 34px);}
     }
-    /* --- 語言切換按鈕的樣式 --- */
-.language-switch {
-    /* 橘黃色底框 */
-    background-color: var(--orange);
-    padding: 8px 16px;
-    border-radius: 6px;
-
-    /* 確保文字是白色，!important 用於防止被其他樣式覆蓋 */
-    color: var(--white) !important;
-
-    /* 動效準備 */
-    transition: all 0.25s ease-out;
-}
-
-/* --- 滑鼠懸停時的動效 --- */
-.language-switch:hover {
-    /* 強制文字在懸停時保持白色 */
-    color: var(--white) !important;
-
-    /* 向上浮動和光暈效果 */
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(255, 107, 53, 0.4);
-    filter: brightness(1.05);
-}
   </style>
 </head>
 <body>
@@ -405,20 +369,19 @@ li a.language-switch {
       <a href="#" class="logo">DxDC</a>
       <div class="menu-toggle" id="menu-toggle-btn">&#9776;</div>
       <ul class="nav-links" id="nav-links-menu">
-        <li><a href="#about">About</a></li>
+        <li><a href="#intro">About</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#grants">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="dfs.html">DfS</a></li>
-        <li><a href="dfma.html">DfMA</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="dfs.html">Stream I: DfS</a></li>
+        <li><a href="dfma.html">Stream II: DfMA</a></li>
+        <li><a href="join.html">Join the Team</a></li>
         <li><a href="index_cn.html" class="language-switch">繁体</a></li>
+        <li><a href="index_sc.html" class="language-switch language-switch--alt">简体</a></li>
       </ul>
     </nav>
 </header>
 
   <main id="main">
-    <section class="hero">
+    <section id="intro" class="hero">
       <div class="hero-content reveal">
         <div class="hero-eyebrow">Architecture • Technology • Management</div>
         <h1 class="hero-title">
@@ -430,13 +393,9 @@ li a.language-switch {
   Each year, the construction industry generates nearly <span class="highlight">37%</span> of global carbon emissions and is responsible for over <span class="highlight">60,000</span> worker fatalities. Yet, around <span class="highlight">40-70%</span> of a building lifecycle cost, environmental impact, and safety risks are locked in during the design phase.
 </p>
 <p class="hero-subtitle">
-  The HKU Research Group of <span class="highlight">Design for Excellence in Digital Construction (DxDC)</span> confronts this crisis head-on. Through Design Engineering Informatics and Design Management Innovation, we pioneer DfMA and DfS to reshape construction from its source.
+  The HKU Tan Tan's Research Group confronts this crisis head-on. Through design engineering informatics and design management innovation, we pioneer <span class="highlight">DfMA</span> and <span class="highlight">DfS</span> to reshape construction from its source.
 </p>
-        <div style="margin:var(--s4) 0;">
-          <a href="https://www.arch.hku.hk/staff/rec/tan-tan/" target="_blank" style="color:var(--orange);">HKU Profile</a>
-          <a href="https://www.linkedin.com/in/mrtantan" target="_blank" style="color:var(--orange); margin: 0 var(--s4);">LinkedIn</a>
-          <a href="https://scholar.google.com/citations?user=_VG990cAAAAJ&hl=en" target="_blank" style="color:var(--orange);">Google Scholar</a>
-        </div>
+        <p class="hero-research-hint">Explore more below.</p>
         <div class="hero-buttons">
           <a class="btn btn--primary hover-lift" href="dfs.html">DfS</a>
           <a class="btn btn--secondary hover-lift" href="dfma.html">DfMA</a>
@@ -447,9 +406,21 @@ li a.language-switch {
     <section id="about" class="section">
       <div class="container">
         <div class="about-wrap">
-          <div class="about-img hover-lift">
-           <img src="images/Tan.jpg" alt="Photo of Dr. Tan Tan" style="width:100%; height:auto; object-fit:cover; border-radius:12px;">
-         </div>
+          <aside class="about-lead reveal" aria-label="Tan Tan, Assistant Professor">
+            <div class="about-lead__photo"><img src="images/Tan.jpg" alt="Photo of Dr. Tan Tan" width="168" height="168" loading="lazy"></div>
+            <div class="team-name-container">
+              <div class="team-name">Tan Tan</div>
+              <div class="team-contact">
+                <a href="mailto:tant@hku.hk" title="Email Tan Tan">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M1.5 4h21A1.5 1.5 0 0 1 24 5.5v13A1.5 1.5 0 0 1 22.5 20h-21A1.5 1.5 0 0 1 0 18.5v-13A1.5 1.5 0 0 1 1.5 4ZM2.502 5l9.498 7.124L21.498 5H2.502ZM1.5 18.5l7.5-5.625V18.5h-7.5Zm13.5 0v-5.625L22.5 18.5h-7.5Z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/mrtantan" target="_blank" rel="noopener noreferrer" title="Tan Tan on LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3v11ZM6.5 6.73c-.966 0-1.75-.79-1.75-1.76s.784-1.76 1.75-1.76c.966 0 1.75.79 1.75 1.76s-.783 1.76-1.75 1.76ZM19 19h-3v-5.6c0-1.33-.027-3.04-1.85-3.04-1.85 0-2.133 1.44-2.133 2.94V19h-3V8h2.88v1.32h.04c.4-.76 1.37-1.54 2.84-1.54 3.03 0 3.59 1.99 3.59 4.58V19Z"/></svg>
+                </a>
+              </div>
+            </div>
+            <p class="about-lead__role">Assistant Professor</p>
+          </aside>
           <div class="about-text reveal">
             <h2 class="section-title" style="text-align:left;">About Group Lead</h2>
             <div class="credentials">PhD · MSc · BArch · MRICS · MCIOB</div>
@@ -632,117 +603,35 @@ li a.language-switch {
     <div class="grant-list">
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>
-        <div class="grant-date">Jan 2026 — Dec 2028</div>
+        <div class="grant-date">Jan 2026 to Dec 2028</div>
         <div class="grant-content">
           <div class="grant-title">Research on Knowledge Co-Creation Mechanism and Human-AI Collaboration Model in Generative AI-based Engineering Design</div>
-          <div class="grant-meta"><span class="grant-role">Principal Investigator</span> · Young Scientists Fund (NSFC) · 300,000 RMB</div>
+          <div class="grant-meta"><span class="grant-role">PI</span> · Young Scientists Fund (NSFC) · 300,000 RMB</div>
         </div>
       </article>
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>
-        <div class="grant-date">Jan 2026 — Dec 2028</div>
+        <div class="grant-date">Jan 2026 to Dec 2028</div>
         <div class="grant-content">
           <div class="grant-title">Large Language Model (LLM)-augmented Automated Safety Checking in Alteration and Addition (A&amp;A) Works</div>
-          <div class="grant-meta"><span class="grant-role">Principal Investigator</span> · Early Career Scheme (RGC) · 611,148 HKD</div>
+          <div class="grant-meta"><span class="grant-role">PI</span> · Early Career Scheme (RGC) · 611,148 HKD</div>
         </div>
       </article>
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>
-        <div class="grant-date">June 2025 — June 2026</div>
+        <div class="grant-date">June 2025 to June 2026</div>
         <div class="grant-content">
           <div class="grant-title">Evaluating the Impact of Augmented Reality (AR)-based Interaction Designs on Cognitive Load and Learning Satisfaction in Digital Construction Education</div>
-          <div class="grant-meta"><span class="grant-role">Principal Investigator</span> · Teaching Development Grant (URC) · 300,000 HKD</div>
+          <div class="grant-meta"><span class="grant-role">PI</span> · Teaching Development Grant (URC) · 300,000 HKD</div>
         </div>
       </article>
     </div>
   </div>
 </section>
-<section id="publications" class="section publications">
-      <div class="container">
-        <div class="section-count" data-count="42"></div>
-        <h2 class="section-title">SELECTED Publications</h2>
-        <p class="section-subtitle">We are developing our research identity in the field of design engineering and management.</p>
-        <div class="publication-grid">
-          <div class="publication-card hover-lift reveal">
-            <div class="publication-year">2026</div>
-            <h3 class="publication-title">Human&ndash;robot interaction design with augmented reality in construction: A systematic review of frameworks, applications, and future directions</h3>
-            <div class="publication-meta">
-              <span class="publication-journal fitline">Eng. Manag.</span>
-              <a class="publication-link" href="https://doi.org/10.1007/s42524-026-5039-0" target="_blank" rel="noopener noreferrer">LINK &rarr;</a>
-            </div>
-            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Liu, X., Walzer, A.N., Ng, M.S., Hall, D.M.</span>
-          </div>
-          <div class="publication-card hover-lift reveal">
-            <div class="publication-year">2025</div>
-            <h3 class="publication-title">Exploring the implementation of digital fabrication in construction: Combining system approaches and a revelatory case study from Switzerland</h3>
-            <div class="publication-meta">
-              <span class="publication-journal fitline">J. Constr. Eng. Manag.</span>
-              <a class="publication-link" href="https://doi.org/10.1061/JCEMD4.COENG-16680" target="_blank" rel="noopener noreferrer">LINK &rarr;</a>
-            </div>
-            <span class="publication-authors fitline"><strong>Tan, T.*</strong>, Graser, K., Walzer, A.N., Ng, M.S., Hall, D.M.</span>
-          </div>
-          <div class="publication-card hover-lift reveal">
-            <div class="publication-year">2025</div>
-            <h3 class="publication-title">Advancing modular design generation: A review of modularization workflows and computational design approaches</h3>
-            <div class="publication-meta">
-              <span class="publication-journal fitline">J. Build. Eng.</span>
-              <a class="publication-link" href="https://doi.org/10.1016/j.jobe.2025.114646" target="_blank" rel="noopener noreferrer">LINK &rarr;</a>
-            </div>
-            <span class="publication-authors fitline">Zhang, Z., <strong>Tan, T*.</strong></span>
-          </div>
-          <div class="publication-card hover-lift reveal">
-            <div class="publication-year">2024</div>
-            <h3 class="publication-title">Adoption challenges of building information modelling (BIM) and off-site construction (OSC) in healthcare construction: Are they fellow sufferers?</h3>
-            <div class="publication-meta">
-              <span class="publication-journal fitline">Eng. Constr. Archit. Manag.</span>
-              <a class="publication-link" href="https://doi.org/10.1108/ECAM-03-2023-0287" target="_blank" rel="noopener noreferrer">LINK &rarr;</a>
-            </div>
-            <span class="publication-authors fitline"><strong>Tan, T*.</strong>, Mills, G., Ma, X., Papadonikolaki, E.</span>
-          </div>
-          <div class="publication-card hover-lift reveal">
-            <div class="publication-year">2024</div>
-            <h3 class="publication-title">Sustainable future-proof healthcare facilities: Modular and adaptable design approach</h3>
-            <div class="publication-meta">
-              <span class="publication-journal fitline">J. Manag. Eng.</span>
-              <a class="publication-link" href="https://doi.org/10.1061/JMENEA.MEENG-5942" target="_blank" rel="noopener noreferrer">LINK &rarr;</a>
-            </div>
-            <span class="publication-authors fitline">Kucan, G., <strong>Tan, T*.</strong>, Grossmann, D., Graser, K., Hall, D.M.</span>
-          </div>
-          <div class="publication-card scholar-card hover-lift reveal">
-            <div class="publication-year">MORE</div>
-            <h3 class="publication-title">Google Scholar</h3>
-            <p class="scholar-brief">More papers</p>
-            <a class="scholar-link" href="https://scholar.google.com/citations?user=_VG990cAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Visit &rarr;</a>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="contact" class="section contact">
       <div class="container">
         <h2 class="section-title">Let's Connect</h2>
-        <p class="section-subtitle">Open to academic partnerships, industry collaborations, research opportunities, and prospective team members.</p>
-        
-        <div style="border:3px solid #000; padding:var(--s5); text-align:left; max-width:800px; margin:0 auto var(--s6);">
-          <h3 style="font-size:24px; font-weight:900; color:var(--orange); text-transform:uppercase; margin-bottom:var(--s3);">Join the Team</h3>
-          <p style="margin-bottom:var(--s3);">We are recruiting <strong>RA / PhD / PostDoc</strong> candidates in our two research domains.</p>
-          <div style="margin-bottom:var(--s3);">
-            <p style="font-weight:700; color:var(--orange);">Funding &amp; Scholarships for PhD Applicants:</p>
-            <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
-              <li><strong>Fellowship Package (Hong Kong PhD Fellowship Scheme + HKU President's Scholarship):</strong> HK$1.7 million. <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/hong_kong_phd_fellowship_scheme" target="_blank" style="color:var(--orange); font-weight:700;">[Details]</a></li>
-              <li><strong>Standard Package (Postgraduate Scholarship):</strong> HK$904,000. <a href="https://gradsch.hku.hk/prospective_students/fees_scholarships_and_financial_support/postgraduate_scholarships" target="_blank" style="color:var(--orange); font-weight:700;">[Details]</a></li>
-            </ul>
-          </div>
-          <div style="margin-bottom:var(--s3);">
-            <p style="font-weight:700; color:var(--orange);">Research Domains:</p>
-            <ul style="list-style-type:disc; padding-left:20px; margin-top:var(--s2);">
-              <li><strong>Domain 1: Design for Manufacture and Assembly</strong></li>
-              <li><strong>Domain 2: Design for Safety</strong></li>
-            </ul>
-          </div>
-          <p style="margin-bottom:var(--s3);">We are open to exploring new research directions and innovative methodologies within these two domains.</p>
-          <p>More requirements about academic merit can be found at the <a href="https://gradsch.hku.hk/" target="_blank" style="color:var(--orange); font-weight:700;">HKU Graduate School</a>.</p>
-        </div>
-      
+        <p class="section-subtitle">Open to academic partnerships and industry collaborations.</p>
         <div class="contact-grid">
           <div>
             <h4 style="text-transform:uppercase; letter-spacing:1px; font-weight:900;">Office</h4>
@@ -757,7 +646,7 @@ li a.language-switch {
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 Tan Tan. All rights reserved. | Assistant Professor, University of Hong Kong</p>
+      <p>&copy; 2026 Tan Tan's Research Group · The University of Hong Kong</p>
     </div>
   </footer>
 
@@ -774,29 +663,6 @@ li a.language-switch {
       });
     }, {threshold: .12});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-
-    // Fit text to one line for journals & authors (Desktop only)
-    function fitOneLine(el, min=10){
-      el.style.whiteSpace = 'nowrap';
-      let size = parseFloat(getComputedStyle(el).fontSize);
-      const parentWidth = el.clientWidth || el.parentElement.clientWidth;
-      let attempts = 0;
-      while(el.scrollWidth > parentWidth && size > min && attempts < 40){
-        size -= 0.5;
-        el.style.fontSize = size + 'px';
-        attempts++;
-      }
-    }
-    function refitAll(){
-        if(window.innerWidth > 768) {
-            document.querySelectorAll('.fitline').forEach(el=>{
-                el.style.fontSize = ''; // reset
-                fitOneLine(el);
-            });
-        }
-    }
-    window.addEventListener('load', refitAll);
-    window.addEventListener('resize', ()=>{ clearTimeout(window.__fitTimer); window.__fitTimer=setTimeout(refitAll, 120); });
 
     // Hamburger Menu Logic
     const menuToggle = document.getElementById('menu-toggle-btn');
