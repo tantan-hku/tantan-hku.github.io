@@ -88,10 +88,10 @@
     },
     {
       id: "2025-05-10-xian-green-forum", date: "2025-05-10", type: "talk", featured: true,
-      cover: "images/news/2025-05-xian-green-forum-slide.jpg",
-      en: { title: "Tan Tan Presents at the 2025 Green Engineering Forum in Xi'an", summary: "Tan Tan presented generative AI-driven engineering design research at the green engineering forum in Xi'an.", url: "news/articles/2025-05-10-xian-green-forum.html" },
-      cn: { title: "譚坦 於西安綠色工程論壇作學術匯報", summary: "譚坦 於西安綠色工程論壇匯報生成式 AI 驅動的工程設計研究。", url: "news/articles/2025-05-10-xian-green-forum_cn.html" },
-      sc: { title: "谭坦 于西安绿色工程论坛作学术汇报", summary: "谭坦 于西安绿色工程论坛汇报生成式 AI 驱动的工程设计研究。", url: "news/articles/2025-05-10-xian-green-forum_sc.html" }
+      cover: "images/news/2025-05-xian-green-forum-certificate.jpg",
+      en: { title: "Tan Tan Presents at the 2025 Engineering Management Conference and Green Engineering Forum", summary: "Tan Tan presented generative AI-driven engineering design research at the 2025 Management Science and Engineering Society Engineering Management Branch annual conference and the First Academic Forum on Green Engineering and Sustainable Development in Xi'an.", url: "news/articles/2025-05-10-xian-green-forum.html" },
+      cn: { title: "譚坦參加2025管理科學與工程學會工程管理分會年會暨首屆綠色工程與可持續發展學術論壇", summary: "譚坦於西安參加2025管理科學與工程學會工程管理分會年會暨首屆綠色工程與可持續發展學術論壇，匯報生成式 AI 驅動的工程設計研究。", url: "news/articles/2025-05-10-xian-green-forum_cn.html" },
+      sc: { title: "谭坦参加2025管理科学与工程学会工程管理分会年会暨首届绿色工程与可持续发展学术论坛", summary: "谭坦于西安参加2025管理科学与工程学会工程管理分会年会暨首届绿色工程与可持续发展学术论坛，汇报生成式 AI 驱动的工程设计研究。", url: "news/articles/2025-05-10-xian-green-forum_sc.html" }
     },
     {
       id: "2025-11-07-criocm-hangzhou", date: "2025-11-07", type: "talk", featured: true,
