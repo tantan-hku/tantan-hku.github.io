@@ -13,12 +13,21 @@
 .news-card__body{display:flex;flex:1;flex-direction:column;padding:20px}
 .news-card__meta{display:flex;align-items:center;gap:10px;margin-bottom:12px;color:var(--gray);font-size:13px;font-variant-numeric:tabular-nums}
 .news-type{display:inline-flex;align-items:center;border-radius:999px;background:var(--yellow);padding:3px 10px;color:#000;font-size:11px;font-weight:900;letter-spacing:.6px;text-transform:uppercase}
-.news-card__title{margin:0 0 10px;font-size:21px;font-weight:900;line-height:1.25}
+.news-card__title{margin:0 0 10px;font-size:21px;font-weight:900;line-height:1.25;color:#111}
 .news-card__title a:hover{color:var(--orange)}
 .news-card__summary{display:-webkit-box;margin:0 0 18px;overflow:hidden;color:#555;font-size:15px;line-height:1.55;-webkit-box-orient:vertical;-webkit-line-clamp:2}
 .news-card__more{margin-top:auto;font-size:14px;font-weight:800;text-decoration:underline;text-decoration-color:var(--orange);text-underline-offset:4px}
 .news-page-hero{padding:72px 0 36px;text-align:center}
 .news-page-hero h1{font-size:clamp(42px,8vw,72px);font-weight:900;letter-spacing:2px;line-height:1;text-transform:uppercase}
+/* SC glyphs read heavier at 900 than TC — dial weight/ink back for zh-CN */
+html[lang="zh-CN"] .news-card__title,
+html[lang="zh-CN"] .news-page-hero h1{
+  font-weight:600;
+  color:#2a2a2a;
+  letter-spacing:.02em;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
 .news-page-hero p{max-width:650px;margin:18px auto 0;color:var(--gray);font-size:18px}
 .news-listing{padding:16px 0 72px}
 .news-filters{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-bottom:36px}
