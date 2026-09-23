@@ -88,10 +88,10 @@
     },
     {
       id: "2025-05-10-xian-green-forum", date: "2025-05-10", type: "talk", featured: true,
-      cover: "images/news/2025-05-xian-green-forum-certificate.jpg",
-      en: { title: "Tan Tan Presents at the 2025 Green Engineering Forum in Xi'an", summary: "Tan Tan presented generative AI-driven engineering design research and received a presentation certificate at the forum in Xi'an.", url: "news/articles/2025-05-10-xian-green-forum.html" },
-      cn: { title: "譚坦 於西安綠色工程論壇作學術匯報", summary: "譚坦 匯報生成式 AI 驅動的工程設計研究，並獲頒報告證書。", url: "news/articles/2025-05-10-xian-green-forum_cn.html" },
-      sc: { title: "谭坦 于西安绿色工程论坛作学术汇报", summary: "谭坦 汇报生成式 AI 驱动的工程设计研究，并获颁报告证书。", url: "news/articles/2025-05-10-xian-green-forum_sc.html" }
+      cover: "images/news/2025-05-xian-green-forum-slide.jpg",
+      en: { title: "Tan Tan Presents at the 2025 Green Engineering Forum in Xi'an", summary: "Tan Tan presented generative AI-driven engineering design research at the green engineering forum in Xi'an.", url: "news/articles/2025-05-10-xian-green-forum.html" },
+      cn: { title: "譚坦 於西安綠色工程論壇作學術匯報", summary: "譚坦 於西安綠色工程論壇匯報生成式 AI 驅動的工程設計研究。", url: "news/articles/2025-05-10-xian-green-forum_cn.html" },
+      sc: { title: "谭坦 于西安绿色工程论坛作学术汇报", summary: "谭坦 于西安绿色工程论坛汇报生成式 AI 驱动的工程设计研究。", url: "news/articles/2025-05-10-xian-green-forum_sc.html" }
     },
     {
       id: "2025-11-07-criocm-hangzhou", date: "2025-11-07", type: "talk", featured: true,
