@@ -25,7 +25,7 @@
     },
     {
       id: "2026-08-12-dxm-workshop-cityu", date: "2026-08-12", type: "talk", featured: true,
-      cover: "images/news/2026-08-dxm-workshop-group-photo.jpg",
+      cover: "images/news/2026-08-tan-dfma-presentation.jpg",
       en: { title: "Tan Tan Speaks at the 2nd International Workshop on Design × Manufacturing", summary: "Invited by Jianxi Luo and Yi Xiong, Tan Tan shared construction design challenges, DfMA research, and ideas for new projects with manufacturing scholars at CityU.", url: "news/articles/2026-08-12-dxm-workshop-cityu.html" },
       cn: { title: "譚坦 參加第二屆設計 × 製造國際工作坊", summary: "應 Luo Jianxi 與 Xiong Yi 邀請，譚坦 在香港城市大學與製造領域學者分享建築業設計問題、DfMA 研究及新項目構想。", url: "news/articles/2026-08-12-dxm-workshop-cityu_cn.html" },
       sc: { title: "谭坦 参加第二届设计 × 制造国际工作坊", summary: "应 Luo Jianxi 与 Xiong Yi 邀请，谭坦 在香港城市大学与制造领域学者分享建筑业设计问题、DfMA 研究及新项目构想。", url: "news/articles/2026-08-12-dxm-workshop-cityu_sc.html" }
