@@ -1,0 +1,156 @@
+[
+  {
+    "id": "2026-09-11-mei-yalan-safety-seminar",
+    "date": "2026-09-11",
+    "type": "talk",
+    "cover": "images/news/2026-09-mei-yalan-forum-certificate.jpg",
+    "featured": true,
+    "en": {
+      "title": "Mei Yalan Presents at the 3rd CRIOCM Construction Safety Symposium",
+      "summary": "PhD researcher Mei Yalan presented at the graduate forum and joined the roundtable discussion at Tsinghua University.",
+      "url": "news/articles/2026-09-11-mei-yalan-safety-seminar.html"
+    },
+    "cn": {
+      "title": "梅亞嵐參加第三屆中華建設管理研究會建築安全學術研討會",
+      "summary": "博士研究生梅亞嵐在清華大學舉行的研究生論壇作匯報，並參與圓桌論壇提問交流。",
+      "url": "news/articles/2026-09-11-mei-yalan-safety-seminar_cn.html"
+    },
+    "sc": {
+      "title": "梅亚岚参加第三届中华建设管理研究会建筑安全学术研讨会",
+      "summary": "博士研究生梅亚岚在清华大学举行的研究生论坛作汇报，并参与圆桌论坛提问交流。",
+      "url": "news/articles/2026-09-11-mei-yalan-safety-seminar_sc.html"
+    }
+  },
+  {
+    "id": "2026-09-15-cib-w096-ai-era-seminar",
+    "date": "2026-09-15",
+    "type": "talk",
+    "cover": "images/news/2026-09-zhuoran-human-ai-presentation.png",
+    "featured": true,
+    "en": {
+      "title": "CIB W096 Seminar: Managing Design and Construction in the AI Era",
+      "summary": "Tan Tan and Charmaine co-organized the online seminar, with Zhuoran Zhang supporting coordination and presenting on human–AI coopetition and knowledge co-creation.",
+      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar.html"
+    },
+    "cn": {
+      "title": "CIB W096 線上研討會：人工智能時代的設計與建造管理",
+      "summary": "Tan Tan 與 Charmaine 共同組織研討會，張卓然協助會議組織並匯報人機競合與知識共創研究。",
+      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar_cn.html"
+    },
+    "sc": {
+      "title": "CIB W096 线上研讨会：人工智能时代的设计与建造管理",
+      "summary": "Tan Tan 与 Charmaine 共同组织研讨会，张卓然协助会议组织并汇报人机竞合与知识共创研究。",
+      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar_sc.html"
+    }
+  },
+  {
+    "id": "2026-09-08-nanjing-wuhu-academic-exchange",
+    "date": "2026-09-08",
+    "type": "visit",
+    "cover": "images/news/2026-09-nanjing-wuhu-group-photo.jpg",
+    "featured": true,
+    "en": {
+      "title": "Academic Exchanges in Nanjing and NSFC Meeting in Wuhu",
+      "summary": "Tan Tan visited four schools in Nanjing for academic exchanges and presentations, then presented his research at an NSFC young scientists project meeting in Wuhu.",
+      "url": "news/articles/2026-09-08-nanjing-wuhu-academic-exchange.html"
+    },
+    "cn": {
+      "title": "Tan Tan 赴南京開展學術交流並參加蕪湖自然科學基金交流會",
+      "summary": "Tan Tan 到訪南京四所院系交流匯報，並在蕪湖青年科學基金項目交流會介紹生成式 AI 工程設計與管理研究。",
+      "url": "news/articles/2026-09-08-nanjing-wuhu-academic-exchange_cn.html"
+    },
+    "sc": {
+      "title": "Tan Tan 赴南京开展学术交流并参加芜湖自然科学基金交流会",
+      "summary": "Tan Tan 到访南京四所院系交流汇报，并在芜湖青年科学基金项目交流会介绍生成式 AI 工程设计与管理研究。",
+      "url": "news/articles/2026-09-08-nanjing-wuhu-academic-exchange_sc.html"
+    }
+  },
+  {
+    "id": "2026-08-12-dxm-workshop-cityu",
+    "date": "2026-08-12",
+    "type": "talk",
+    "cover": "images/news/2026-08-dxm-workshop-group-photo.jpg",
+    "featured": true,
+    "en": {
+      "title": "Tan Tan Speaks at the 2nd International Workshop on Design × Manufacturing",
+      "summary": "Invited by Jianxi Luo and Yi Xiong, Tan Tan shared construction design challenges, DfMA research, and ideas for new projects with manufacturing scholars at CityU.",
+      "url": "news/articles/2026-08-12-dxm-workshop-cityu.html"
+    },
+    "cn": {
+      "title": "Tan Tan 參加第二屆設計 × 製造國際工作坊",
+      "summary": "應 Luo Jianxi 與 Xiong Yi 邀請，Tan Tan 在香港城市大學與製造領域學者分享建築業設計問題、DfMA 研究及新項目構想。",
+      "url": "news/articles/2026-08-12-dxm-workshop-cityu_cn.html"
+    },
+    "sc": {
+      "title": "Tan Tan 参加第二届设计 × 制造国际工作坊",
+      "summary": "应 Luo Jianxi 与 Xiong Yi 邀请，Tan Tan 在香港城市大学与制造领域学者分享建筑业设计问题、DfMA 研究及新项目构想。",
+      "url": "news/articles/2026-08-12-dxm-workshop-cityu_sc.html"
+    }
+  },
+  {
+    "id": "2026-07-08-ucl-researchers-visit",
+    "date": "2026-07-08",
+    "type": "visit",
+    "cover": "images/news/2026-07-ucl-visit-hong-kong.jpg",
+    "featured": true,
+    "en": {
+      "title": "Research Group Hosts Three Visiting Scholars from UCL",
+      "summary": "Stergios Aristoteles Mitoulis, Weiwei Chen, and Yiming Xiang visited the research group for two seminars and discussions on resilient infrastructure and AI-enabled digital twins.",
+      "url": "news/articles/2026-07-08-ucl-researchers-visit.html"
+    },
+    "cn": {
+      "title": "研究團隊接待三位 UCL 學者來訪",
+      "summary": "Stergios Aristoteles Mitoulis、Weiwei Chen 與 Yiming Xiang 到訪研究團隊，並圍繞韌性基礎設施及 AI 數字孿生開展兩場學術報告與討論。",
+      "url": "news/articles/2026-07-08-ucl-researchers-visit_cn.html"
+    },
+    "sc": {
+      "title": "研究团队接待三位 UCL 学者来访",
+      "summary": "Stergios Aristoteles Mitoulis、Weiwei Chen 与 Yiming Xiang 到访研究团队，并围绕韧性基础设施及 AI 数字孪生开展两场学术报告与讨论。",
+      "url": "news/articles/2026-07-08-ucl-researchers-visit_sc.html"
+    }
+  },
+  {
+    "id": "2026-06-22-isarc-nus-singapore",
+    "date": "2026-06-22",
+    "type": "talk",
+    "cover": "images/news/2026-06-nus-seminar-presentation.jpg",
+    "featured": true,
+    "en": {
+      "title": "Research Group Presents at ISARC 2026 and NUS Seminar",
+      "summary": "Tan Tan, Zhuoran Zhang, Yalan Mei, and Mudasir Hussain attended ISARC 2026 at NUS, presenting RAG-LLM and BIM research on fall-hazard detection, with Tan Tan also delivering an NUS seminar.",
+      "url": "news/articles/2026-06-22-isarc-nus-singapore.html"
+    },
+    "cn": {
+      "title": "研究團隊參加 ISARC 2026 並於 NUS 舉辦研討會",
+      "summary": "Tan Tan、張卓然、梅亞嵐與 Mudasir Hussain 赴新加坡國立大學參加 ISARC 2026，宣講 RAG-LLM 與 BIM 墜落風險研究，Tan Tan 亦作 NUS 研討會分享。",
+      "url": "news/articles/2026-06-22-isarc-nus-singapore_cn.html"
+    },
+    "sc": {
+      "title": "研究团队参加 ISARC 2026 并于 NUS 举办研讨会",
+      "summary": "Tan Tan、张卓然、梅亚岚与 Mudasir Hussain 赴新加坡国立大学参加 ISARC 2026，宣讲 RAG-LLM 与 BIM 坠落风险研究，Tan Tan 亦作 NUS 研讨会分享。",
+      "url": "news/articles/2026-06-22-isarc-nus-singapore_sc.html"
+    }
+  },
+  {
+    "id": "2026-06-07-epoc-tu-delft",
+    "date": "2026-06-07",
+    "type": "talk",
+    "cover": "images/news/2026-06-epoc-conference-group.jpg",
+    "featured": true,
+    "en": {
+      "title": "Research Group Presents at EPOC 2026 and Visits TU Delft",
+      "summary": "Yalan Mei and Zhuoran Zhang presented at EPOC 2026 on AR embodiment and human–AI coopetition, Tan Tan joined PhD Day, and the team visited TU Delft.",
+      "url": "news/articles/2026-06-07-epoc-tu-delft.html"
+    },
+    "cn": {
+      "title": "研究團隊參加 EPOC 2026 並訪問代爾夫特理工大學",
+      "summary": "梅亞嵐與張卓然於 EPOC 2026 匯報 AR 具身認知與人機競合研究，Tan Tan 參與 PhD Day 分享，團隊並訪問 TU Delft。",
+      "url": "news/articles/2026-06-07-epoc-tu-delft_cn.html"
+    },
+    "sc": {
+      "title": "研究团队参加 EPOC 2026 并访问代尔夫特理工大学",
+      "summary": "梅亚岚与张卓然于 EPOC 2026 汇报 AR 具身认知与人机竞合研究，Tan Tan 参与 PhD Day 分享，团队并访问 TU Delft。",
+      "url": "news/articles/2026-06-07-epoc-tu-delft_sc.html"
+    }
+  }
+]

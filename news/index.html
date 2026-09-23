@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Tan Tan Research Group</title>
+  <meta name="description" content="News, academic activities, lectures, visits, and research talks from the Tan Tan research group at HKU.">
+  <link rel="canonical" href="https://tantan-hku.github.io/news/">
+  <meta property="og:title" content="News | Tan Tan Research Group">
+  <meta property="og:description" content="Academic activities, lectures, visits, and research talks from the Tan Tan research group at HKU.">
+  <meta property="og:image" content="https://tantan-hku.github.io/images/research/dfs-ar-experiment-setup.png">
+  <meta property="og:url" content="https://tantan-hku.github.io/news/">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="News | Tan Tan Research Group">
+  <meta name="twitter:description" content="Academic activities from the Tan Tan research group at HKU.">
+  <meta name="twitter:image" content="https://tantan-hku.github.io/images/research/dfs-ar-experiment-setup.png">
+  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="news.css">
+</head>
+<body>
+  <header><nav><a href="../index.html" class="logo">DxDC</a><button class="menu-toggle" id="menu-toggle-btn" type="button" aria-label="Open menu" aria-expanded="false">&#9776;</button><ul class="nav-links" id="nav-links-menu"><li><a href="../index.html#intro">About</a></li><li><a href="../index.html#team">Team</a></li><li><a href="../dfs.html">Stream I: DfS</a></li><li><a href="../dfma.html">Stream II: DfMA</a></li><li><a href="index.html" aria-current="page">News</a></li><li><a href="../join.html">Join the Team</a></li><li><a href="index_cn.html" class="language-switch">繁体</a></li><li><a href="index_sc.html" class="language-switch language-switch--alt">简体</a></li></ul></nav></header>
+  <main>
+    <section class="news-page-hero"><div class="container"><h1>News</h1><p>Lectures, visits, research talks, and activities from the Tan Tan research group at HKU.</p></div></section>
+    <section class="news-listing"><div class="container">
+      <div class="news-filters" data-news-filters aria-label="Filter news by type">
+        <button class="news-filter is-active" type="button" data-filter="all">All</button><button class="news-filter" type="button" data-filter="lecture">Lecture</button><button class="news-filter" type="button" data-filter="visit">Visit</button><button class="news-filter" type="button" data-filter="talk">Talk</button><button class="news-filter" type="button" data-filter="reception">Reception</button><button class="news-filter" type="button" data-filter="award">Award</button>
+      </div>
+      <div class="news-grid" data-news-grid data-lang="en" data-root=".."><p class="news-empty">Loading news…</p></div>
+    </div></section>
+  </main>
+  <footer><div class="container"><p>&copy; 2026 Tan Tan's Research Group · The University of Hong Kong</p></div></footer>
+  <div class="menu-overlay" id="menu-overlay"></div><a href="#" class="back-to-top" id="back-to-top-btn" aria-label="Back to top">&uarr;</a>
+  <script src="../js/news.js"></script><script>const t=document.getElementById('menu-toggle-btn'),o=document.getElementById('menu-overlay');function c(){document.body.classList.remove('menu-open');t.setAttribute('aria-expanded','false')}t.addEventListener('click',()=>{const v=document.body.classList.toggle('menu-open');t.setAttribute('aria-expanded',String(v))});o.addEventListener('click',c);document.querySelectorAll('#nav-links-menu a').forEach(a=>a.addEventListener('click',c));const b=document.getElementById('back-to-top-btn');addEventListener('scroll',()=>b.classList.toggle('visible',scrollY>400));</script>
+</body>
+</html>

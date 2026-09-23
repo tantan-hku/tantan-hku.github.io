@@ -14,6 +14,7 @@
   <meta property="og:image" content="https://tantan-hku.github.io/images/Tan.jpg"> <meta property="og:url" content="https://tantan-hku.github.io/"> <meta property="og:type" content="website">
   <meta name="googlebot" content="noimageindex">
   <meta name="google-site-verification" content="ioEo1MSJWHxrqk5xHnvyepEGAWgJwVbFu0eRYOwNkK4" />
+  <link rel="stylesheet" href="news/news.css">
   <style>
     :root{
       --black:#0b0b0b;
@@ -380,6 +381,7 @@
         <li><a href="#team">Team</a></li>
         <li><a href="dfs.html">Stream I: DfS</a></li>
         <li><a href="dfma.html">Stream II: DfMA</a></li>
+        <li><a href="news/index.html">News</a></li>
         <li><a href="join.html">Join the Team</a></li>
         <li><a href="index_cn.html" class="language-switch">繁体</a></li>
         <li><a href="index_sc.html" class="language-switch language-switch--alt">简体</a></li>
@@ -439,6 +441,15 @@
             <p>He currently serves as a co-coordinator for CIB W096 Architectural Design and Management, a managing guest editor for Developments in the Built Environment, a Corresponding Expert for the Chinese Academy of Engineering's journal Frontiers of Engineering Management, and as Co-Chair for CAAD Futures 2025.</p>
           </div>
         </div>
+      </div>
+    </section>
+    <section id="news" class="section news-section">
+      <div class="container">
+        <div class="news-section__head">
+          <h2 class="section-title">Latest News</h2>
+          <a class="news-all-link" href="news/index.html">All news &rarr;</a>
+        </div>
+        <div class="news-grid" data-news-grid data-lang="en" data-root="." data-featured="true" data-limit="3" aria-live="polite"></div>
       </div>
     </section>
 <section id="team" class="section">
@@ -618,6 +629,7 @@
   <div class="menu-overlay" id="menu-overlay"></div>
   <a href="#" class="back-to-top" id="back-to-top-btn" title="Back to top">&uarr;</a>
 
+  <script src="js/news.js"></script>
   <script>
     // Smooth scrolling for anchor links is handled by CSS 'scroll-behavior: smooth;'
 
