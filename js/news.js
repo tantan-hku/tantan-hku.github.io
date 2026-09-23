@@ -13,22 +13,22 @@
       id: "2026-09-15-cib-w096-ai-era-seminar", date: "2026-09-15", type: "talk", featured: true,
       cover: "images/news/2026-09-zhuoran-human-ai-presentation.png",
       en: { title: "CIB W096 Seminar: Managing Design and Construction in the AI Era", summary: "Tan Tan and Charmaine co-organized the online seminar, with Zhuoran Zhang supporting coordination and presenting on human–AI coopetition and knowledge co-creation.", url: "news/articles/2026-09-15-cib-w096-ai-era-seminar.html" },
-      cn: { title: "CIB W096 線上研討會：人工智能時代的設計與建造管理", summary: "Tan Tan 與 Charmaine 共同組織研討會，張卓然協助會議組織並匯報人機競合與知識共創研究。", url: "news/articles/2026-09-15-cib-w096-ai-era-seminar_cn.html" },
-      sc: { title: "CIB W096 线上研讨会：人工智能时代的设计与建造管理", summary: "Tan Tan 与 Charmaine 共同组织研讨会，张卓然协助会议组织并汇报人机竞合与知识共创研究。", url: "news/articles/2026-09-15-cib-w096-ai-era-seminar_sc.html" }
+      cn: { title: "CIB W096 線上研討會：人工智能時代的設計與建造管理", summary: "譚坦 與 Charmaine 共同組織研討會，張卓然協助會議組織並匯報人機競合與知識共創研究。", url: "news/articles/2026-09-15-cib-w096-ai-era-seminar_cn.html" },
+      sc: { title: "CIB W096 线上研讨会：人工智能时代的设计与建造管理", summary: "谭坦 与 Charmaine 共同组织研讨会，张卓然协助会议组织并汇报人机竞合与知识共创研究。", url: "news/articles/2026-09-15-cib-w096-ai-era-seminar_sc.html" }
     },
     {
       id: "2026-09-08-nanjing-wuhu-academic-exchange", date: "2026-09-08", type: "visit", featured: true,
       cover: "images/news/2026-09-nanjing-wuhu-group-photo.jpg",
       en: { title: "Academic Exchanges in Nanjing and NSFC Meeting in Wuhu", summary: "Tan Tan visited four schools in Nanjing for academic exchanges and presentations, then presented his research at an NSFC young scientists project meeting in Wuhu.", url: "news/articles/2026-09-08-nanjing-wuhu-academic-exchange.html" },
-      cn: { title: "Tan Tan 赴南京開展學術交流並參加蕪湖自然科學基金交流會", summary: "Tan Tan 到訪南京四所院系交流匯報，並在蕪湖青年科學基金項目交流會介紹生成式 AI 工程設計與管理研究。", url: "news/articles/2026-09-08-nanjing-wuhu-academic-exchange_cn.html" },
-      sc: { title: "Tan Tan 赴南京开展学术交流并参加芜湖自然科学基金交流会", summary: "Tan Tan 到访南京四所院系交流汇报，并在芜湖青年科学基金项目交流会介绍生成式 AI 工程设计与管理研究。", url: "news/articles/2026-09-08-nanjing-wuhu-academic-exchange_sc.html" }
+      cn: { title: "譚坦 赴南京開展學術交流並參加蕪湖自然科學基金交流會", summary: "譚坦 到訪南京四所院系交流匯報，並在蕪湖青年科學基金項目交流會介紹生成式 AI 工程設計與管理研究。", url: "news/articles/2026-09-08-nanjing-wuhu-academic-exchange_cn.html" },
+      sc: { title: "谭坦 赴南京开展学术交流并参加芜湖自然科学基金交流会", summary: "谭坦 到访南京四所院系交流汇报，并在芜湖青年科学基金项目交流会介绍生成式 AI 工程设计与管理研究。", url: "news/articles/2026-09-08-nanjing-wuhu-academic-exchange_sc.html" }
     },
     {
       id: "2026-08-12-dxm-workshop-cityu", date: "2026-08-12", type: "talk", featured: true,
       cover: "images/news/2026-08-dxm-workshop-group-photo.jpg",
       en: { title: "Tan Tan Speaks at the 2nd International Workshop on Design × Manufacturing", summary: "Invited by Jianxi Luo and Yi Xiong, Tan Tan shared construction design challenges, DfMA research, and ideas for new projects with manufacturing scholars at CityU.", url: "news/articles/2026-08-12-dxm-workshop-cityu.html" },
-      cn: { title: "Tan Tan 參加第二屆設計 × 製造國際工作坊", summary: "應 Luo Jianxi 與 Xiong Yi 邀請，Tan Tan 在香港城市大學與製造領域學者分享建築業設計問題、DfMA 研究及新項目構想。", url: "news/articles/2026-08-12-dxm-workshop-cityu_cn.html" },
-      sc: { title: "Tan Tan 参加第二届设计 × 制造国际工作坊", summary: "应 Luo Jianxi 与 Xiong Yi 邀请，Tan Tan 在香港城市大学与制造领域学者分享建筑业设计问题、DfMA 研究及新项目构想。", url: "news/articles/2026-08-12-dxm-workshop-cityu_sc.html" }
+      cn: { title: "譚坦 參加第二屆設計 × 製造國際工作坊", summary: "應 Luo Jianxi 與 Xiong Yi 邀請，譚坦 在香港城市大學與製造領域學者分享建築業設計問題、DfMA 研究及新項目構想。", url: "news/articles/2026-08-12-dxm-workshop-cityu_cn.html" },
+      sc: { title: "谭坦 参加第二届设计 × 制造国际工作坊", summary: "应 Luo Jianxi 与 Xiong Yi 邀请，谭坦 在香港城市大学与制造领域学者分享建筑业设计问题、DfMA 研究及新项目构想。", url: "news/articles/2026-08-12-dxm-workshop-cityu_sc.html" }
     },
     {
       id: "2026-07-08-ucl-researchers-visit", date: "2026-07-08", type: "visit", featured: true,
@@ -41,22 +41,72 @@
       id: "2026-06-22-isarc-nus-singapore", date: "2026-06-22", type: "talk", featured: true,
       cover: "images/news/2026-06-nus-seminar-presentation.jpg",
       en: { title: "Research Group Presents at ISARC 2026 and NUS Seminar", summary: "Tan Tan, Zhuoran Zhang, Yalan Mei, and Mudasir Hussain attended ISARC 2026 at NUS, presenting RAG-LLM and BIM research on fall-hazard detection, with Tan Tan also delivering an NUS seminar.", url: "news/articles/2026-06-22-isarc-nus-singapore.html" },
-      cn: { title: "研究團隊參加 ISARC 2026 並於 NUS 舉辦研討會", summary: "Tan Tan、張卓然、梅亞嵐與 Mudasir Hussain 赴新加坡國立大學參加 ISARC 2026，宣講 RAG-LLM 與 BIM 墜落風險研究，Tan Tan 亦作 NUS 研討會分享。", url: "news/articles/2026-06-22-isarc-nus-singapore_cn.html" },
-      sc: { title: "研究团队参加 ISARC 2026 并于 NUS 举办研讨会", summary: "Tan Tan、张卓然、梅亚岚与 Mudasir Hussain 赴新加坡国立大学参加 ISARC 2026，宣讲 RAG-LLM 与 BIM 坠落风险研究，Tan Tan 亦作 NUS 研讨会分享。", url: "news/articles/2026-06-22-isarc-nus-singapore_sc.html" }
+      cn: { title: "研究團隊參加 ISARC 2026 並於 NUS 舉辦研討會", summary: "譚坦、張卓然、梅亞嵐與 Mudasir Hussain 赴新加坡國立大學參加 ISARC 2026，宣講 RAG-LLM 與 BIM 墜落風險研究，譚坦 亦作 NUS 研討會分享。", url: "news/articles/2026-06-22-isarc-nus-singapore_cn.html" },
+      sc: { title: "研究团队参加 ISARC 2026 并于 NUS 举办研讨会", summary: "谭坦、张卓然、梅亚岚与 Mudasir Hussain 赴新加坡国立大学参加 ISARC 2026，宣讲 RAG-LLM 与 BIM 坠落风险研究，谭坦 亦作 NUS 研讨会分享。", url: "news/articles/2026-06-22-isarc-nus-singapore_sc.html" }
     },
     {
       id: "2026-06-07-epoc-tu-delft", date: "2026-06-07", type: "talk", featured: true,
       cover: "images/news/2026-06-epoc-conference-group.jpg",
       en: { title: "Research Group Presents at EPOC 2026 and Visits TU Delft", summary: "Yalan Mei and Zhuoran Zhang presented at EPOC 2026 on AR embodiment and human–AI coopetition, Tan Tan joined PhD Day, and the team visited TU Delft.", url: "news/articles/2026-06-07-epoc-tu-delft.html" },
-      cn: { title: "研究團隊參加 EPOC 2026 並訪問代爾夫特理工大學", summary: "梅亞嵐與張卓然於 EPOC 2026 匯報 AR 具身認知與人機競合研究，Tan Tan 參與 PhD Day 分享，團隊並訪問 TU Delft。", url: "news/articles/2026-06-07-epoc-tu-delft_cn.html" },
-      sc: { title: "研究团队参加 EPOC 2026 并访问代尔夫特理工大学", summary: "梅亚岚与张卓然于 EPOC 2026 汇报 AR 具身认知与人机竞合研究，Tan Tan 参与 PhD Day 分享，团队并访问 TU Delft。", url: "news/articles/2026-06-07-epoc-tu-delft_sc.html" }
+      cn: { title: "研究團隊參加 EPOC 2026 並訪問代爾夫特理工大學", summary: "梅亞嵐與張卓然於 EPOC 2026 匯報 AR 具身認知與人機競合研究，譚坦 參與 PhD Day 分享，團隊並訪問 TU Delft。", url: "news/articles/2026-06-07-epoc-tu-delft_cn.html" },
+      sc: { title: "研究团队参加 EPOC 2026 并访问代尔夫特理工大学", summary: "梅亚岚与张卓然于 EPOC 2026 汇报 AR 具身认知与人机竞合研究，谭坦 参与 PhD Day 分享，团队并访问 TU Delft。", url: "news/articles/2026-06-07-epoc-tu-delft_sc.html" }
+    },
+    {
+      id: "2025-10-27-eth-dillenburger-visit", date: "2025-10-27", type: "visit", featured: true,
+      cover: "images/news/2025-10-eth-lab-group.jpg",
+      en: { title: "Research Group Hosts Benjamin Dillenburger from ETH Zurich", summary: "Professor Benjamin Dillenburger delivered a REC seminar on large-scale additive manufacturing, joined by Professor Ming Shan Ng from Kyoto Institute of Technology.", url: "news/articles/2025-10-27-eth-dillenburger-visit.html" },
+      cn: { title: "研究團隊接待蘇黎世聯邦理工學院 Benjamin Dillenburger 教授來訪", summary: "Benjamin Dillenburger 教授主講大規模增材製造 REC 研討會，來訪亦包括京都工藝纖維大學 Ming Shan Ng 教授。", url: "news/articles/2025-10-27-eth-dillenburger-visit_cn.html" },
+      sc: { title: "研究团队接待苏黎世联邦理工学院 Benjamin Dillenburger 教授来访", summary: "Benjamin Dillenburger 教授主讲大规模增材制造 REC 研讨会，来访亦包括京都工艺纤维大学 Ming Shan Ng 教授。", url: "news/articles/2025-10-27-eth-dillenburger-visit_sc.html" }
+    },
+    {
+      id: "2026-04-16-martina-huemann-visit", date: "2026-04-16", type: "visit", featured: true,
+      cover: "images/news/2026-04-martina-rec-wall-group.jpg",
+      en: { title: "Research Group Hosts Martina Huemann for Workshop and Industry Visits", summary: "IJPM Editor-in-Chief Professor Martina Huemann joined a REC workshop and industry visits with WU Vienna EMBA students to Light Public Housing, AECOM Asia, and The Henderson.", url: "news/articles/2026-04-16-martina-huemann-visit.html" },
+      cn: { title: "研究團隊接待 Martina Huemann 教授舉辦工作坊並開展業界參訪", summary: "IJPM 主編 Martina Huemann 教授出席 REC 工作坊，並與維也納經濟與商業大學 EMBA 學生聯合參訪簡約公屋、艾亦康亞洲總部及 The Henderson。", url: "news/articles/2026-04-16-martina-huemann-visit_cn.html" },
+      sc: { title: "研究团队接待 Martina Huemann 教授举办工作坊并开展业界参访", summary: "IJPM 主编 Martina Huemann 教授出席 REC 工作坊，并与维也纳经济与商业大学 EMBA 学生联合参访简约公屋、艾亦康亚洲总部及 The Henderson。", url: "news/articles/2026-04-16-martina-huemann-visit_sc.html" }
+    },
+    {
+      id: "2025-06-10-dfx-special-issue", date: "2025-06-10", type: "special", featured: true,
+      cover: "images/news/2025-06-dfx-special-issue-cfp.jpg",
+      en: { title: "Special Issue: Design for X (DfX) in Digital Construction", summary: "Tan Tan is Managing Guest Editor of a Developments in the Built Environment special issue on Design for X in digital construction (submission deadline 1 July 2026).", url: "news/articles/2025-06-10-dfx-special-issue.html" },
+      cn: { title: "專刊徵稿：數字建造中的 Design for X（DfX）", summary: "譚坦 擔任 Elsevier《Developments in the Built Environment》專刊 Managing Guest Editor，誠邀數字建造 DfX 相關投稿（截稿 2026年7月1日）。", url: "news/articles/2025-06-10-dfx-special-issue_cn.html" },
+      sc: { title: "专刊征稿：数字建造中的 Design for X（DfX）", summary: "谭坦 担任 Elsevier《Developments in the Built Environment》专刊 Managing Guest Editor，诚邀数字建造 DfX 相关投稿（截稿 2026年7月1日）。", url: "news/articles/2025-06-10-dfx-special-issue_sc.html" }
+    },
+    {
+      id: "2025-07-09-hust-summer-camp", date: "2025-07-09", type: "visit", featured: true,
+      cover: "images/news/2025-07-hust-summer-camp-group.jpg",
+      en: { title: "HKU–HUST Summer Camp on Smart Construction and Smart Cities", summary: "Supported by the Ministry of Education Hong Kong–Mainland exchange programme, Tan Tan led HKU students to HUST; Zhuoran Zhang joined as summer camp tutor.", url: "news/articles/2025-07-09-hust-summer-camp.html" },
+      cn: { title: "港大–華中科大智能建造與智慧城市暑期夏令營", summary: "譚坦 獲教育部香港與內地高校師生交流計劃支持，帶領港大學生赴華中科大參加暑期夏令營；張卓然同行並擔任 tutor。", url: "news/articles/2025-07-09-hust-summer-camp_cn.html" },
+      sc: { title: "港大–华中科大智能建造与智慧城市暑期夏令营", summary: "谭坦 获教育部香港与内地高校师生交流计划支持，带领港大学生赴华中科大参加暑期夏令营；张卓然同行并担任 tutor。", url: "news/articles/2025-07-09-hust-summer-camp_sc.html" }
+    },
+    {
+      id: "2025-05-09-liz-varga-seminar", date: "2025-05-09", type: "visit", featured: true,
+      cover: "images/news/2025-05-liz-varga-seminar.jpg",
+      en: { title: "Research Group Hosts Liz Varga CBE for Infrastructure Seminar", summary: "UCL Professor of Complex Systems Liz Varga CBE presented Infrastructure: A systems approach at HKU REC and began a one-year Visiting Professorship with the group.", url: "news/articles/2025-05-09-liz-varga-seminar.html" },
+      cn: { title: "研究團隊接待 Liz Varga CBE 教授基礎設施研討會", summary: "UCL 複雜系統教授 Liz Varga CBE 於港大 REC 主講 Infrastructure: A systems approach，並開始為期一年的訪問教授交流。", url: "news/articles/2025-05-09-liz-varga-seminar_cn.html" },
+      sc: { title: "研究团队接待 Liz Varga CBE 教授基础设施研讨会", summary: "UCL 复杂系统教授 Liz Varga CBE 于港大 REC 主讲 Infrastructure: A systems approach，并开始为期一年的访问教授交流。", url: "news/articles/2025-05-09-liz-varga-seminar_sc.html" }
+    },
+    {
+      id: "2025-05-10-xian-green-forum", date: "2025-05-10", type: "talk", featured: true,
+      cover: "images/news/2025-05-xian-green-forum-certificate.jpg",
+      en: { title: "Tan Tan Presents at the 2025 Green Engineering Forum in Xi'an", summary: "Tan Tan presented generative AI-driven engineering design research and received a presentation certificate at the forum in Xi'an.", url: "news/articles/2025-05-10-xian-green-forum.html" },
+      cn: { title: "譚坦 於西安綠色工程論壇作學術匯報", summary: "譚坦 匯報生成式 AI 驅動的工程設計研究，並獲頒報告證書。", url: "news/articles/2025-05-10-xian-green-forum_cn.html" },
+      sc: { title: "谭坦 于西安绿色工程论坛作学术汇报", summary: "谭坦 汇报生成式 AI 驱动的工程设计研究，并获颁报告证书。", url: "news/articles/2025-05-10-xian-green-forum_sc.html" }
+    },
+    {
+      id: "2025-11-07-criocm-hangzhou", date: "2025-11-07", type: "talk", featured: true,
+      cover: "images/news/2025-11-criocm-certificate-group.jpg",
+      en: { title: "Tan Tan and Yalan Mei at CRIOCM 2025 in Hangzhou", summary: "Tan Tan and Yalan Mei attended the 30th CRIOCM symposium hosted by Zhejiang University City College; Tan Tan also delivered an invited lecture at Zhejiang University of Technology.", url: "news/articles/2025-11-07-criocm-hangzhou.html" },
+      cn: { title: "譚坦 與梅亞嵐參加杭州 CRIOCM 2025", summary: "譚坦 與梅亞嵐赴浙大城院參加第三十屆 CRIOCM，並感謝浙江工業大學設計與建築學院邀請講座分享。", url: "news/articles/2025-11-07-criocm-hangzhou_cn.html" },
+      sc: { title: "谭坦 与梅亚岚参加杭州 CRIOCM 2025", summary: "谭坦 与梅亚岚赴浙大城院参加第三十届 CRIOCM，并感谢浙江工业大学设计与建筑学院邀请讲座分享。", url: "news/articles/2025-11-07-criocm-hangzhou_sc.html" }
     }
+
   ];
 
   const labels = {
-    en: { more: "Read more", all: "All", lecture: "Lecture", visit: "Visit", talk: "Talk", reception: "Reception", award: "Award", other: "Other", locale: "en-GB" },
-    cn: { more: "閱讀更多", all: "全部", lecture: "講座", visit: "訪問", talk: "分享", reception: "交流", award: "獎項", other: "其他", locale: "zh-HK" },
-    sc: { more: "阅读更多", all: "全部", lecture: "讲座", visit: "访问", talk: "分享", reception: "交流", award: "奖项", other: "其他", locale: "zh-CN" }
+    en: { more: "Read more", all: "All", lecture: "Lecture", visit: "Visit", talk: "Talk", reception: "Reception", award: "Award", special: "Special Issue", other: "Other", locale: "en-GB" },
+    cn: { more: "閱讀更多", all: "全部", lecture: "講座", visit: "訪問", talk: "分享", reception: "交流", award: "獎項", special: "專刊", other: "其他", locale: "zh-HK" },
+    sc: { more: "阅读更多", all: "全部", lecture: "讲座", visit: "访问", talk: "分享", reception: "交流", award: "奖项", special: "专刊", other: "其他", locale: "zh-CN" }
   };
 
   function escapeHtml(value) {
