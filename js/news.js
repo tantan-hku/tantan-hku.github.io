@@ -32,7 +32,7 @@
     },
     {
       id: "2026-07-08-ucl-researchers-visit", date: "2026-07-08", type: "visit", featured: true,
-      cover: "images/news/2026-07-ucl-visit-hong-kong.jpg",
+      cover: "images/news/2026-07-ucl-research-seminar-group.jpg",
       en: { title: "Research Group Hosts Three Visiting Scholars from UCL", summary: "Stergios Aristoteles Mitoulis, Weiwei Chen, and Yiming Xiang visited the research group for two seminars and discussions on resilient infrastructure and AI-enabled digital twins.", url: "news/articles/2026-07-08-ucl-researchers-visit.html" },
       cn: { title: "研究團隊接待三位 UCL 學者來訪", summary: "Stergios Aristoteles Mitoulis、Weiwei Chen 與 Yiming Xiang 到訪研究團隊，並圍繞韌性基礎設施及 AI 數字孿生開展兩場學術報告與討論。", url: "news/articles/2026-07-08-ucl-researchers-visit_cn.html" },
       sc: { title: "研究团队接待三位 UCL 学者来访", summary: "Stergios Aristoteles Mitoulis、Weiwei Chen 与 Yiming Xiang 到访研究团队，并围绕韧性基础设施及 AI 数字孪生开展两场学术报告与讨论。", url: "news/articles/2026-07-08-ucl-researchers-visit_sc.html" }
