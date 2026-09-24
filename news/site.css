@@ -4,7 +4,7 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:"Inter Tight","PingFang TC","PingFang SC","Hiragino Sans CNS","Noto Sans TC","Noto Sans SC","Microsoft JhengHei","Microsoft YaHei",sans-serif;line-height:1.7}
 body.menu-open{overflow:hidden}
 a{color:inherit;text-decoration:none}
-img{max-width:100%}
+img:not(.site-logo){max-width:100%}
 .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
 body>header{position:sticky;top:0;z-index:1000;border-bottom:1px solid var(--light-gray);background:#fff}
 nav{position:relative;display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);height:70px;margin:0 auto;padding:0 24px}

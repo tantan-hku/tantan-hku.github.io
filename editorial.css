@@ -67,14 +67,18 @@ nav {
 .logo {
   display: inline-flex;
   align-items: center;
+  flex: 0 0 auto;
   line-height: 0;
   color: #000000;
 }
 
 .logo img {
-  height: 46px;
-  width: auto;
+  height: 46px !important;
+  width: auto !important;
+  max-height: 46px !important;
+  max-width: 42px !important;
   display: block;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -87,6 +91,7 @@ nav {
   letter-spacing: 0;
   text-transform: none;
   color: #000000;
+  white-space: nowrap;
 }
 
 .nav-links a:not(.language-switch):hover,
