@@ -65,10 +65,16 @@ nav {
 }
 
 .logo {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
   color: #000000;
+}
+
+.logo img {
+  height: 46px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
