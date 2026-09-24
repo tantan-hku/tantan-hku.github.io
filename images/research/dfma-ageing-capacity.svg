@@ -11,20 +11,20 @@
       <line x1="0" y1="0" x2="0" y2="7" stroke="#0b0b0b" stroke-width="1.25" opacity=".18"/>
     </pattern>
     <pattern id="bedStripe" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
-      <rect width="7" height="7" fill="#fff4ee"/>
-      <line x1="0" y1="0" x2="0" y2="7" stroke="#ff6b35" stroke-width="1.25" opacity=".22"/>
+      <rect width="7" height="7" fill="#f3f3f1"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#4a4a4a" stroke-width="1.25" opacity=".22"/>
     </pattern>
     <pattern id="bedStripeHi" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
-      <rect width="7" height="7" fill="#ffe8dc"/>
-      <line x1="0" y1="0" x2="0" y2="7" stroke="#ff6b35" stroke-width="1.25" opacity=".38"/>
+      <rect width="7" height="7" fill="#e6e6e4"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#4a4a4a" stroke-width="1.25" opacity=".38"/>
     </pattern>
     <pattern id="legPop" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
       <rect width="7" height="7" fill="#ececec"/>
       <line x1="0" y1="0" x2="0" y2="7" stroke="#0b0b0b" stroke-width="1.25" opacity=".12"/>
     </pattern>
     <pattern id="legBed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
-      <rect width="7" height="7" fill="#fff4ee"/>
-      <line x1="0" y1="0" x2="0" y2="7" stroke="#ff6b35" stroke-width="1.25" opacity=".28"/>
+      <rect width="7" height="7" fill="#f3f3f1"/>
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#4a4a4a" stroke-width="1.25" opacity=".28"/>
     </pattern>
   </defs>
   <style>
@@ -55,12 +55,12 @@
     .eco-group .bar { transition: fill .2s ease, stroke-width .2s ease, stroke .2s ease, filter .2s ease; }
     .eco-group .eco-label, .eco-group .val { text-anchor: middle; transition: fill .2s ease; }
     .eco-group .bar-pop-type { fill: url(#popStripe); stroke: rgba(11,11,11,.18); stroke-width: 1; }
-    .eco-group .bar-bed-type { fill: url(#bedStripe); stroke: rgba(255,107,53,.35); stroke-width: 1; }
+    .eco-group .bar-bed-type { fill: url(#bedStripe); stroke: rgba(28,28,28,.28); stroke-width: 1; }
     .eco-group:hover .bar-pop-type { fill: url(#popStripeHi); stroke: rgba(11,11,11,.35); stroke-width: 1.5; filter: drop-shadow(0 -3px 4px rgba(11,11,11,.12)); }
-    .eco-group:hover .bar-bed-type { fill: url(#bedStripeHi); stroke: rgba(255,107,53,.65); stroke-width: 1.5; filter: drop-shadow(0 -3px 6px rgba(255,107,53,.25)); }
-    .eco-group:hover .eco-label { fill: #ff6b35; font-weight: 900; }
+    .eco-group:hover .bar-bed-type { fill: url(#bedStripeHi); stroke: rgba(28,28,28,.45); stroke-width: 1.5; filter: drop-shadow(0 -3px 6px rgba(0,0,0,.12)); }
+    .eco-group:hover .eco-label { fill: #4a4a4a; font-weight: 500; }
     .eco-group:hover .val-pop { fill: #0b0b0b; }
-    .eco-group:hover .val-bed { fill: #ff6b35; }
+    .eco-group:hover .val-bed { fill: #4a4a4a; }
     .bars-body:hover .eco-group:not(:hover) { opacity: .42; }
     .bars-body:has(.eco-hk:hover) .eco-jp,
     .bars-body:has(.eco-jp:hover) .eco-hk { opacity: 1 !important; }
@@ -69,15 +69,15 @@
     .bars-body:has(.eco-hk:hover) .eco-hk .bar-bed-type,
     .bars-body:has(.eco-hk:hover) .eco-jp .bar-bed-type,
     .bars-body:has(.eco-jp:hover) .eco-hk .bar-bed-type,
-    .bars-body:has(.eco-jp:hover) .eco-jp .bar-bed-type { fill: url(#bedStripeHi); stroke: rgba(255,107,53,.65); stroke-width: 1.5; filter: drop-shadow(0 -3px 6px rgba(255,107,53,.25)); }
+    .bars-body:has(.eco-jp:hover) .eco-jp .bar-bed-type { fill: url(#bedStripeHi); stroke: rgba(28,28,28,.45); stroke-width: 1.5; filter: drop-shadow(0 -3px 6px rgba(0,0,0,.12)); }
     .bars-body:has(.eco-hk:hover) .eco-hk .val-bed,
     .bars-body:has(.eco-hk:hover) .eco-jp .val-bed,
     .bars-body:has(.eco-jp:hover) .eco-hk .val-bed,
-    .bars-body:has(.eco-jp:hover) .eco-jp .val-bed { fill: #ff6b35; }
+    .bars-body:has(.eco-jp:hover) .eco-jp .val-bed { fill: #4a4a4a; }
     .bars-body:has(.eco-hk:hover) .eco-hk .eco-label,
     .bars-body:has(.eco-hk:hover) .eco-jp .eco-label,
     .bars-body:has(.eco-jp:hover) .eco-hk .eco-label,
-    .bars-body:has(.eco-jp:hover) .eco-jp .eco-label { fill: #ff6b35; font-weight: 900; }
+    .bars-body:has(.eco-jp:hover) .eco-jp .eco-label { fill: #4a4a4a; font-weight: 500; }
     .gap-hk-jp { opacity: 0; pointer-events: none; transition: opacity .22s ease; }
     .bars-body:has(.eco-hk:hover) .gap-hk-jp,
     .bars-body:has(.eco-jp:hover) .gap-hk-jp { opacity: 1; }
@@ -85,8 +85,8 @@
   <rect width="720" height="380" fill="#ffffff"/>
   <rect x="88" y="48" width="552" height="272" fill="#f5f5f5"/>
   <g class="axis-labels" font-family="Segoe UI,Roboto,Arial,sans-serif" font-size="11" font-weight="700" pointer-events="none">
-    <line x1="88" y1="320" x2="640" y2="320" stroke="#0b0b0b" stroke-width="2"/>
-    <line x1="88" y1="48" x2="88" y2="320" stroke="#0b0b0b" stroke-width="2"/>
+    <line x1="88" y1="320" x2="640" y2="320" stroke="#1c1c1c" stroke-width="1"/>
+    <line x1="88" y1="48" x2="88" y2="320" stroke="#1c1c1c" stroke-width="1"/>
     <line x1="640" y1="48" x2="640" y2="320" stroke="#ddd" stroke-width="1"/>
     <line x1="88" y1="280" x2="640" y2="280" stroke="#e8e8e8" stroke-width="1"/>
     <line x1="88" y1="240" x2="640" y2="240" stroke="#e8e8e8" stroke-width="1"/>
@@ -149,24 +149,24 @@
       <rect class="hit" x="498" y="48" width="88" height="300"/>
     </g>
     <g class="gap-hk-jp" font-family="Segoe UI,Roboto,Arial,sans-serif" font-weight="700">
-      <rect x="176" y="100" width="66" height="144" fill="rgba(255,107,53,.07)" rx="2"/>
-      <line x1="178" y1="244" x2="204" y2="244" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
-      <line x1="238" y1="100" x2="264" y2="100" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
-      <line x1="212" y1="244" x2="212" y2="100" stroke="#ff6b35" stroke-width="2"/>
-      <polygon points="212,244 207,239 217,239" fill="#ff6b35"/>
-      <polygon points="212,100 207,105 217,105" fill="#ff6b35"/>
-      <circle cx="159" cy="244" r="3.5" fill="#ff6b35" stroke="#fff" stroke-width="1.5"/>
-      <circle cx="259" cy="100" r="3.5" fill="#ff6b35" stroke="#fff" stroke-width="1.5"/>
-      <rect x="178" y="158" width="104" height="40" rx="4" fill="#0b0b0b"/>
-      <text x="230" y="174" text-anchor="middle" fill="#ffd23f" font-size="13">8.2</text>
-      <text x="230" y="190" text-anchor="middle" fill="#fff" font-size="8.5">beds / 1,000 gap</text>
-      <text x="230" y="200" text-anchor="middle" fill="#aaa" font-size="7.5">Japan 12.5 - HK 4.3</text>
+      <rect x="176" y="100" width="66" height="144" fill="rgba(28,28,28,.05)" rx="2"/>
+      <line x1="178" y1="244" x2="204" y2="244" stroke="#4a4a4a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="238" y1="100" x2="264" y2="100" stroke="#4a4a4a" stroke-width="2" stroke-linecap="round"/>
+      <line x1="212" y1="244" x2="212" y2="100" stroke="#4a4a4a" stroke-width="2"/>
+      <polygon points="212,244 207,239 217,239" fill="#4a4a4a"/>
+      <polygon points="212,100 207,105 217,105" fill="#4a4a4a"/>
+      <circle cx="159" cy="244" r="3.5" fill="#4a4a4a" stroke="#fff" stroke-width="1.5"/>
+      <circle cx="259" cy="100" r="3.5" fill="#4a4a4a" stroke="#fff" stroke-width="1.5"/>
+      <rect x="178" y="158" width="104" height="40" fill="#f7f7f5" stroke="#d8d8d6" stroke-width="1"/>
+      <text x="230" y="174" text-anchor="middle" fill="#3a3a3a" font-size="13">8.2</text>
+      <text x="230" y="190" text-anchor="middle" fill="#1c1c1c" font-size="8.5">beds / 1,000 gap</text>
+      <text x="230" y="200" text-anchor="middle" fill="#6a6a6a" font-size="7.5">Japan 12.5 - HK 4.3</text>
     </g>
   </g>
   <g class="legend-in" font-family="Segoe UI,Roboto,Arial,sans-serif" font-size="10" font-weight="700" fill="#666" pointer-events="none">
     <rect x="24" y="14" width="10" height="10" fill="url(#legPop)" stroke="rgba(11,11,11,.2)" stroke-width="1" rx="1"/>
     <text x="40" y="23">Population aged 65+ by 2050 (%)</text>
-    <rect x="268" y="14" width="10" height="10" fill="url(#legBed)" stroke="rgba(255,107,53,.35)" stroke-width="1" rx="1"/>
+    <rect x="268" y="14" width="10" height="10" fill="url(#legBed)" stroke="rgba(28,28,28,.28)" stroke-width="1" rx="1"/>
     <text x="284" y="23">Hospital beds per 1,000 people</text>
   </g>
 </svg>

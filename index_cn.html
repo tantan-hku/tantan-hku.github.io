@@ -17,22 +17,28 @@
   <link rel="stylesheet" href="news/news.css">
   <style>
     :root{
-      --black:#0b0b0b;
+      --bg:#ffffff;
+      --paper:#ffffff;
+      --ink:#1c1c1c;
+      --muted:#5a5a5a;
+      --caption:#6a6a6a;
+      --line:#e4e4e2;
+      --black:#1c1c1c;
       --white:#ffffff;
-      --orange:#ff6b35;
-      --yellow:#ffd23f;
-      --gray:#666;
-      --light-gray:#f5f5f5;
-      --maxw:1200px;
-      --s1:8px; --s2:12px; --s3:16px; --s4:24px; --s5:32px; --s6:48px; --s7:64px;
-      --radius:12px;
-      --shadow:0 6px 24px rgba(0,0,0,.08);
+      --orange:#1c1c1c;
+      --yellow:transparent;
+      --gray:#5a5a5a;
+      --light-gray:#f3f3f1;
+      --maxw:1080px;
+      --s1:8px; --s2:12px; --s3:20px; --s4:28px; --s5:40px; --s6:56px; --s7:96px;
+      --radius:0;
+      --shadow:none;
     }
     html {
         scroll-behavior: smooth;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Noto Sans","Helvetica Neue",Arial,sans-serif; line-height:1.6; color:var(--black); background:var(--white);}
+    body{font-family:"Inter Tight","PingFang TC","PingFang SC","Hiragino Sans CNS","Noto Sans TC","Noto Sans SC","Microsoft JhengHei","Microsoft YaHei",sans-serif; line-height:1.6; color:var(--black); background:var(--white);}
     body.menu-open {
         overflow: hidden;
     }
@@ -350,6 +356,7 @@
       .hero-title{font-size:clamp(24px, 9vw, 34px);}
     }
   </style>
+<link rel="stylesheet" href="editorial.css">
 </head>
 <body>
   
@@ -375,9 +382,9 @@
       <div class="hero-content reveal">
         <div class="hero-eyebrow">建築 • 科技 • 管理</div>
         <h1 class="hero-title">
-          連接設計創新<br>
+          連接<span class="hero-pair">設計</span>創新<br>
           與<br>
-          <span class="no-wrap">數字建造</span>
+          <span class="no-wrap">數字<span class="hero-pair">建造</span></span>
         </h1>
         <p class="hero-subtitle">
   每年，建造業的碳排放量佔全球近 <span class="highlight">37%</span>，並導致超過 <span class="highlight">60,000</span> 名工人死亡。然而，建築物生命週期中約 <span class="highlight">40-70%</span> 的成本、環境影響及安全風險，在設計階段就已註定。
@@ -390,6 +397,16 @@
           <a class="btn btn--primary hover-lift" href="dfs_cn.html">DfS</a>
           <a class="btn btn--secondary hover-lift" href="dfma_cn.html">DfMA</a>
         </div>
+      </div>
+    </section>
+
+    <section id="news" class="section news-section">
+      <div class="container">
+        <div class="news-section__head">
+          <h2 class="section-title">最新動態</h2>
+          <a class="news-all-link" href="news/index_cn.html">全部動態 &rarr;</a>
+        </div>
+        <div class="news-grid" data-news-grid data-lang="cn" data-root="." data-featured="true" data-limit="3" aria-live="polite"></div>
       </div>
     </section>
 
@@ -419,18 +436,9 @@
             <div class="credentials">博士 · 理學碩士 · 建築學學士 · 英國皇家特許測量師 · 英國特許建造師</div>
             <p><strong>譚坦</strong>博士，現任香港大學建築學院房地產及建設系助理教授，建設資產數字管理碩士（MSc DMBA）項目主管。此前，他曾於荷蘭代爾夫特理工大學（TU Delft）及瑞士國家數字製造能力研究中心（NCCR Dfab）從事博士後研究。他於英国倫敦大學學院（UCL）取得博士及理學碩士學位，並於華中科技大學（HUST）獲得建築學學士學位。</p>
             <p>譚博士主持多項研究計劃，包括香港研究資助局的「傑出青年學者計劃」（ECS）、國家自然科學基金委「青年科學基金項目（C類）」，參與「協作研究金」（CRF）以及創新科技署的「創新及科技基金」（ITF）。他曾榮獲 ESI 高被引論文獎、美国土木工程师协会主編精選論文獎、会议最佳論文獎，並獲得多項著名獎學金，如倫敦大學學院博士獎學金、英國 Grand Challenges 博士研究資助，以及中国國家優秀自費留學生獎學金。</p>
-            <p>他目前擔任國際建築與建設研究創新理事會建築設計與管理工作組（CIB W096）共同協調員、《Developments in the Built Environment》执行客座編輯、中國工程院院刊《Frontiers of Engineering Management》特约通訊專家，並共同擔任 CAAD Futures 2025 學術委員會聯席主席。</p>
+            <p>他目前擔任國際建築與建設研究創新理事會建築設計與管理工作組（CIB W096）共同協調員、《Developments in the Built Environment》执行客座編輯、中國工程院院刊《ENGINEERING Management》特约通訊專家。</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="news" class="section news-section">
-      <div class="container">
-        <div class="news-section__head">
-          <h2 class="section-title">最新動態</h2>
-          <a class="news-all-link" href="news/index_cn.html">全部動態 &rarr;</a>
-        </div>
-        <div class="news-grid" data-news-grid data-lang="cn" data-root="." data-featured="true" data-limit="3" aria-live="polite"></div>
       </div>
     </section>
 <section id="team" class="section">
@@ -555,7 +563,6 @@
   <div class="container grant-wrap">
     <div class="section-count" data-count="03"></div>
     <h2 class="section-title">部分獲資助項目</h2>
-    <p class="section-subtitle">截至2025年，研究團隊已從香港研資局（RGC）、國家自然科學基金（NSFC）和港大研究委員會（URC）獲得超過120萬港元的研究經費，涵蓋 ECS、NSFC、TDG等項目。</p>
     <div class="grant-list">
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>

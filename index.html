@@ -17,22 +17,28 @@
   <link rel="stylesheet" href="news/news.css">
   <style>
     :root{
-      --black:#0b0b0b;
+      --bg:#ffffff;
+      --paper:#ffffff;
+      --ink:#1c1c1c;
+      --muted:#5a5a5a;
+      --caption:#6a6a6a;
+      --line:#e4e4e2;
+      --black:#1c1c1c;
       --white:#ffffff;
-      --orange:#ff6b35;
-      --yellow:#ffd23f;
-      --gray:#666;
-      --light-gray:#f5f5f5;
-      --maxw:1200px;
-      --s1:8px; --s2:12px; --s3:16px; --s4:24px; --s5:32px; --s6:48px; --s7:64px;
-      --radius:12px;
-      --shadow:0 6px 24px rgba(0,0,0,.08);
+      --orange:#1c1c1c;
+      --yellow:transparent;
+      --gray:#5a5a5a;
+      --light-gray:#f3f3f1;
+      --maxw:1080px;
+      --s1:8px; --s2:12px; --s3:20px; --s4:28px; --s5:40px; --s6:56px; --s7:96px;
+      --radius:0;
+      --shadow:none;
     }
     html {
         scroll-behavior: smooth;
     }
     *{box-sizing:border-box;margin:0;padding:0}
-    body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Noto Sans","Helvetica Neue",Arial,sans-serif; line-height:1.6; color:var(--black); background:var(--white);}
+    body{font-family:"Inter Tight","PingFang TC","PingFang SC","Hiragino Sans CNS","Noto Sans TC","Noto Sans SC","Microsoft JhengHei","Microsoft YaHei",sans-serif; line-height:1.6; color:var(--black); background:var(--white);}
     body.menu-open {
         overflow: hidden; /* Prevent body scroll when mobile menu is open */
     }
@@ -369,6 +375,7 @@
       .hero-title{font-size:clamp(24px, 9vw, 34px);}
     }
   </style>
+<link rel="stylesheet" href="editorial.css">
 </head>
 <body>
   
@@ -394,9 +401,9 @@
       <div class="hero-content reveal">
         <div class="hero-eyebrow">Architecture • Technology • Management</div>
         <h1 class="hero-title">
-          BRIDGING DESIGN<br>
+          BRIDGING <span class="hero-pair">DESIGN</span><br>
           INNOVATION WITH<br>
-          <span>DIGITAL CONSTRUCTION</span>
+          DIGITAL <span class="hero-pair">CONSTRUCTION</span>
         </h1>
         <p class="hero-subtitle">
   Each year, the construction industry generates nearly <span class="highlight">37%</span> of global carbon emissions and is responsible for over <span class="highlight">60,000</span> worker fatalities. Yet, around <span class="highlight">40-70%</span> of a building lifecycle cost, environmental impact, and safety risks are locked in during the design phase.
@@ -409,6 +416,16 @@
           <a class="btn btn--primary hover-lift" href="dfs.html">DfS</a>
           <a class="btn btn--secondary hover-lift" href="dfma.html">DfMA</a>
         </div>
+      </div>
+    </section>
+
+    <section id="news" class="section news-section">
+      <div class="container">
+        <div class="news-section__head">
+          <h2 class="section-title">Latest News</h2>
+          <a class="news-all-link" href="news/index.html">All news &rarr;</a>
+        </div>
+        <div class="news-grid" data-news-grid data-lang="en" data-root="." data-featured="true" data-limit="3" aria-live="polite"></div>
       </div>
     </section>
 
@@ -438,25 +455,15 @@
             <div class="credentials">PhD · MSc · BArch · MRICS · MCIOB</div>
             <p>Dr. <strong>Tan Tan</strong>  is an Assistant Professor at the Department of Real Estate and Construction, Faculty of Architecture, the University of Hong Kong (HKU), the Program Director of MSc Digital Management of Built Assets (DMBA). Previously, he held postdoctoral positions at the Delft University of Technology (TU Delft) in the Netherlands and the National Centre of Competence in Research (NCCR) Digital Fabrication in Switzerland. He received his PhD and MSc from University College London (UCL Bartlett) and his BArch from Huazhong University of Science and Technology (HUST).</p>
             <p>Dr. Tan has led research projects, including the Hong Kong Early Career Scheme (ECS) and the National Natural Science Foundation of China (NSFC) Young Scientists Fund, and participated in the Collaborative Research Fund (CRF) and the Innovation and Technology Fund (ITF). His achievements include receiving the ESI Highly Cited Paper Award, Editor's Choice Paper Award, and Best Paper Awards, alongside various prestigious scholarships such as the UCL PhD Scholarship, UK Grand Challenges Doctoral Grant, and China National Award for Outstanding Self-funded Students Abroad.</p>
-            <p>He currently serves as a co-coordinator for CIB W096 Architectural Design and Management, a managing guest editor for Developments in the Built Environment, a Corresponding Expert for the Chinese Academy of Engineering's journal Frontiers of Engineering Management, and as Co-Chair for CAAD Futures 2025.</p>
+            <p>He currently serves as a co-coordinator for CIB W096 Architectural Design and Management, a managing guest editor for Developments in the Built Environment, a Corresponding Expert for the Chinese Academy of Engineering's journal ENGINEERING Management.</p>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="news" class="section news-section">
-      <div class="container">
-        <div class="news-section__head">
-          <h2 class="section-title">Latest News</h2>
-          <a class="news-all-link" href="news/index.html">All news &rarr;</a>
-        </div>
-        <div class="news-grid" data-news-grid data-lang="en" data-root="." data-featured="true" data-limit="3" aria-live="polite"></div>
       </div>
     </section>
 <section id="team" class="section">
       <div class="container">
         <div class="section-count" data-count="08"></div>
         <h2 class="section-title">Our Research Team</h2>
-        <p class="section-subtitle"> The core team includes four doctoral-level researchers, supported by master's student research assistants.</p>
         <div class="team-grid">
           <div class="team-member hover-lift reveal">
            <div class="team-photo">
@@ -575,7 +582,6 @@
   <div class="container grant-wrap">
     <div class="section-count" data-count="03"></div>
     <h2 class="section-title">Selected Funded Projects</h2>
-    <p class="section-subtitle">In 2025, the research group has secured over HK$1.2 million in funding from the RGC, NSFC and URC, including ECS, YSF(C), TDG.</p>
     <div class="grant-list">
       <article class="grant-item hover-lift reveal">
         <span class="dot" aria-hidden="true"></span>

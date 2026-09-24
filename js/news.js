@@ -101,7 +101,7 @@
       sc: { title: "港大–华中科大智能建造与智慧城市暑期夏令营", summary: "谭坦 获教育部香港与内地高校师生交流计划支持，带领港大学生赴华中科大参加暑期夏令营；张卓然同行并担任 tutor。", url: "news/articles/2025-07-09-hust-summer-camp_sc.html" }
     },
     {
-      id: "2025-06-10-dfx-special-issue", date: "2025-06-10", type: "special", featured: true,
+      id: "2025-06-10-dfx-special-issue", date: "2025-06-10", type: "other", featured: true,
       cover: "images/news/2025-06-dfx-special-issue-cfp.jpg",
       en: { title: "Special Issue: Design for X (DfX) in Digital Construction", summary: "Tan Tan is Managing Guest Editor of a Developments in the Built Environment special issue on Design for X in digital construction (submission deadline 1 July 2026).", url: "news/articles/2025-06-10-dfx-special-issue.html" },
       cn: { title: "專刊徵稿：數字建造中的 Design for X（DfX）", summary: "譚坦 擔任 Elsevier《Developments in the Built Environment》專刊 Managing Guest Editor，誠邀數字建造 DfX 相關投稿（截稿 2026年7月1日）。", url: "news/articles/2025-06-10-dfx-special-issue_cn.html" },
@@ -125,9 +125,9 @@
   ];
 
   const labels = {
-    en: { more: "Read more", all: "All", talk: "Talk", meeting: "Meeting", visit: "Visit", special: "Special Issue", other: "Other", locale: "en-GB" },
-    cn: { more: "閱讀更多", all: "全部", talk: "報告", meeting: "會議", visit: "訪問", special: "專刊", other: "其他", locale: "zh-HK" },
-    sc: { more: "阅读更多", all: "全部", talk: "报告", meeting: "会议", visit: "访问", special: "专刊", other: "其他", locale: "zh-CN" }
+    en: { more: "Read more", all: "All", talk: "Talk", meeting: "Meeting", visit: "Visit", other: "Other", locale: "en-GB" },
+    cn: { more: "閱讀更多", all: "全部", talk: "報告", meeting: "會議", visit: "訪問", other: "其他", locale: "zh-HK" },
+    sc: { more: "阅读更多", all: "全部", talk: "报告", meeting: "会议", visit: "访问", other: "其他", locale: "zh-CN" }
   };
 
   function escapeHtml(value) {
