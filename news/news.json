@@ -1,5 +1,27 @@
 [
   {
+    "id": "2026-09-15-cib-w096-ai-era-seminar",
+    "date": "2026-09-15",
+    "type": "meeting",
+    "cover": "images/news/2026-09-zhuoran-human-ai-presentation.png",
+    "featured": true,
+    "en": {
+      "title": "CIB W096 Seminar: Managing Design and Construction in the AI Era",
+      "summary": "Tan Tan and Charmaine co-organized the online seminar, with Zhuoran Zhang supporting coordination and presenting on human–AI coopetition and knowledge co-creation.",
+      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar.html"
+    },
+    "cn": {
+      "title": "CIB W096 線上研討會：人工智能時代的設計與建造管理",
+      "summary": "譚坦 與 Charmaine 共同組織研討會，張卓然協助會議組織並匯報人機競合與知識共創研究。",
+      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar_cn.html"
+    },
+    "sc": {
+      "title": "CIB W096 线上研讨会：人工智能时代的设计与建造管理",
+      "summary": "谭坦 与 Charmaine 共同组织研讨会，张卓然协助会议组织并汇报人机竞合与知识共创研究。",
+      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar_sc.html"
+    }
+  },
+  {
     "id": "2026-09-11-mei-yalan-safety-seminar",
     "date": "2026-09-11",
     "type": "talk",
@@ -22,31 +44,9 @@
     }
   },
   {
-    "id": "2026-09-15-cib-w096-ai-era-seminar",
-    "date": "2026-09-15",
-    "type": "talk",
-    "cover": "images/news/2026-09-zhuoran-human-ai-presentation.png",
-    "featured": true,
-    "en": {
-      "title": "CIB W096 Seminar: Managing Design and Construction in the AI Era",
-      "summary": "Tan Tan and Charmaine co-organized the online seminar, with Zhuoran Zhang supporting coordination and presenting on human–AI coopetition and knowledge co-creation.",
-      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar.html"
-    },
-    "cn": {
-      "title": "CIB W096 線上研討會：人工智能時代的設計與建造管理",
-      "summary": "譚坦 與 Charmaine 共同組織研討會，張卓然協助會議組織並匯報人機競合與知識共創研究。",
-      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar_cn.html"
-    },
-    "sc": {
-      "title": "CIB W096 线上研讨会：人工智能时代的设计与建造管理",
-      "summary": "谭坦 与 Charmaine 共同组织研讨会，张卓然协助会议组织并汇报人机竞合与知识共创研究。",
-      "url": "news/articles/2026-09-15-cib-w096-ai-era-seminar_sc.html"
-    }
-  },
-  {
     "id": "2026-09-08-nanjing-wuhu-academic-exchange",
     "date": "2026-09-08",
-    "type": "visit",
+    "type": "talk",
     "cover": "images/news/2026-09-nanjing-wuhu-group-photo.jpg",
     "featured": true,
     "en": {
@@ -154,28 +154,6 @@
     }
   },
   {
-    "id": "2025-10-27-eth-dillenburger-visit",
-    "date": "2025-10-27",
-    "type": "visit",
-    "cover": "images/news/2025-10-eth-lab-group.jpg",
-    "featured": true,
-    "en": {
-      "title": "Research Group Hosts Benjamin Dillenburger from ETH Zurich",
-      "summary": "Professor Benjamin Dillenburger delivered a REC seminar on large-scale additive manufacturing, joined by Professor Ming Shan Ng from Kyoto Institute of Technology.",
-      "url": "news/articles/2025-10-27-eth-dillenburger-visit.html"
-    },
-    "cn": {
-      "title": "研究團隊接待蘇黎世聯邦理工學院 Benjamin Dillenburger 教授來訪",
-      "summary": "Benjamin Dillenburger 教授主講大規模增材製造 REC 研討會，來訪亦包括京都工藝纖維大學 Ming Shan Ng 教授。",
-      "url": "news/articles/2025-10-27-eth-dillenburger-visit_cn.html"
-    },
-    "sc": {
-      "title": "研究团队接待苏黎世联邦理工学院 Benjamin Dillenburger 教授来访",
-      "summary": "Benjamin Dillenburger 教授主讲大规模增材制造 REC 研讨会，来访亦包括京都工艺纤维大学 Ming Shan Ng 教授。",
-      "url": "news/articles/2025-10-27-eth-dillenburger-visit_sc.html"
-    }
-  },
-  {
     "id": "2026-04-16-martina-huemann-visit",
     "date": "2026-04-16",
     "type": "visit",
@@ -198,25 +176,113 @@
     }
   },
   {
-    "id": "2025-06-10-dfx-special-issue",
-    "date": "2025-06-10",
-    "type": "special",
-    "cover": "images/news/2025-06-dfx-special-issue-cfp.jpg",
+    "id": "2026-03-09-zhuoran-rpg-symposium-award",
+    "date": "2026-03-09",
+    "type": "talk",
+    "cover": "images/news/2026-03-zhuoran-rpg-symposium-award.jpg",
     "featured": true,
     "en": {
-      "title": "Special Issue: Design for X (DfX) in Digital Construction",
-      "summary": "Tan Tan is Managing Guest Editor of a Developments in the Built Environment special issue on Design for X in digital construction (submission deadline 1 July 2026).",
-      "url": "news/articles/2025-06-10-dfx-special-issue.html"
+      "title": "Zhuoran Zhang Receives Poster Presentation Merit Award at HKU Research Postgraduate Symposium 2026",
+      "summary": "As an HKPFS awardee, Zhuoran Zhang received the Poster Presentation Merit Award for research on cognitive outsourcing to Generative AI in design workflows.",
+      "url": "news/articles/2026-03-09-zhuoran-rpg-symposium-award.html"
     },
     "cn": {
-      "title": "專刊徵稿：數字建造中的 Design for X（DfX）",
-      "summary": "譚坦 擔任 Elsevier《Developments in the Built Environment》專刊 Managing Guest Editor，誠邀數字建造 DfX 相關投稿（截稿 2026年7月1日）。",
-      "url": "news/articles/2025-06-10-dfx-special-issue_cn.html"
+      "title": "張卓然於港大研究生學術研討會獲海報展示優異獎",
+      "summary": "張卓然以 HKPFS 得主身份參加港大研究生學術研討會，憑生成式 AI 認知外包研究獲海報展示優異獎。",
+      "url": "news/articles/2026-03-09-zhuoran-rpg-symposium-award_cn.html"
     },
     "sc": {
-      "title": "专刊征稿：数字建造中的 Design for X（DfX）",
-      "summary": "谭坦 担任 Elsevier《Developments in the Built Environment》专刊 Managing Guest Editor，诚邀数字建造 DfX 相关投稿（截稿 2026年7月1日）。",
-      "url": "news/articles/2025-06-10-dfx-special-issue_sc.html"
+      "title": "张卓然于港大研究生学术研讨会获海报展示优异奖",
+      "summary": "张卓然以 HKPFS 得主身份参加港大研究生学术研讨会，凭生成式 AI 认知外包研究获海报展示优异奖。",
+      "url": "news/articles/2026-03-09-zhuoran-rpg-symposium-award_sc.html"
+    }
+  },
+  {
+    "id": "2025-12-15-zhuoran-ncti-dchk-conference",
+    "date": "2025-12-15",
+    "type": "talk",
+    "cover": "images/news/2025-12-zhuoran-ncti-dchk-presentation.jpg",
+    "featured": true,
+    "en": {
+      "title": "Zhuoran Zhang Presents Research on Cognitive Outsourcing at NCTI-DCHK Conference 2025",
+      "summary": "Zhuoran Zhang presented research on cognitive outsourcing to Generative AI and supported NCTI-DCHK Conference 2025 as a student helper.",
+      "url": "news/articles/2025-12-15-zhuoran-ncti-dchk-conference.html"
+    },
+    "cn": {
+      "title": "張卓然於 NCTI-DCHK 2025 會議匯報生成式 AI 認知外包研究",
+      "summary": "張卓然於 NCTI-DCHK 2025 匯報生成式 AI 認知外包研究，並擔任學生志願者協助會議。",
+      "url": "news/articles/2025-12-15-zhuoran-ncti-dchk-conference_cn.html"
+    },
+    "sc": {
+      "title": "张卓然于 NCTI-DCHK 2025 会议汇报生成式 AI 认知外包研究",
+      "summary": "张卓然于 NCTI-DCHK 2025 汇报生成式 AI 认知外包研究，并担任学生志愿者协助会议。",
+      "url": "news/articles/2025-12-15-zhuoran-ncti-dchk-conference_sc.html"
+    }
+  },
+  {
+    "id": "2025-11-07-criocm-hangzhou",
+    "date": "2025-11-07",
+    "type": "talk",
+    "cover": "images/news/2025-11-criocm-certificate-group.jpg",
+    "featured": true,
+    "en": {
+      "title": "Research Group Attends CRIOCM 2025 in Hangzhou",
+      "summary": "The research group attended the 30th CRIOCM symposium hosted by Zhejiang University City College, with an invited lecture at Zhejiang University of Technology.",
+      "url": "news/articles/2025-11-07-criocm-hangzhou.html"
+    },
+    "cn": {
+      "title": "研究團隊參加杭州 CRIOCM 2025",
+      "summary": "研究團隊赴浙大城院參加第三十屆 CRIOCM，並感謝浙江工業大學設計與建築學院邀請講座分享。",
+      "url": "news/articles/2025-11-07-criocm-hangzhou_cn.html"
+    },
+    "sc": {
+      "title": "研究团队参加杭州 CRIOCM 2025",
+      "summary": "研究团队赴浙大城院参加第三十届 CRIOCM，并感谢浙江工业大学设计与建筑学院邀请讲座分享。",
+      "url": "news/articles/2025-11-07-criocm-hangzhou_sc.html"
+    }
+  },
+  {
+    "id": "2025-10-27-eth-dillenburger-visit",
+    "date": "2025-10-27",
+    "type": "visit",
+    "cover": "images/news/2025-10-eth-lab-group.jpg",
+    "featured": true,
+    "en": {
+      "title": "Research Group Hosts Benjamin Dillenburger from ETH Zurich",
+      "summary": "Professor Benjamin Dillenburger delivered a REC seminar on large-scale additive manufacturing, joined by Professor Ming Shan Ng from Kyoto Institute of Technology.",
+      "url": "news/articles/2025-10-27-eth-dillenburger-visit.html"
+    },
+    "cn": {
+      "title": "研究團隊接待蘇黎世聯邦理工學院 Benjamin Dillenburger 教授來訪",
+      "summary": "Benjamin Dillenburger 教授主講大規模增材製造 REC 研討會，來訪亦包括京都工藝纖維大學 Ming Shan Ng 教授。",
+      "url": "news/articles/2025-10-27-eth-dillenburger-visit_cn.html"
+    },
+    "sc": {
+      "title": "研究团队接待苏黎世联邦理工学院 Benjamin Dillenburger 教授来访",
+      "summary": "Benjamin Dillenburger 教授主讲大规模增材制造 REC 研讨会，来访亦包括京都工艺纤维大学 Ming Shan Ng 教授。",
+      "url": "news/articles/2025-10-27-eth-dillenburger-visit_sc.html"
+    }
+  },
+  {
+    "id": "2025-07-18-zhuoran-young-scholars-forum",
+    "date": "2025-07-18",
+    "type": "talk",
+    "cover": "images/news/2025-07-zhuoran-young-scholars-presentation.jpg",
+    "featured": true,
+    "en": {
+      "title": "Zhuoran Zhang Presents at the 2025 Young Scholars Forum on Project Management",
+      "summary": "In Baotou, Zhuoran Zhang presented research on Generative AI’s dual effects on design knowledge conversion and design fixation.",
+      "url": "news/articles/2025-07-18-zhuoran-young-scholars-forum.html"
+    },
+    "cn": {
+      "title": "張卓然參加 2025 項目管理青年學者論壇並作匯報",
+      "summary": "張卓然於包頭項目管理青年學者論壇匯報生成式 AI 對設計知識轉化與設計固化的雙重影響。",
+      "url": "news/articles/2025-07-18-zhuoran-young-scholars-forum_cn.html"
+    },
+    "sc": {
+      "title": "张卓然参加 2025 项目管理青年学者论坛并作汇报",
+      "summary": "张卓然于包头项目管理青年学者论坛汇报生成式 AI 对设计知识转化与设计固化的双重影响。",
+      "url": "news/articles/2025-07-18-zhuoran-young-scholars-forum_sc.html"
     }
   },
   {
@@ -242,25 +308,25 @@
     }
   },
   {
-    "id": "2025-05-09-liz-varga-seminar",
-    "date": "2025-05-09",
-    "type": "visit",
-    "cover": "images/news/2025-05-liz-varga-seminar.jpg",
+    "id": "2025-06-10-dfx-special-issue",
+    "date": "2025-06-10",
+    "type": "special",
+    "cover": "images/news/2025-06-dfx-special-issue-cfp.jpg",
     "featured": true,
     "en": {
-      "title": "Research Group Hosts Liz Varga CBE Seminar and Secures Visiting Professor Scheme",
-      "summary": "UCL Professor of Complex Systems Liz Varga CBE presented Infrastructure: A systems approach at HKU REC and began a one-year Visiting Professorship with the group.",
-      "url": "news/articles/2025-05-09-liz-varga-seminar.html"
+      "title": "Special Issue: Design for X (DfX) in Digital Construction",
+      "summary": "Tan Tan is Managing Guest Editor of a Developments in the Built Environment special issue on Design for X in digital construction (submission deadline 1 July 2026).",
+      "url": "news/articles/2025-06-10-dfx-special-issue.html"
     },
     "cn": {
-      "title": "研究團隊接待 Liz Varga CBE 教授基礎設施研討會並獲訪問教授計劃資助",
-      "summary": "UCL 複雜系統教授 Liz Varga CBE 於港大 REC 主講 Infrastructure: A systems approach，並開始為期一年的訪問教授交流。",
-      "url": "news/articles/2025-05-09-liz-varga-seminar_cn.html"
+      "title": "專刊徵稿：數字建造中的 Design for X（DfX）",
+      "summary": "譚坦 擔任 Elsevier《Developments in the Built Environment》專刊 Managing Guest Editor，誠邀數字建造 DfX 相關投稿（截稿 2026年7月1日）。",
+      "url": "news/articles/2025-06-10-dfx-special-issue_cn.html"
     },
     "sc": {
-      "title": "研究团队接待 Liz Varga CBE 教授基础设施研讨会并获访问教授计划资助",
-      "summary": "UCL 复杂系统教授 Liz Varga CBE 于港大 REC 主讲 Infrastructure: A systems approach，并开始为期一年的访问教授交流。",
-      "url": "news/articles/2025-05-09-liz-varga-seminar_sc.html"
+      "title": "专刊征稿：数字建造中的 Design for X（DfX）",
+      "summary": "谭坦 担任 Elsevier《Developments in the Built Environment》专刊 Managing Guest Editor，诚邀数字建造 DfX 相关投稿（截稿 2026年7月1日）。",
+      "url": "news/articles/2025-06-10-dfx-special-issue_sc.html"
     }
   },
   {
@@ -286,25 +352,25 @@
     }
   },
   {
-    "id": "2025-11-07-criocm-hangzhou",
-    "date": "2025-11-07",
-    "type": "talk",
-    "cover": "images/news/2025-11-criocm-certificate-group.jpg",
+    "id": "2025-05-09-liz-varga-seminar",
+    "date": "2025-05-09",
+    "type": "visit",
+    "cover": "images/news/2025-05-liz-varga-seminar.jpg",
     "featured": true,
     "en": {
-      "title": "Research Group Attends CRIOCM 2025 in Hangzhou",
-      "summary": "The research group attended the 30th CRIOCM symposium hosted by Zhejiang University City College, with an invited lecture at Zhejiang University of Technology.",
-      "url": "news/articles/2025-11-07-criocm-hangzhou.html"
+      "title": "Research Group Hosts Liz Varga CBE Seminar and Secures Visiting Professor Scheme",
+      "summary": "UCL Professor of Complex Systems Liz Varga CBE presented Infrastructure: A systems approach at HKU REC and began a one-year Visiting Professorship with the group.",
+      "url": "news/articles/2025-05-09-liz-varga-seminar.html"
     },
     "cn": {
-      "title": "研究團隊參加杭州 CRIOCM 2025",
-      "summary": "研究團隊赴浙大城院參加第三十屆 CRIOCM，並感謝浙江工業大學設計與建築學院邀請講座分享。",
-      "url": "news/articles/2025-11-07-criocm-hangzhou_cn.html"
+      "title": "研究團隊接待 Liz Varga CBE 教授基礎設施研討會並獲訪問教授計劃資助",
+      "summary": "UCL 複雜系統教授 Liz Varga CBE 於港大 REC 主講 Infrastructure: A systems approach，並開始為期一年的訪問教授交流。",
+      "url": "news/articles/2025-05-09-liz-varga-seminar_cn.html"
     },
     "sc": {
-      "title": "研究团队参加杭州 CRIOCM 2025",
-      "summary": "研究团队赴浙大城院参加第三十届 CRIOCM，并感谢浙江工业大学设计与建筑学院邀请讲座分享。",
-      "url": "news/articles/2025-11-07-criocm-hangzhou_sc.html"
+      "title": "研究团队接待 Liz Varga CBE 教授基础设施研讨会并获访问教授计划资助",
+      "summary": "UCL 复杂系统教授 Liz Varga CBE 于港大 REC 主讲 Infrastructure: A systems approach，并开始为期一年的访问教授交流。",
+      "url": "news/articles/2025-05-09-liz-varga-seminar_sc.html"
     }
   }
 ]
