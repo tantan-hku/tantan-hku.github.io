@@ -3,6 +3,13 @@
 
   const fallbackItems = [
     {
+      id: "2026-10-16-wuhan-engineering-management-forum", date: "2026-10-16", type: "meeting", featured: true,
+      cover: "images/news/2026-10-wuhan-engineering-management-forum.jpg",
+      en: { title: "Tan Tan Chairs Green and Sustainable Engineering Management Session in Wuhan", summary: "Tan Tan chaired Session 4 on green, low-carbon and sustainable engineering management at the Engineering Management Youth Academic Forum in Wuhan.", url: "news/articles/2026-10-16-wuhan-engineering-management-forum.html" },
+      cn: { title: "譚坦於武漢工程管理青年學術論壇主持綠色低碳專題", summary: "譚坦於武漢工程管理青年學術論壇擔任專題4：綠色低碳與可持續工程管理論壇主持人。", url: "news/articles/2026-10-16-wuhan-engineering-management-forum_cn.html" },
+      sc: { title: "谭坦于武汉工程管理青年学术论坛主持绿色低碳专题", summary: "谭坦于武汉工程管理青年学术论坛担任专题4：绿色低碳与可持续工程管理论坛主持人。", url: "news/articles/2026-10-16-wuhan-engineering-management-forum_sc.html" }
+    },
+    {
       id: "2026-09-15-cib-w096-ai-era-seminar", date: "2026-09-15", type: "meeting", featured: true,
       cover: "images/news/2026-09-zhuoran-human-ai-presentation.png",
       en: { title: "CIB W096 Seminar: Managing Design and Construction in the AI Era", summary: "Tan Tan and Charmaine co-organized the online seminar, with Zhuoran Zhang supporting coordination and presenting on human–AI coopetition and knowledge co-creation.", url: "news/articles/2026-09-15-cib-w096-ai-era-seminar.html" },
